@@ -1,0 +1,5123 @@
+#TTL FROM INPUT FILE:
+#../aama-data/data/beja-van/beja-van-pdgms.edn
+
+@prefix rdf:	 <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:	 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:    <http://purl.org/dc/elements>.
+@prefix dcterms:    <http://purl.org/dc/terms>.
+@prefix aama:	 <http://id.oi.uchicago.edu/aama/2013/> .
+@prefix aamas:	 <http://id.oi.uchicago.edu/aama/2013/schema/> .
+@prefix bva:   <http://id.oi.uchicago.edu/aama/2013/beja-van/> .
+
+#LANG INFO:
+
+aama:Beja-van a aamas:Language .
+aama:Beja-van rdfs:label "Beja-van" .
+aama:Beja-van aamas:subfamily "Beja" .
+aama:Beja-van aamas:lpref "bva" .
+aama:Beja-van aamas:dataSource "Vanhove2014 (http://corpafroas.huma-num.fr/Archives/BEJ/PDF/BEJ_MV_AGRAMMATICALSKETCH.PDF) Vanhove2017: abbrev. in :note  VNp.[age](.t[able])" .
+aama:Beja-van aamas:dataSourceNotes "The current data is taken from the paradigm tables in Vanhove2014." .
+aama:Beja-van aamas:geodemoURL "http://www.ethnologue.com/language/bej" .
+aama:Beja-van aamas:geodemoTXT "Beja is a closely related group of language varieties and dialects spoken in the Red Sea coastal and hill regions in Sudan%% Eritrea%% and Egypt by more than a million individuals. The variety documented here is that of the village of Sinkat (36 49'58E%% 18 50'14N)%% about 60km WSW of Suakin%% where Martine Vanhove recorded a corpus of Beja narratives (avaliable at https://cocoon.huma-num.fr/exist/crdo/search2.xql?keyword=beja." .
+
+
+#SCHEMATA: slot
+bva:slot aamas:lang aama:Beja-van .
+bva:Slot aamas:lang aama:Beja-van .
+bva:slot rdfs:domain aamas:Term .
+bva:Slot rdfs:label "slot exponents" .
+bva:slot rdfs:label "slot" .
+bva:slot rdfs:range bva:Slot .
+bva:Slot rdfs:subClassOf bva:MuExponent .
+bva:slot rdfs:subPropertyOf bva:muProperty .
+bva:After-IPFV-PFV aamas:lang aama:Beja-van .
+bva:After-IPFV-PFV rdf:type bva:Slot .
+bva:After-IPFV-PFV rdfs:label "After-IPFV-PFV" .
+bva:After-aor aamas:lang aama:Beja-van .
+bva:After-aor rdf:type bva:Slot .
+bva:After-aor rdfs:label "After-aor" .
+bva:Before-hoob aamas:lang aama:Beja-van .
+bva:Before-hoob rdf:type bva:Slot .
+bva:Before-hoob rdfs:label "Before-hoob" .
+
+#SCHEMATA: person
+bva:person aamas:lang aama:Beja-van .
+bva:Person aamas:lang aama:Beja-van .
+bva:person rdfs:domain aamas:Term .
+bva:Person rdfs:label "person exponents" .
+bva:person rdfs:label "person" .
+bva:person rdfs:range bva:Person .
+bva:Person rdfs:subClassOf bva:MuExponent .
+bva:person rdfs:subPropertyOf bva:muProperty .
+bva:Person1 aamas:lang aama:Beja-van .
+bva:Person1 rdf:type bva:Person .
+bva:Person1 rdfs:label "Person1" .
+bva:Person2 aamas:lang aama:Beja-van .
+bva:Person2 rdf:type bva:Person .
+bva:Person2 rdfs:label "Person2" .
+bva:Person3 aamas:lang aama:Beja-van .
+bva:Person3 rdf:type bva:Person .
+bva:Person3 rdfs:label "Person3" .
+
+#SCHEMATA: number
+bva:number aamas:lang aama:Beja-van .
+bva:Number aamas:lang aama:Beja-van .
+bva:number rdfs:domain aamas:Term .
+bva:Number rdfs:label "number exponents" .
+bva:number rdfs:label "number" .
+bva:number rdfs:range bva:Number .
+bva:Number rdfs:subClassOf bva:MuExponent .
+bva:number rdfs:subPropertyOf bva:muProperty .
+bva:Plural aamas:lang aama:Beja-van .
+bva:Plural rdf:type bva:Number .
+bva:Plural rdfs:label "Plural" .
+bva:Singular aamas:lang aama:Beja-van .
+bva:Singular rdf:type bva:Number .
+bva:Singular rdfs:label "Singular" .
+
+#SCHEMATA: vmorphClass
+bva:vmorphClass aamas:lang aama:Beja-van .
+bva:Vmorphclass aamas:lang aama:Beja-van .
+bva:vmorphClass rdfs:domain aamas:Term .
+bva:Vmorphclass rdfs:label "vmorphClass exponents" .
+bva:vmorphClass rdfs:label "vmorphClass" .
+bva:vmorphClass rdfs:range bva:Vmorphclass .
+bva:Vmorphclass rdfs:subClassOf bva:MuExponent .
+bva:vmorphClass rdfs:subPropertyOf bva:muProperty .
+bva:Finite aamas:lang aama:Beja-van .
+bva:Finite rdf:type bva:Vmorphclass .
+bva:Finite rdfs:label "Finite" .
+bva:StemExx aamas:lang aama:Beja-van .
+bva:StemExx rdf:type bva:Vmorphclass .
+bva:StemExx rdfs:label "StemExx" .
+
+#SCHEMATA: pos
+bva:pos aamas:lang aama:Beja-van .
+bva:Pos aamas:lang aama:Beja-van .
+bva:pos rdfs:domain aamas:Term .
+bva:Pos rdfs:label "pos exponents" .
+bva:pos rdfs:label "pos" .
+bva:pos rdfs:range bva:Pos .
+bva:Pos rdfs:subClassOf bva:MuExponent .
+bva:pos rdfs:subPropertyOf bva:muProperty .
+bva:Pronoun aamas:lang aama:Beja-van .
+bva:Pronoun rdf:type bva:Pos .
+bva:Pronoun rdfs:label "Pronoun" .
+bva:Verb aamas:lang aama:Beja-van .
+bva:Verb rdf:type bva:Pos .
+bva:Verb rdfs:label "Verb" .
+
+#SCHEMATA: proClass
+bva:proClass aamas:lang aama:Beja-van .
+bva:Proclass aamas:lang aama:Beja-van .
+bva:proClass rdfs:domain aamas:Term .
+bva:Proclass rdfs:label "proClass exponents" .
+bva:proClass rdfs:label "proClass" .
+bva:proClass rdfs:range bva:Proclass .
+bva:Proclass rdfs:subClassOf bva:MuExponent .
+bva:proClass rdfs:subPropertyOf bva:muProperty .
+bva:Bound aamas:lang aama:Beja-van .
+bva:Bound rdf:type bva:Proclass .
+bva:Bound rdfs:label "Bound" .
+bva:Demonstrative aamas:lang aama:Beja-van .
+bva:Demonstrative rdf:type bva:Proclass .
+bva:Demonstrative rdfs:label "Demonstrative" .
+bva:IndPoss aamas:lang aama:Beja-van .
+bva:IndPoss rdf:type bva:Proclass .
+bva:IndPoss rdfs:label "IndPoss" .
+bva:Independent aamas:lang aama:Beja-van .
+bva:Independent rdf:type bva:Proclass .
+bva:Independent rdfs:label "Independent" .
+bva:PossBound aamas:lang aama:Beja-van .
+bva:PossBound rdf:type bva:Proclass .
+bva:PossBound rdfs:label "PossBound" .
+bva:ProBound aamas:lang aama:Beja-van .
+bva:ProBound rdf:type bva:Proclass .
+bva:ProBound rdfs:label "ProBound" .
+bva:indPoss aamas:lang aama:Beja-van .
+bva:indPoss rdf:type bva:Proclass .
+bva:indPoss rdfs:label "indPoss" .
+
+#SCHEMATA: conjClass
+bva:conjClass aamas:lang aama:Beja-van .
+bva:Conjclass aamas:lang aama:Beja-van .
+bva:conjClass rdfs:domain aamas:Term .
+bva:Conjclass rdfs:label "conjClass exponents" .
+bva:conjClass rdfs:label "conjClass" .
+bva:conjClass rdfs:range bva:Conjclass .
+bva:Conjclass rdfs:subClassOf bva:MuExponent .
+bva:conjClass rdfs:subPropertyOf bva:muProperty .
+bva:Prefix aamas:lang aama:Beja-van .
+bva:Prefix rdf:type bva:Conjclass .
+bva:Prefix rdfs:label "Prefix" .
+bva:Suffix aamas:lang aama:Beja-van .
+bva:Suffix rdf:type bva:Conjclass .
+bva:Suffix rdfs:label "Suffix" .
+
+#SCHEMATA: pmorphClass
+bva:pmorphClass aamas:lang aama:Beja-van .
+bva:Pmorphclass aamas:lang aama:Beja-van .
+bva:pmorphClass rdfs:domain aamas:Term .
+bva:Pmorphclass rdfs:label "pmorphClass exponents" .
+bva:pmorphClass rdfs:label "pmorphClass" .
+bva:pmorphClass rdfs:range bva:Pmorphclass .
+bva:Pmorphclass rdfs:subClassOf bva:MuExponent .
+bva:pmorphClass rdfs:subPropertyOf bva:muProperty .
+bva:ProMorph aamas:lang aama:Beja-van .
+bva:ProMorph rdf:type bva:Pmorphclass .
+bva:ProMorph rdfs:label "ProMorph" .
+
+#SCHEMATA: case
+bva:case aamas:lang aama:Beja-van .
+bva:Case aamas:lang aama:Beja-van .
+bva:case rdfs:domain aamas:Term .
+bva:Case rdfs:label "case exponents" .
+bva:case rdfs:label "case" .
+bva:case rdfs:range bva:Case .
+bva:Case rdfs:subClassOf bva:MuExponent .
+bva:case rdfs:subPropertyOf bva:muProperty .
+bva:Ablative aamas:lang aama:Beja-van .
+bva:Ablative rdf:type bva:Case .
+bva:Ablative rdfs:label "Ablative" .
+bva:Accusative aamas:lang aama:Beja-van .
+bva:Accusative rdf:type bva:Case .
+bva:Accusative rdfs:label "Accusative" .
+bva:Genitive aamas:lang aama:Beja-van .
+bva:Genitive rdf:type bva:Case .
+bva:Genitive rdfs:label "Genitive" .
+bva:Nominative aamas:lang aama:Beja-van .
+bva:Nominative rdf:type bva:Case .
+bva:Nominative rdfs:label "Nominative" .
+
+#SCHEMATA: polarity
+bva:polarity aamas:lang aama:Beja-van .
+bva:Polarity aamas:lang aama:Beja-van .
+bva:polarity rdfs:domain aamas:Term .
+bva:Polarity rdfs:label "polarity exponents" .
+bva:polarity rdfs:label "polarity" .
+bva:polarity rdfs:range bva:Polarity .
+bva:Polarity rdfs:subClassOf bva:MuExponent .
+bva:polarity rdfs:subPropertyOf bva:muProperty .
+bva:Affirmative aamas:lang aama:Beja-van .
+bva:Affirmative rdf:type bva:Polarity .
+bva:Affirmative rdfs:label "Affirmative" .
+bva:Negative aamas:lang aama:Beja-van .
+bva:Negative rdf:type bva:Polarity .
+bva:Negative rdfs:label "Negative" .
+
+#SCHEMATA: tam
+bva:tam aamas:lang aama:Beja-van .
+bva:Tam aamas:lang aama:Beja-van .
+bva:tam rdfs:domain aamas:Term .
+bva:Tam rdfs:label "tam exponents" .
+bva:tam rdfs:label "tam" .
+bva:tam rdfs:range bva:Tam .
+bva:Tam rdfs:subClassOf bva:MuExponent .
+bva:tam rdfs:subPropertyOf bva:muProperty .
+bva:Aorist aamas:lang aama:Beja-van .
+bva:Aorist rdf:type bva:Tam .
+bva:Aorist rdfs:label "Aorist" .
+bva:Imperfective aamas:lang aama:Beja-van .
+bva:Imperfective rdf:type bva:Tam .
+bva:Imperfective rdfs:label "Imperfective" .
+bva:Optative aamas:lang aama:Beja-van .
+bva:Optative rdf:type bva:Tam .
+bva:Optative rdfs:label "Optative" .
+bva:Perfective aamas:lang aama:Beja-van .
+bva:Perfective rdf:type bva:Tam .
+bva:Perfective rdfs:label "Perfective" .
+bva:Potential aamas:lang aama:Beja-van .
+bva:Potential rdf:type bva:Tam .
+bva:Potential rdfs:label "Potential" .
+
+#SCHEMATA: h_gender
+bva:h_gender aamas:lang aama:Beja-van .
+bva:H_gender aamas:lang aama:Beja-van .
+bva:h_gender rdfs:domain aamas:Term .
+bva:H_gender rdfs:label "h_gender exponents" .
+bva:h_gender rdfs:label "h_gender" .
+bva:h_gender rdfs:range bva:H_gender .
+bva:H_gender rdfs:subClassOf bva:MuExponent .
+bva:h_gender rdfs:subPropertyOf bva:muProperty .
+bva:H_Fem aamas:lang aama:Beja-van .
+bva:H_Fem rdf:type bva:H_gender .
+bva:H_Fem rdfs:label "H_Fem" .
+bva:H_Masc aamas:lang aama:Beja-van .
+bva:H_Masc rdf:type bva:H_gender .
+bva:H_Masc rdfs:label "H_Masc" .
+
+#SCHEMATA: dervStem
+bva:dervStem aamas:lang aama:Beja-van .
+bva:Dervstem aamas:lang aama:Beja-van .
+bva:dervStem rdfs:domain aamas:Term .
+bva:Dervstem rdfs:label "dervStem exponents" .
+bva:dervStem rdfs:label "dervStem" .
+bva:dervStem rdfs:range bva:Dervstem .
+bva:Dervstem rdfs:subClassOf bva:MuExponent .
+bva:dervStem rdfs:subPropertyOf bva:muProperty .
+bva:CAUS aamas:lang aama:Beja-van .
+bva:CAUS rdf:type bva:Dervstem .
+bva:CAUS rdfs:label "CAUS" .
+bva:DBL_CAUS aamas:lang aama:Beja-van .
+bva:DBL_CAUS rdf:type bva:Dervstem .
+bva:DBL_CAUS rdfs:label "DBL_CAUS" .
+bva:INT aamas:lang aama:Beja-van .
+bva:INT rdf:type bva:Dervstem .
+bva:INT rdfs:label "INT" .
+bva:PASS aamas:lang aama:Beja-van .
+bva:PASS rdf:type bva:Dervstem .
+bva:PASS rdfs:label "PASS" .
+bva:PLAC aamas:lang aama:Beja-van .
+bva:PLAC rdf:type bva:Dervstem .
+bva:PLAC rdfs:label "PLAC" .
+bva:PLAC1 aamas:lang aama:Beja-van .
+bva:PLAC1 rdf:type bva:Dervstem .
+bva:PLAC1 rdfs:label "PLAC1" .
+bva:PLAC2 aamas:lang aama:Beja-van .
+bva:PLAC2 rdf:type bva:Dervstem .
+bva:PLAC2 rdfs:label "PLAC2" .
+bva:RECP aamas:lang aama:Beja-van .
+bva:RECP rdf:type bva:Dervstem .
+bva:RECP rdfs:label "RECP" .
+bva:REFL aamas:lang aama:Beja-van .
+bva:REFL rdf:type bva:Dervstem .
+bva:REFL rdfs:label "REFL" .
+bva:REFL_PASS aamas:lang aama:Beja-van .
+bva:REFL_PASS rdf:type bva:Dervstem .
+bva:REFL_PASS rdfs:label "REFL_PASS" .
+bva:Reflexive aamas:lang aama:Beja-van .
+bva:Reflexive rdf:type bva:Dervstem .
+bva:Reflexive rdfs:label "Reflexive" .
+
+#SCHEMATA: gender
+bva:gender aamas:lang aama:Beja-van .
+bva:Gender aamas:lang aama:Beja-van .
+bva:gender rdfs:domain aamas:Term .
+bva:Gender rdfs:label "gender exponents" .
+bva:gender rdfs:label "gender" .
+bva:gender rdfs:range bva:Gender .
+bva:Gender rdfs:subClassOf bva:MuExponent .
+bva:gender rdfs:subPropertyOf bva:muProperty .
+bva:Common aamas:lang aama:Beja-van .
+bva:Common rdf:type bva:Gender .
+bva:Common rdfs:label "Common" .
+bva:Fem aamas:lang aama:Beja-van .
+bva:Fem rdf:type bva:Gender .
+bva:Fem rdfs:label "Fem" .
+bva:Masc aamas:lang aama:Beja-van .
+bva:Masc rdf:type bva:Gender .
+bva:Masc rdfs:label "Masc" .
+
+#SCHEMATA: h_number
+bva:h_number aamas:lang aama:Beja-van .
+bva:H_number aamas:lang aama:Beja-van .
+bva:h_number rdfs:domain aamas:Term .
+bva:H_number rdfs:label "h_number exponents" .
+bva:h_number rdfs:label "h_number" .
+bva:h_number rdfs:range bva:H_number .
+bva:H_number rdfs:subClassOf bva:MuExponent .
+bva:h_number rdfs:subPropertyOf bva:muProperty .
+bva:ANY aamas:lang aama:Beja-van .
+bva:ANY rdf:type bva:H_number .
+bva:ANY rdfs:label "ANY" .
+bva:H_Plural aamas:lang aama:Beja-van .
+bva:H_Plural rdf:type bva:H_number .
+bva:H_Plural rdfs:label "H_Plural" .
+bva:H_Singular aamas:lang aama:Beja-van .
+bva:H_Singular rdf:type bva:H_number .
+bva:H_Singular rdfs:label "H_Singular" .
+
+#SCHEMATA: proximity
+bva:proximity aamas:lang aama:Beja-van .
+bva:Proximity aamas:lang aama:Beja-van .
+bva:proximity rdfs:domain aamas:Term .
+bva:Proximity rdfs:label "proximity exponents" .
+bva:proximity rdfs:label "proximity" .
+bva:proximity rdfs:range bva:Proximity .
+bva:Proximity rdfs:subClassOf bva:MuExponent .
+bva:proximity rdfs:subPropertyOf bva:muProperty .
+bva:Distal aamas:lang aama:Beja-van .
+bva:Distal rdf:type bva:Proximity .
+bva:Distal rdfs:label "Distal" .
+bva:Proximal aamas:lang aama:Beja-van .
+bva:Proximal rdf:type bva:Proximity .
+bva:Proximal rdfs:label "Proximal" .
+
+#SCHEMATA: rootClass
+bva:rootClass aamas:lang aama:Beja-van .
+bva:Rootclass aamas:lang aama:Beja-van .
+bva:rootClass rdfs:domain aamas:Term .
+bva:Rootclass rdfs:label "rootClass exponents" .
+bva:rootClass rdfs:label "rootClass" .
+bva:rootClass rdfs:range bva:Rootclass .
+bva:Rootclass rdfs:subClassOf bva:MuExponent .
+bva:rootClass rdfs:subPropertyOf bva:muProperty .
+bva:CC aamas:lang aama:Beja-van .
+bva:CC rdf:type bva:Rootclass .
+bva:CC rdfs:label "CC" .
+bva:CCC aamas:lang aama:Beja-van .
+bva:CCC rdf:type bva:Rootclass .
+bva:CCC rdfs:label "CCC" .
+bva:CCC1a aamas:lang aama:Beja-van .
+bva:CCC1a rdf:type bva:Rootclass .
+bva:CCC1a rdfs:label "CCC1a" .
+bva:CCC1b aamas:lang aama:Beja-van .
+bva:CCC1b rdf:type bva:Rootclass .
+bva:CCC1b rdfs:label "CCC1b" .
+bva:CCC2 aamas:lang aama:Beja-van .
+bva:CCC2 rdf:type bva:Rootclass .
+bva:CCC2 rdfs:label "CCC2" .
+bva:CCC3 aamas:lang aama:Beja-van .
+bva:CCC3 rdf:type bva:Rootclass .
+bva:CCC3 rdfs:label "CCC3" .
+
+#PCLASSES:
+
+bva:person aamas:pclass aamas:pngClass .
+aamas:pngClass rdfs:label "pngClass" .
+bva:number aamas:pclass aamas:pngClass .
+aamas:pngClass rdfs:label "pngClass" .
+bva:gender aamas:pclass aamas:pngClass .
+aamas:pngClass rdfs:label "pngClass" .
+bva:case aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+bva:defClass aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+bva:deixis aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+bva:derivedStem aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+bva:derivedStemAug aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+bva:participle aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+bva:polarity aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+bva:pos aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+bva:proClass aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+bva:tam aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+bva:conjClass aamas:pclass aamas:inflClass .
+aamas:inflClass rdfs:label "inflClass" .
+bva:pluralClass aamas:pclass aamas:inflClass .
+aamas:inflClass rdfs:label "inflClass" .
+bva:postpositionClass aamas:pclass aamas:inflClass .
+aamas:inflClass rdfs:label "inflClass" .
+bva:rootClass aamas:pclass aamas:inflClass .
+aamas:inflClass rdfs:label "inflClass" .
+
+#LEXEMES:
+
+##LexItems
+aama:Beja-van-di a aamas:Lexeme ;
+	aamas:lang aama:Beja-van ;
+	rdfs:label "di" ;
+	bva:pos bva:Verb ;
+	aamas:lemma "di" ;
+	aamas:gloss "say" ;
+	bva:conjClass bva:Prefix ;
+	bva:rootClass bva:CC ;
+	.
+aama:Beja-van-min a aamas:Lexeme ;
+	aamas:lang aama:Beja-van ;
+	rdfs:label "min" ;
+	bva:pos bva:Verb ;
+	aamas:lemma "min" ;
+	aamas:gloss "shave" ;
+	bva:conjClass bva:Prefix ;
+	bva:rootClass bva:CC ;
+	.
+aama:Beja-van-bis a aamas:Lexeme ;
+	aamas:lang aama:Beja-van ;
+	rdfs:label "bis" ;
+	bva:pos bva:Verb ;
+	aamas:lemma "bis" ;
+	aamas:gloss "bury" ;
+	bva:conjClass bva:Prefix ;
+	bva:rootClass bva:CC ;
+	.
+aama:Beja-van-dir a aamas:Lexeme ;
+	aamas:lang aama:Beja-van ;
+	rdfs:label "dir" ;
+	bva:pos bva:Verb ;
+	aamas:lemma "dir" ;
+	aamas:gloss "kill" ;
+	bva:conjClass bva:Prefix ;
+	bva:rootClass bva:CC ;
+	.
+aama:Beja-van-hibeeb a aamas:Lexeme ;
+	aamas:lang aama:Beja-van ;
+	rdfs:label "hibeeb" ;
+	bva:pos bva:Verb ;
+	aamas:lemma "hibe:b" ;
+	aamas:gloss "spend rainy season" ;
+	bva:conjClass bva:Prefix ;
+	bva:rootClass bva:CCC2 ;
+	.
+aama:Beja-van-bar a aamas:Lexeme ;
+	aamas:lang aama:Beja-van ;
+	rdfs:label "bar" ;
+	bva:pos bva:Verb ;
+	aamas:lemma "bar" ;
+	aamas:gloss "have" ;
+	bva:conjClass bva:Prefix ;
+	bva:rootClass bva:CCC3 ;
+	.
+aama:Beja-van-girim a aamas:Lexeme ;
+	aamas:lang aama:Beja-van ;
+	rdfs:label "girim" ;
+	bva:pos bva:Verb ;
+	aamas:lemma "girim" ;
+	aamas:gloss "be inimical" ;
+	bva:conjClass bva:Prefix ;
+	bva:rootClass bva:CCC ;
+	.
+aama:Beja-van-b-an a aamas:Lexeme ;
+	aamas:lang aama:Beja-van ;
+	rdfs:label "b-an" ;
+	bva:pos bva:Verb ;
+	aamas:lemma "bɁaːn" ;
+	aamas:gloss "fear" ;
+	bva:conjClass bva:Prefix ;
+	bva:rootClass bva:CCC3 ;
+	.
+aama:Beja-van-war a aamas:Lexeme ;
+	aamas:lang aama:Beja-van ;
+	rdfs:label "war" ;
+	bva:pos bva:Verb ;
+	aamas:lemma "war" ;
+	aamas:gloss "do" ;
+	bva:conjClass bva:Prefix ;
+	bva:rootClass bva:CCC3 ;
+	.
+aama:Beja-van-kwas a aamas:Lexeme ;
+	aamas:lang aama:Beja-van ;
+	rdfs:label "kwas" ;
+	bva:pos bva:Verb ;
+	aamas:lemma "kʷaːs" ;
+	aamas:gloss "create" ;
+	bva:conjClass bva:Prefix ;
+	bva:rootClass bva:CCC3 ;
+	.
+aama:Beja-van-sikwan a aamas:Lexeme ;
+	aamas:lang aama:Beja-van ;
+	rdfs:label "sikwan" ;
+	bva:pos bva:Verb ;
+	aamas:lemma "ʃikʷan" ;
+	aamas:gloss "smell nice" ;
+	bva:conjClass bva:Prefix ;
+	bva:rootClass bva:CCC3 ;
+	.
+aama:Beja-van-hadal a aamas:Lexeme ;
+	aamas:lang aama:Beja-van ;
+	rdfs:label "hadal" ;
+	bva:pos bva:Verb ;
+	aamas:lemma "hadal" ;
+	aamas:gloss "be black" ;
+	bva:conjClass bva:Prefix ;
+	bva:rootClass bva:CCC3 ;
+	.
+aama:Beja-van-rimid a aamas:Lexeme ;
+	aamas:lang aama:Beja-van ;
+	rdfs:label "rimid" ;
+	bva:pos bva:Verb ;
+	aamas:lemma "rimid" ;
+	aamas:gloss "revenge" ;
+	bva:conjClass bva:Prefix ;
+	bva:rootClass bva:CCC ;
+	.
+aama:Beja-van-nhad a aamas:Lexeme ;
+	aamas:lang aama:Beja-van ;
+	rdfs:label "nhad" ;
+	bva:pos bva:Verb ;
+	aamas:lemma "nhad" ;
+	aamas:gloss "finish" ;
+	bva:conjClass bva:Prefix ;
+	bva:rootClass bva:CCC3 ;
+	.
+aama:Beja-van-gid a aamas:Lexeme ;
+	aamas:lang aama:Beja-van ;
+	rdfs:label "gid" ;
+	bva:pos bva:Verb ;
+	aamas:lemma "gid" ;
+	aamas:gloss "throw" ;
+	bva:conjClass bva:Prefix ;
+	bva:rootClass bva:CC ;
+	.
+aama:Beja-van-foor a aamas:Lexeme ;
+	aamas:lang aama:Beja-van ;
+	rdfs:label "foor" ;
+	bva:pos bva:Verb ;
+	aamas:lemma "fo:r" ;
+	aamas:gloss "flee" ;
+	bva:conjClass bva:Prefix ;
+	bva:rootClass bva:CCC1a ;
+	.
+aama:Beja-van-kitim a aamas:Lexeme ;
+	aamas:lang aama:Beja-van ;
+	rdfs:label "kitim" ;
+	bva:pos bva:Verb ;
+	aamas:lemma "kitim" ;
+	aamas:gloss "arrive" ;
+	bva:conjClass bva:Prefix ;
+	bva:rootClass bva:CCC ;
+	.
+aama:Beja-van-haragw a aamas:Lexeme ;
+	aamas:lang aama:Beja-van ;
+	rdfs:label "haragw" ;
+	bva:pos bva:Verb ;
+	aamas:lemma "haragʷ" ;
+	aamas:gloss "be hungry" ;
+	bva:conjClass bva:Prefix ;
+	bva:rootClass bva:CCC3 ;
+	.
+aama:Beja-van-dibil a aamas:Lexeme ;
+	aamas:lang aama:Beja-van ;
+	rdfs:label "dibil" ;
+	bva:pos bva:Verb ;
+	aamas:lemma "dibil" ;
+	aamas:gloss "collect" ;
+	bva:conjClass bva:Prefix ;
+	bva:rootClass bva:CCC ;
+	.
+aama:Beja-van-tam a aamas:Lexeme ;
+	aamas:lang aama:Beja-van ;
+	rdfs:label "tam" ;
+	bva:pos bva:Verb ;
+	aamas:lemma "tam" ;
+	aamas:gloss "eat" ;
+	bva:conjClass bva:Suffix ;
+	.
+aama:Beja-van-siboob a aamas:Lexeme ;
+	aamas:lang aama:Beja-van ;
+	rdfs:label "siboob" ;
+	bva:pos bva:Verb ;
+	aamas:lemma "ʃibo:b" ;
+	aamas:gloss "be good" ;
+	bva:conjClass bva:Prefix ;
+	bva:rootClass bva:CCC1b ;
+	.
+aama:Beja-van-fif a aamas:Lexeme ;
+	aamas:lang aama:Beja-van ;
+	rdfs:label "fif" ;
+	bva:pos bva:Verb ;
+	aamas:lemma "fif" ;
+	aamas:gloss "pour" ;
+	bva:conjClass bva:Prefix ;
+	bva:rootClass bva:CC ;
+	.
+
+#TERMCLUSTER:  bvan-dem-nom-acc
+
+bva:bvan-dem-nom-acc a aamas:Termcluster ;
+	rdfs:label "bvan-dem-nom-acc" ;
+	aamas:lang aama:Beja-van ;
+	rdfs:comment "VNp.16t.4" 
+	.
+
+aama:ID285ba9d8-7057-4861-a537-0323940f47fd a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-dem-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Demonstrative ;
+	bva:token "u:n" ;
+	bva:gender bva:Masc ;
+	bva:number bva:Singular ;
+	bva:case bva:Nominative ;
+	bva:proximity bva:Proximal ;
+	.
+
+aama:ID34087b24-c77c-4476-a12a-d4058afe489f a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-dem-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Demonstrative ;
+	bva:token "tu:n" ;
+	bva:gender bva:Fem ;
+	bva:number bva:Singular ;
+	bva:case bva:Nominative ;
+	bva:proximity bva:Proximal ;
+	.
+
+aama:IDe9ef8a12-a337-4ac9-aa88-147f478ac12c a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-dem-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Demonstrative ;
+	bva:token "a:n" ;
+	bva:gender bva:Masc ;
+	bva:number bva:Plural ;
+	bva:case bva:Nominative ;
+	bva:proximity bva:Proximal ;
+	.
+
+aama:IDbf0e81fd-1579-4635-89dc-1beee00b31f7 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-dem-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Demonstrative ;
+	bva:token "ta:n" ;
+	bva:gender bva:Fem ;
+	bva:number bva:Plural ;
+	bva:case bva:Nominative ;
+	bva:proximity bva:Proximal ;
+	.
+
+aama:IDbf7aa02e-d029-410c-a0ce-0ef03b602aae a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-dem-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Demonstrative ;
+	bva:token "o:n" ;
+	bva:gender bva:Masc ;
+	bva:number bva:Singular ;
+	bva:case bva:Accusative ;
+	bva:proximity bva:Proximal ;
+	.
+
+aama:IDdd19edf0-d130-44b9-8fc2-1058463913ff a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-dem-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Demonstrative ;
+	bva:token "to:n" ;
+	bva:gender bva:Fem ;
+	bva:number bva:Singular ;
+	bva:case bva:Accusative ;
+	bva:proximity bva:Proximal ;
+	.
+
+aama:ID9870a8e4-57a2-450b-ae73-78c6846bb366 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-dem-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Demonstrative ;
+	bva:token "e:n" ;
+	bva:gender bva:Masc ;
+	bva:number bva:Plural ;
+	bva:case bva:Accusative ;
+	bva:proximity bva:Proximal ;
+	.
+
+aama:IDf3377e65-5cd4-4e21-be6c-89bc766cda13 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-dem-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Demonstrative ;
+	bva:token "te:n" ;
+	bva:gender bva:Fem ;
+	bva:number bva:Plural ;
+	bva:case bva:Accusative ;
+	bva:proximity bva:Proximal ;
+	.
+
+aama:IDb2be432b-4e65-4e08-8f0f-04fd757a5a79 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-dem-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Demonstrative ;
+	bva:token "be:n" ;
+	bva:gender bva:Masc ;
+	bva:number bva:Singular ;
+	bva:case bva:Nominative ;
+	bva:proximity bva:Distal ;
+	.
+
+aama:ID40d871dd-18b7-4d0a-9387-44500337edbb a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-dem-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Demonstrative ;
+	bva:token "be:t" ;
+	bva:gender bva:Fem ;
+	bva:number bva:Singular ;
+	bva:case bva:Nominative ;
+	bva:proximity bva:Distal ;
+	.
+
+aama:IDa2cc459f-2fcd-478a-a5f7-e5b7dbf26089 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-dem-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Demonstrative ;
+	bva:token "ba'li:n" ;
+	bva:gender bva:Masc ;
+	bva:number bva:Plural ;
+	bva:case bva:Nominative ;
+	bva:proximity bva:Distal ;
+	.
+
+aama:ID3b94e61c-aa56-4372-9c1b-38db17055ee5 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-dem-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Demonstrative ;
+	bva:token "ba'li:t" ;
+	bva:gender bva:Fem ;
+	bva:number bva:Plural ;
+	bva:case bva:Nominative ;
+	bva:proximity bva:Distal ;
+	.
+
+aama:IDae594bca-b01c-4dc0-b802-0b831900b1fa a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-dem-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Demonstrative ;
+	bva:token "be:b" ;
+	bva:gender bva:Masc ;
+	bva:number bva:Singular ;
+	bva:case bva:Accusative ;
+	bva:proximity bva:Distal ;
+	.
+
+aama:ID9a3a796c-2edc-4493-9d50-51c833ef5f63 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-dem-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Demonstrative ;
+	bva:token "be:t" ;
+	bva:gender bva:Fem ;
+	bva:number bva:Singular ;
+	bva:case bva:Accusative ;
+	bva:proximity bva:Distal ;
+	.
+
+aama:ID43051794-acd4-4aba-a890-3c098b4eaa34 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-dem-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Demonstrative ;
+	bva:token "ba'li:b" ;
+	bva:gender bva:Masc ;
+	bva:number bva:Plural ;
+	bva:case bva:Accusative ;
+	bva:proximity bva:Distal ;
+	.
+
+aama:IDb952ab1f-b1ea-4703-ab7c-b8573b9fecb2 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-dem-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Demonstrative ;
+	bva:token "ba'li:t" ;
+	bva:gender bva:Fem ;
+	bva:number bva:Plural ;
+	bva:case bva:Accusative ;
+	bva:proximity bva:Distal ;
+	.
+
+#TERMCLUSTER:  bvan-dem-gen
+
+bva:bvan-dem-gen a aamas:Termcluster ;
+	rdfs:label "bvan-dem-gen" ;
+	aamas:lang aama:Beja-van ;
+	rdfs:comment "VNp.16t.5" 
+	.
+
+aama:ID8d99ef33-eb9c-4d74-92ed-df104da633bf a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-dem-gen ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:case bva:Genitive ;
+	bva:proClass bva:Demonstrative ;
+	bva:token "o:naj" ;
+	bva:gender bva:Masc ;
+	bva:h_gender bva:H_Masc ;
+	bva:h_number bva:ANY ;
+	.
+
+aama:IDa4d43ed9-bf2c-49af-9888-9ddb3fb5b638 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-dem-gen ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:case bva:Genitive ;
+	bva:proClass bva:Demonstrative ;
+	bva:token "to:naj" ;
+	bva:gender bva:Fem ;
+	bva:h_gender bva:H_Masc ;
+	bva:h_number bva:ANY ;
+	.
+
+aama:ID4a75872a-1176-4f64-b688-1cc13a61146c a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-dem-gen ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:case bva:Genitive ;
+	bva:proClass bva:Demonstrative ;
+	bva:token "o:na:ti" ;
+	bva:gender bva:Masc ;
+	bva:h_gender bva:H_Fem ;
+	bva:h_number bva:ANY ;
+	.
+
+aama:ID18cab0c6-d4bb-4c09-824b-9722193adfe6 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-dem-gen ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:case bva:Genitive ;
+	bva:proClass bva:Demonstrative ;
+	bva:token "to:na:ti" ;
+	bva:gender bva:Fem ;
+	bva:h_gender bva:H_Fem ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:IDa167112a-c9b7-4060-9c4f-223d298f74fc a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-dem-gen ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:case bva:Genitive ;
+	bva:proClass bva:Demonstrative ;
+	bva:token "to:na:te:t" ;
+	bva:gender bva:Fem ;
+	bva:h_gender bva:H_Fem ;
+	bva:h_number bva:H_Plural ;
+	.
+
+#TERMCLUSTER:  bvan-pro-ind
+
+bva:bvan-pro-ind a aamas:Termcluster ;
+	rdfs:label "bvan-pro-ind" ;
+	aamas:lang aama:Beja-van ;
+	rdfs:comment "VNp.16t.6" 
+	.
+
+aama:ID3b5b8aaa-a7db-4d3c-a332-b40804c19372 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Independent ;
+	bva:token "(un)ˈani " ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:case bva:Nominative ;
+	.
+
+aama:IDa691e607-4b07-42b5-8180-cd94083daa19 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Independent ;
+	bva:token "(um)baˈruːk " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	bva:case bva:Nominative ;
+	.
+
+aama:IDb697bbfa-6b93-4a65-b133-7b03b0fde17e a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Independent ;
+	bva:token "(um)baˈtuːk " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	bva:case bva:Nominative ;
+	.
+
+aama:IDc7516a26-c41b-4557-8a47-d49cfab45a2e a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Independent ;
+	bva:token "(um)baˈruː " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	bva:case bva:Nominative ;
+	.
+
+aama:ID17223bae-4e1a-46d8-8308-4ade95073142 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Independent ;
+	bva:token "(um)baˈtuː " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	bva:case bva:Nominative ;
+	.
+
+aama:IDb432dbd5-3837-44f0-98e7-613616fe8ed9 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Independent ;
+	bva:token "(an)hiˈnin " ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Plural ;
+	bva:case bva:Nominative ;
+	.
+
+aama:IDb4cb1cc2-0d1b-4f71-aa7d-e93349ed1fe6 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Independent ;
+	bva:token "(am)baˈraːk(na)" ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	bva:case bva:Nominative ;
+	.
+
+aama:IDdf06d34a-c075-4c13-9d9b-8fe80ee12f28 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Independent ;
+	bva:token "(am)baˈtaːk(na)" ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	bva:case bva:Nominative ;
+	.
+
+aama:IDcb20744c-dd93-4f9b-b4eb-c6b0c6342206 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Independent ;
+	bva:token "(am)baˈraː " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	bva:case bva:Nominative ;
+	.
+
+aama:ID29f2e9d2-dd0b-4e56-96d8-976e3c3b6f99 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Independent ;
+	bva:token "(am)baˈtaː " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	bva:case bva:Nominative ;
+	.
+
+aama:ID534bc837-4119-4fae-b779-68d44ac0aba2 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Independent ;
+	bva:token "(on)ˈaneb " ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:case bva:Accusative ;
+	.
+
+aama:ID438a1068-20bc-4994-8a54-5b7da7b3c95f a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Independent ;
+	bva:token "(om)baˈroːk" ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	bva:case bva:Accusative ;
+	.
+
+aama:IDb3347c29-e677-4737-90b3-8dc48b7e06be a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Independent ;
+	bva:token "(om)baˈtoːk" ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	bva:case bva:Accusative ;
+	.
+
+aama:ID78e05bc6-de63-423f-a212-d7b26f03e73f a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Independent ;
+	bva:token "(om)baˈroː " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	bva:case bva:Accusative ;
+	.
+
+aama:ID08500156-6e79-450c-bfee-07b8b29982e4 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Independent ;
+	bva:token "(om)baˈtoː " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	bva:case bva:Accusative ;
+	.
+
+aama:ID4c73998d-9d0f-4e81-bc2c-56d34e54e721 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Independent ;
+	bva:token "(en)hiˈnin " ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Plural ;
+	bva:case bva:Accusative ;
+	.
+
+aama:ID7a559bd7-359a-4320-ad4e-06bae8a45a58 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Independent ;
+	bva:token "(em)baˈreːk(na) " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	bva:case bva:Accusative ;
+	.
+
+aama:IDb64c6c23-42d2-493f-8117-48ac186f2d60 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Independent ;
+	bva:token "(em)baˈteːk(na) " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	bva:case bva:Accusative ;
+	.
+
+aama:ID2d1fb7b0-0868-4903-b9d9-8027af2fdf8f a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Independent ;
+	bva:token "(em)baˈreː " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	bva:case bva:Accusative ;
+	.
+
+aama:ID07ef32db-d845-4f45-8759-860c6eb42a58 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Independent ;
+	bva:token "(em)baˈteːk " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	bva:case bva:Accusative ;
+	.
+
+#TERMCLUSTER:  bvan-pro-ind-poss-nom-h_masc
+
+bva:bvan-pro-ind-poss-nom-h_masc a aamas:Termcluster ;
+	rdfs:label "bvan-pro-ind-poss-nom-h_masc" ;
+	aamas:lang aama:Beja-van ;
+	rdfs:comment "VNp.17t.7" 
+	.
+
+aama:IDd4f34f64-4aaf-4839-8382-79c94ea58570 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:IndPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:token "ˈani " ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:IDc8bc2f63-f42c-4203-aff7-b6f86d6ce76b a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:IndPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:token "bariˈjuːk " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:ID49f214e0-e787-4096-a57e-1ca5d2f57548 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:IndPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:token "batiˈjuːk " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:IDd435c847-18a9-4a32-b523-3149d75aee4b a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:IndPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:token "bariˈjuː " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:ID0f4da115-3e51-481a-a95a-afa8a7b52701 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:IndPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:token "batiˈjuː " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:IDff2aa6c7-980d-4b2e-b7bf-645717e96cdc a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:IndPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:token "ˈaːni " ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:ID7feea172-28bc-4673-b645-4af30decc677 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:IndPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:token "bariˈjaːk " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:ID30dbd6a0-ab59-463b-aa01-808d6cfb1b04 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:IndPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:token "batiˈjaːk " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:ID46425320-7585-4cda-bbde-910484bbf9b8 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:IndPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:token "bariˈjaː " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:IDb839b431-0302-4f96-b32a-c399824c2eb9 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:IndPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:token "batiˈjaː " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:ID574ca5d2-e601-4c7a-9235-c91078e1c0fa a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:IndPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:token "ˈhine " ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:ID0c745fd1-45af-48d5-889a-d5deec56e07b a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:IndPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:token "bareːˈjuːk(na) " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:ID747688bb-becd-442b-b801-cd8309874c9a a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:IndPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:token "bateːˈjuːk(na) " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:ID84e49d9a-a24e-4846-bbac-dbe6d800c17f a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:IndPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:token "bareːˈjuː " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:IDfef8ddac-dbf2-4ec6-9032-e1181d551875 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:IndPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:token "bateːˈjuː " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:ID3de06833-d86e-4030-b878-b150deaf0bb7 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:IndPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:token "hine " ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:ID88523913-ca90-4431-95a2-53f2ad1c4728 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:IndPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:token "bareːˈjaːk(na) " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:ID46bb45e6-ee58-4e64-a6e6-5529fc3ffcce a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:IndPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:token "bateːˈjaːk(na) " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:IDc096a823-702c-46fb-96fe-3341b1e49957 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:IndPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:token "bareːˈjaː " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:IDf6582a5b-0b73-40ed-b07e-cbbc149c27b8 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:IndPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:token "bateːˈjaː " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Plural ;
+	.
+
+#TERMCLUSTER:  bvan-pro-ind-poss-acc-h_masc
+
+bva:bvan-pro-ind-poss-acc-h_masc a aamas:Termcluster ;
+	rdfs:label "bvan-pro-ind-poss-acc-h_masc" ;
+	aamas:lang aama:Beja-van ;
+	rdfs:comment "VNp.17t.8" 
+	.
+
+aama:IDd948a682-8511-4dae-bbae-31578094a3af a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-acc-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:case bva:Accusative ;
+	bva:token "ˈoːnib " ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:IDa39f39e4-f299-471b-b12f-40017c872d30 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-acc-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:case bva:Accusative ;
+	bva:token "bariˈjoːk " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:ID58d10df6-ec0c-433c-a48b-fdf0111195c3 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-acc-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:case bva:Accusative ;
+	bva:token "batiˈjoːk " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:IDb89a36df-5abd-4b36-b864-39e71080fa93 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-acc-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:case bva:Accusative ;
+	bva:token "bariˈjoː " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:IDebad7272-ba53-4fad-aeda-f2082c4068c6 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-acc-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:case bva:Accusative ;
+	bva:token "batiˈjoː " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:IDcb5bda72-40a7-4ec6-b106-1999cfaf2a79 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-acc-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:case bva:Accusative ;
+	bva:token "ˈeːnib " ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:IDc6c3bf5f-f040-44d1-9374-a454407b47e9 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-acc-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:case bva:Accusative ;
+	bva:token "bariˈjeːk " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:IDbd5a8e23-5fca-4804-8204-76404e478897 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-acc-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:case bva:Accusative ;
+	bva:token "batiˈjeːk " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:ID41d5a0ae-4cbe-4d32-8be4-bebb3fa7d66d a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-acc-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:case bva:Accusative ;
+	bva:token "bariˈjeː " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:IDd109a23f-0b39-46c9-bf61-b2e3a6958a94 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-acc-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:case bva:Accusative ;
+	bva:token "batiˈjeː " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:ID6406b270-5f17-4766-ac09-8366abc912ae a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-acc-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:case bva:Accusative ;
+	bva:token "ˈhineb " ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:ID980e1b82-97cd-44de-aaff-d81c0f8c032c a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-acc-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:case bva:Accusative ;
+	bva:token "bareːˈjoːk(na) " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:ID986a5730-c90d-49df-b416-213c87de6b66 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-acc-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:case bva:Accusative ;
+	bva:token "bateːˈjoːk(na) " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:ID310758df-6892-477e-a06d-9abb308efd56 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-acc-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:case bva:Accusative ;
+	bva:token "bareːˈjoː " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:ID146f68fc-624f-4fc1-8b02-54e608688016 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-acc-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:case bva:Accusative ;
+	bva:token "bateːˈjoː " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:IDe4dd3950-459c-40a3-92d3-58a59e5cedc3 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-acc-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:case bva:Accusative ;
+	bva:token "ˈhineb " ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:IDcec978ad-d77b-4bb1-b742-53f382efe3d4 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-acc-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:case bva:Accusative ;
+	bva:token "bareːˈjeːk(na) " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:IDd5e5ced2-1ff0-4c60-8c49-3abe1fd21fe6 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-acc-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:case bva:Accusative ;
+	bva:token "bateːˈjeːk(na) " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:IDc3058f4c-e6e4-44c2-ac56-d4f6425a3ffe a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-acc-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:case bva:Accusative ;
+	bva:token "bareːˈjeː " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:ID080b0380-0a00-47af-a0e8-078b00a3c9ef a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-acc-h_masc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Masc ;
+	bva:case bva:Accusative ;
+	bva:token "bateːˈje" ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Plural ;
+	.
+
+#TERMCLUSTER:  bvan-pro-ind-poss-nom-h_fem
+
+bva:bvan-pro-ind-poss-nom-h_fem a aamas:Termcluster ;
+	rdfs:label "bvan-pro-ind-poss-nom-h_fem" ;
+	aamas:lang aama:Beja-van ;
+	rdfs:comment "VNp.17t.9" 
+	.
+
+aama:IDea46a7b5-16e9-4a73-b99c-d8eb60032a77 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Nominative ;
+	bva:token "ˈani " ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:ID470a6fc3-f707-421f-ada4-9d16a88f3a53 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Nominative ;
+	bva:token "bariˈtuːk " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:IDb65d5f56-f6d1-4180-ae4f-b698f5661c08 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Nominative ;
+	bva:token "batiˈtuːk " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:IDac961343-513a-4c52-a256-38f6c52f46ca a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Nominative ;
+	bva:token "bariˈtuː " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:ID8cf0e0ed-4148-4d55-899d-dec2bdced8c3 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Nominative ;
+	bva:token "batiˈtuː " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:ID3cecfbb9-6ff6-489e-94cf-80ab95bc33c3 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Nominative ;
+	bva:token "ˈaːni " ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:IDc9292f3c-7e3e-44ed-b686-dc1708b7503a a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Nominative ;
+	bva:token "bariˈtaːk " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:IDbc9fa138-c93d-4dbf-a959-8b53a73bd3f9 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Nominative ;
+	bva:token "batiˈtaːk " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:ID40845a6a-6ec2-4c1a-9063-f6bccc2f5f9e a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Nominative ;
+	bva:token "bariˈtaː " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:IDa93ad056-96b3-4a34-87d0-e55985dc3a37 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Nominative ;
+	bva:token "batiˈtaː " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:IDe5265cbe-757f-49a2-82b8-a3b2542c893b a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Nominative ;
+	bva:token "ˈhine " ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:ID49938b85-a913-4f70-931b-0b15601b6aa8 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Nominative ;
+	bva:token "bareːˈtuːk(na) " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:IDac5dc99b-fa0d-40b6-b37e-ba66758f8b97 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Nominative ;
+	bva:token "bateːˈtuːk(na) " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:IDdca0d639-52e6-42de-8d30-6c4269f897ba a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Nominative ;
+	bva:token "bareːˈtuː " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:IDe49d7a2a-981d-47dd-b6b5-c008edbeed36 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Nominative ;
+	bva:token "bateːˈtuː " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:ID983f08e6-c294-4810-88b5-aacf7dc49c30 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Nominative ;
+	bva:token "hine " ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:IDfb36fe2f-ba3d-449d-a0cb-842ac4c5dc61 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Nominative ;
+	bva:token "bareːˈtaːk(na) " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:IDd6a51031-a85a-4fb9-8ad9-b00184c4e8b1 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Nominative ;
+	bva:token "bateːˈtaːk(na) " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:ID4da4ef3e-f523-4da0-8f79-84ae2cf361a3 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Nominative ;
+	bva:token "bareːˈtaː " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:ID2e42e4da-4238-4d8c-bca9-2c636ac8e2f2 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Nominative ;
+	bva:token "bateːˈtaː " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Plural ;
+	.
+
+#TERMCLUSTER:  bvan-pro-ind-poss-nom-h_fem
+
+bva:bvan-pro-ind-poss-nom-h_fem a aamas:Termcluster ;
+	rdfs:label "bvan-pro-ind-poss-nom-h_fem" ;
+	aamas:lang aama:Beja-van ;
+	rdfs:comment "VNp.17t.10" 
+	.
+
+aama:IDcda2c5fa-76c6-419a-8ae8-35d69c8d0b62 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Accusative ;
+	bva:token "ˈoːnib " ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:IDb1a99358-8f7c-4fc7-957d-051388706211 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Accusative ;
+	bva:token "bariˈtoːk " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:ID1177978d-fda8-44d4-9470-ad26a6db3f86 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Accusative ;
+	bva:token "batiˈtoːk " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:ID28826a59-e288-4020-a7d2-9e526f3d969e a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Accusative ;
+	bva:token "bariˈtoː " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:ID3f276983-99af-44e4-8781-b25cb0a61353 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Accusative ;
+	bva:token "batiˈtoː " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:ID2c779997-e79a-4c81-8d7d-edd47d27bf39 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Accusative ;
+	bva:token "ˈeːnib " ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:ID9b04f470-8079-47c7-8054-10c8c39ce56d a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Accusative ;
+	bva:token "bariˈteːk " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:ID558c71ae-e23b-41e7-96dc-7a9be9974b5f a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Accusative ;
+	bva:token "batiˈteːk " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:IDa898ebfb-1c62-41b2-bba2-23a3ad3db69d a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Accusative ;
+	bva:token "bariˈteː " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:ID06514948-e5a3-4ca4-8d14-3d9107cb8400 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Accusative ;
+	bva:token "batiˈteː " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:IDbafafa26-65af-4e6b-9b1f-228828fa183c a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Accusative ;
+	bva:token "ˈhineb " ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:IDbe494868-bb3c-4456-a194-9048e01e1916 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Accusative ;
+	bva:token "bareːˈtoːk(na) " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:ID926b0a4b-5dd7-469a-ba09-2461c2964c35 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Accusative ;
+	bva:token "bateːˈtoːk(na) " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:IDa49d4803-0520-4831-a725-4c5e98119d0b a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Accusative ;
+	bva:token "bareːˈtoː " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:IDe6043393-a854-43c2-a8dd-167c41ea02bc a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Accusative ;
+	bva:token "bateːˈtoː " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:IDfee7100a-81cc-44f2-a3d5-2a0f7f054ef3 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Accusative ;
+	bva:token "ˈhineb " ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:ID5bcaa357-9cd0-4b1e-9743-69621f8e23db a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Accusative ;
+	bva:token "bareːˈteːk(na) " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:IDf0cc2a43-792a-4a5e-b7ba-74a31fdb2e34 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Accusative ;
+	bva:token "bateːˈteːk(na) " ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:ID09fd068b-83ed-4b66-a7f4-d70a4b437d5b a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Accusative ;
+	bva:token "bareːˈteː " ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:ID006ad658-6e39-4114-8691-583245c5456f a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-ind-poss-nom-h_fem ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:indPoss ;
+	bva:h_gender bva:H_Fem ;
+	bva:case bva:Accusative ;
+	bva:token "bateːˈte" ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Plural ;
+	.
+
+#TERMCLUSTER:  bvan-pro-bound-obj
+
+bva:bvan-pro-bound-obj a aamas:Termcluster ;
+	rdfs:label "bvan-pro-bound-obj" ;
+	aamas:lang aama:Beja-van ;
+	rdfs:comment "VNp.18t.11" 
+	.
+
+aama:ID0208811e-956a-44ef-9f54-ad49d53352d4 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-bound-obj ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Bound ;
+	bva:token "=heːb " ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:slot bva:After-IPFV-PFV ;
+	.
+
+aama:ID486794cb-95ae-4cd8-a9b9-5824f019852a a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-bound-obj ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Bound ;
+	bva:token "=hoːk " ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:slot bva:After-IPFV-PFV ;
+	.
+
+aama:ID130690bd-b718-4494-b3a6-e0bd48c6c4ac a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-bound-obj ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Bound ;
+	bva:token "=hoːn " ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	bva:slot bva:After-IPFV-PFV ;
+	.
+
+aama:ID71b110ab-6e72-41b7-973c-532c9b62693f a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-bound-obj ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Bound ;
+	bva:token "=ˈhoːkna " ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	bva:slot bva:After-IPFV-PFV ;
+	.
+
+aama:IDf89e51d6-096e-4860-8c3c-28e5aec5a3b1 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-bound-obj ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Bound ;
+	bva:token "=i " ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:slot bva:After-aor ;
+	.
+
+aama:ID4dfa1edd-b71d-45db-94de-f9c0b7cc8012 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-bound-obj ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Bound ;
+	bva:token "=uːk " ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:slot bva:After-aor ;
+	.
+
+aama:ID8924c4ec-5d0f-44fa-9780-663c31fc0675 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-bound-obj ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Bound ;
+	bva:token "=uːn " ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	bva:slot bva:After-aor ;
+	.
+
+aama:IDa6ec97d5-8d56-493e-97f0-301ecb44c7bb a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-bound-obj ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Bound ;
+	bva:token "=ˈuːkna " ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	bva:slot bva:After-aor ;
+	.
+
+aama:IDe1684a96-a42c-4197-9cb0-371830f574c9 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-bound-obj ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Bound ;
+	bva:token "=ˈo(ː) " ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:slot bva:Before-hoob ;
+	.
+
+aama:ID20bcbeaf-73cb-49ae-805b-460f4c31d65b a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-bound-obj ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Bound ;
+	bva:token "=ˈoːk " ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:slot bva:Before-hoob ;
+	.
+
+aama:IDeb9aefb7-880f-42d2-b49c-7e6b0eee2fe9 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-bound-obj ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Bound ;
+	bva:token "=ˈoːn " ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	bva:slot bva:Before-hoob ;
+	.
+
+aama:IDc8b684fa-016c-48d8-8e59-29b128ad7c6d a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-bound-obj ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:Bound ;
+	bva:token "=ˈoːkna " ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	bva:slot bva:Before-hoob ;
+	.
+
+#TERMCLUSTER:  bvan-pro-poss-bound-nom-acc
+
+bva:bvan-pro-poss-bound-nom-acc a aamas:Termcluster ;
+	rdfs:label "bvan-pro-poss-bound-nom-acc" ;
+	aamas:lang aama:Beja-van ;
+	rdfs:comment "VNp.19t.12" 
+	.
+
+aama:ID3e8a6faf-ef02-4945-ba45-a0bed84cf8ab a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-poss-bound-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:PossBound ;
+	bva:token "=i/=eː" ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:case bva:Nominative ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:ID7b0eb6c2-4736-4d6a-9879-8853bc4e2f67 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-poss-bound-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:PossBound ;
+	bva:token "=uːk " ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	bva:case bva:Nominative ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:ID6098d87c-e3cf-4753-b523-28d2c7af953c a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-poss-bound-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:PossBound ;
+	bva:token "=uː " ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	bva:case bva:Nominative ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:IDa27312b6-6f76-4193-bea4-2ec296d33053 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-poss-bound-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:PossBound ;
+	bva:token "=uːn " ;
+	bva:person bva:Person1 ;
+	bva:number bva:Plural ;
+	bva:case bva:Nominative ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:ID072a0ab4-a923-46d6-a72c-7e81a0396070 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-poss-bound-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:PossBound ;
+	bva:token "=uːkna" ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	bva:case bva:Nominative ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:IDbc7b9498-6c62-443e-b659-6be7f21cc299 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-poss-bound-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:PossBound ;
+	bva:token "=uː " ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	bva:case bva:Nominative ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:ID5c9a9f83-8741-4afc-871b-f77e84524680 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-poss-bound-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:PossBound ;
+	bva:token "=aː " ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:case bva:Nominative ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:IDa616d5ad-0c4b-48f0-8a58-ad07775b2b4c a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-poss-bound-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:PossBound ;
+	bva:token "=aːk " ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	bva:case bva:Nominative ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:ID0d367c2c-f120-4e3d-8943-0363de9e9adb a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-poss-bound-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:PossBound ;
+	bva:token "=aː " ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	bva:case bva:Nominative ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:ID851d88a7-3ddb-4de0-bc41-0981be007072 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-poss-bound-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:PossBound ;
+	bva:token "=aːn " ;
+	bva:person bva:Person1 ;
+	bva:number bva:Plural ;
+	bva:case bva:Nominative ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:IDfc6f0cf4-b948-46ee-8d80-8b2a24e97d30 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-poss-bound-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:PossBound ;
+	bva:token "=aːkna" ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	bva:case bva:Nominative ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:ID37fc82e8-d2df-4817-98d0-758d92f5494a a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-poss-bound-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:PossBound ;
+	bva:token "=aː " ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	bva:case bva:Nominative ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:ID13ea4e46-6af5-434e-8607-9760a29b8b50 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-poss-bound-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:PossBound ;
+	bva:token "=i " ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:case bva:Accusative ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:ID56f7ba32-a477-4915-a6a5-9ee7baae2e91 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-poss-bound-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:PossBound ;
+	bva:token "=oːk " ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	bva:case bva:Accusative ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:ID135064ef-b548-400f-bbe6-67c8feebea30 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-poss-bound-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:PossBound ;
+	bva:token "=oː " ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	bva:case bva:Accusative ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:IDdf36e632-5653-46da-b5af-191c2ddb5682 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-poss-bound-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:PossBound ;
+	bva:token "=oːn " ;
+	bva:person bva:Person1 ;
+	bva:number bva:Plural ;
+	bva:case bva:Accusative ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:IDb10b5ccd-f346-4191-9473-48c888ab6c66 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-poss-bound-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:PossBound ;
+	bva:token "=oːkna" ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	bva:case bva:Accusative ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:IDbb4e8e8c-d2b6-4f15-9ff0-a08adb47534c a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-poss-bound-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:PossBound ;
+	bva:token "=oː " ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	bva:case bva:Accusative ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:ID27fd3a1d-3706-4129-84f2-c5c7d64ae323 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-poss-bound-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:PossBound ;
+	bva:token "=eː " ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:case bva:Accusative ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:ID95ddbc36-897d-4cae-b177-34b3cd763e12 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-poss-bound-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:PossBound ;
+	bva:token "=eːk " ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	bva:case bva:Accusative ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:IDa479c8a4-7102-4a07-b48a-ffcb1f08aefc a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-poss-bound-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:PossBound ;
+	bva:token "=eː " ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	bva:case bva:Accusative ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:ID6dbf2413-df7e-478b-8a04-a2dc7fc79614 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-poss-bound-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:PossBound ;
+	bva:token "=eːn " ;
+	bva:person bva:Person1 ;
+	bva:number bva:Plural ;
+	bva:case bva:Accusative ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:IDa506d3cd-2ee8-467b-b401-6aaf1c3dd53b a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-poss-bound-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:PossBound ;
+	bva:token "=eːkna" ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	bva:case bva:Accusative ;
+	bva:h_number bva:H_Plural ;
+	.
+
+aama:ID4b088859-d246-4942-af1b-feb1b9cc0321 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-poss-bound-nom-acc ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:PossBound ;
+	bva:token "=e" ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	bva:case bva:Accusative ;
+	bva:h_number bva:H_Plural ;
+	.
+
+#TERMCLUSTER:  bvan-pro-bound-ablative
+
+bva:bvan-pro-bound-ablative a aamas:Termcluster ;
+	rdfs:label "bvan-pro-bound-ablative" ;
+	aamas:lang aama:Beja-van ;
+	rdfs:comment "VNp.20t.13" 
+	.
+
+aama:ID44d37a2f-d3b6-413e-824c-34317b43cf2a a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-bound-ablative ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:ProBound ;
+	bva:case bva:Ablative ;
+	bva:token "=isoː / =isiːsi" ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:IDce35c6f7-eef2-48cb-8b89-763450972d17 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-bound-ablative ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:ProBound ;
+	bva:case bva:Ablative ;
+	bva:token "=isoːk " ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:IDf191c8bf-eec5-4c98-9681-750ef2c17e72 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-bound-ablative ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:ProBound ;
+	bva:case bva:Ablative ;
+	bva:token "=isoː / =isiː " ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:ID3e16798d-26f7-4228-b6b3-84a9d3ecc03c a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-bound-ablative ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:ProBound ;
+	bva:case bva:Ablative ;
+	bva:token "=isoːn " ;
+	bva:person bva:Person1 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Singular ;
+	.
+
+aama:ID07d8f433-3563-4127-9f97-a8a1975ce9cb a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-pro-bound-ablative ;
+	bva:pos bva:Pronoun ;
+	bva:pmorphClass bva:ProMorph ;
+	bva:proClass bva:ProBound ;
+	bva:case bva:Ablative ;
+	bva:token "=eːsoːn" ;
+	bva:person bva:Person1 ;
+	bva:number bva:Plural ;
+	bva:h_number bva:H_Plural ;
+	.
+
+#TERMCLUSTER:  bvan-verb-pref-imperf-CC-template
+
+bva:bvan-verb-pref-imperf-CC-template a aamas:Termcluster ;
+	rdfs:label "bvan-verb-pref-imperf-CC-template" ;
+	aamas:lang aama:Beja-van ;
+	rdfs:comment "VNp.22t.14" 
+	.
+
+aama:ID6a0333fc-90d2-443f-b6bd-3c16686f58a8 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-imperf-CC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CC ;
+	bva:tam bva:Imperfective ;
+	bva:token-suffix "-Ø" ;
+	bva:token-stem "ˈCiːC" ;
+	bva:token-prefix "an-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	.
+
+aama:IDf2a4871f-6380-487d-8dc8-cfbe06b84867 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-imperf-CC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CC ;
+	bva:tam bva:Imperfective ;
+	bva:token-suffix "-a" ;
+	bva:token-stem "CiːC" ;
+	bva:token-prefix "ˈtin-" ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	.
+
+aama:IDfb7d8e78-f5cd-410f-a0eb-86c0286d44e6 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-imperf-CC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CC ;
+	bva:tam bva:Imperfective ;
+	bva:token-suffix "-i" ;
+	bva:token-stem "CiːC" ;
+	bva:token-prefix "ˈtin-" ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	.
+
+aama:IDb775190c-cb69-4e5f-bf12-f0cb50ae7f61 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-imperf-CC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CC ;
+	bva:tam bva:Imperfective ;
+	bva:token-suffix "-Ø" ;
+	bva:token-stem "ˈCiːC" ;
+	bva:token-prefix "in-" ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	.
+
+aama:ID724d4f00-b3eb-4c17-a93e-413271204e33 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-imperf-CC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CC ;
+	bva:tam bva:Imperfective ;
+	bva:token-suffix "-Ø" ;
+	bva:token-stem "ˈCiːC" ;
+	bva:token-prefix "tin-" ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	.
+
+aama:IDde2f9273-3fc3-4400-a882-2235be3bbf99 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-imperf-CC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CC ;
+	bva:tam bva:Imperfective ;
+	bva:token-suffix "-Ø" ;
+	bva:token-stem "ˈCiC" ;
+	bva:token-prefix "neː-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Plural ;
+	.
+
+aama:IDd920931e-04d7-490a-9bfe-0e937c126d87 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-imperf-CC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CC ;
+	bva:tam bva:Imperfective ;
+	bva:token-suffix "-na" ;
+	bva:token-stem "CiC" ;
+	bva:token-prefix "ˈteː-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	.
+
+aama:ID0233ecc8-8e35-4895-9258-c5c96ed312c6 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-imperf-CC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CC ;
+	bva:tam bva:Imperfective ;
+	bva:token-suffix "-na" ;
+	bva:token-stem "CiC" ;
+	bva:token-prefix "ˈeː-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	.
+
+#TERMCLUSTER:  bvan-verb-pref-perf-CC-template
+
+bva:bvan-verb-pref-perf-CC-template a aamas:Termcluster ;
+	rdfs:label "bvan-verb-pref-perf-CC-template" ;
+	aamas:lang aama:Beja-van ;
+	rdfs:comment "VNp.22t.14" 
+	.
+
+aama:IDfe24a48a-b8aa-4f15-9b90-3f3796387b02 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-perf-CC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CC ;
+	bva:tam bva:Perfective ;
+	bva:token-suffix "-Ø" ;
+	bva:token-stem "ˈCiC" ;
+	bva:token-prefix "a-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	.
+
+aama:IDe9f6b329-d57a-44af-b69f-e1d29802ccf3 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-perf-CC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CC ;
+	bva:tam bva:Perfective ;
+	bva:token-suffix "-a" ;
+	bva:token-stem "CiC" ;
+	bva:token-prefix "ˈti-" ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	.
+
+aama:ID1ec17f85-6b82-4b26-b99f-a124dfdb7b71 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-perf-CC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CC ;
+	bva:tam bva:Perfective ;
+	bva:token-suffix "-i" ;
+	bva:token-stem "CiC" ;
+	bva:token-prefix "ˈti-" ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	.
+
+aama:ID3231dad5-8647-4e5a-96b4-695c011defa2 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-perf-CC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CC ;
+	bva:tam bva:Perfective ;
+	bva:token-suffix "-Ø" ;
+	bva:token-stem "ˈCiC" ;
+	bva:token-prefix "i-" ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	.
+
+aama:IDa84cc90e-49df-414d-9ea4-857bc548214b a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-perf-CC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CC ;
+	bva:tam bva:Perfective ;
+	bva:token-suffix "-Ø" ;
+	bva:token-stem "ˈCiC" ;
+	bva:token-prefix "ti-" ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	.
+
+aama:IDb7d121db-432c-416b-975f-70097d9f2487 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-perf-CC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CC ;
+	bva:tam bva:Perfective ;
+	bva:token-suffix "-Ø" ;
+	bva:token-stem "ˈCiC" ;
+	bva:token-prefix "n(i)-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Plural ;
+	.
+
+aama:ID914f9478-bc8d-4b6b-84f9-c377fc65ebd6 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-perf-CC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CC ;
+	bva:tam bva:Perfective ;
+	bva:token-suffix "-na" ;
+	bva:token-stem "CiC" ;
+	bva:token-prefix "ˈti-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	.
+
+aama:IDfefc0dd6-0e08-4914-8fa3-525b548dc013 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-perf-CC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CC ;
+	bva:tam bva:Perfective ;
+	bva:token-suffix "-na" ;
+	bva:token-stem "CiC" ;
+	bva:token-prefix "ˈi-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	.
+
+#TERMCLUSTER:  bvan-verb-pref-aor-CC-template
+
+bva:bvan-verb-pref-aor-CC-template a aamas:Termcluster ;
+	rdfs:label "bvan-verb-pref-aor-CC-template" ;
+	aamas:lang aama:Beja-van ;
+	rdfs:comment "VNp.22t.14" 
+	.
+
+aama:IDa2b62734-0eae-400e-99f5-3768d02715b1 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-aor-CC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CC ;
+	bva:tam bva:Aorist ;
+	bva:token-suffix "-Ø" ;
+	bva:token-stem "ˈCiC" ;
+	bva:token-prefix "iː-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	.
+
+aama:IDa12cf523-51af-4967-afc8-ee34a9442f1b a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-aor-CC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CC ;
+	bva:tam bva:Aorist ;
+	bva:token-suffix "-a" ;
+	bva:token-stem "CiC" ;
+	bva:token-prefix "ˈtiː-" ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	.
+
+aama:ID605f65ff-9197-4963-8a02-8c359b7cd34f a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-aor-CC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CC ;
+	bva:tam bva:Aorist ;
+	bva:token-suffix "-i" ;
+	bva:token-stem "CiC" ;
+	bva:token-prefix "ˈtiː-" ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	.
+
+aama:ID9e69860d-d17e-4f21-8992-67ae12aa4e02 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-aor-CC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CC ;
+	bva:tam bva:Aorist ;
+	bva:token-suffix "-Ø" ;
+	bva:token-stem "ˈCiC" ;
+	bva:token-prefix "iː-" ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	.
+
+aama:IDd28dbfc5-2353-4d0b-915c-963db0bb4273 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-aor-CC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CC ;
+	bva:tam bva:Aorist ;
+	bva:token-suffix "-Ø" ;
+	bva:token-stem "ˈCiC" ;
+	bva:token-prefix "tiː-" ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	.
+
+aama:IDd73f00b0-68b8-4565-bd25-0e36dc0fd9f7 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-aor-CC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CC ;
+	bva:tam bva:Aorist ;
+	bva:token-suffix "-Ø" ;
+	bva:token-stem "ˈCiC" ;
+	bva:token-prefix "niː-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Plural ;
+	.
+
+aama:IDe1d9ad71-fc77-42cc-a9ae-a699471e4afa a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-aor-CC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CC ;
+	bva:tam bva:Aorist ;
+	bva:token-suffix "-na" ;
+	bva:token-stem "CiC" ;
+	bva:token-prefix "ˈtiː-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	.
+
+aama:IDabb5b0ad-c143-4cf5-9705-bee617da3728 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-aor-CC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CC ;
+	bva:tam bva:Aorist ;
+	bva:token-suffix "-na" ;
+	bva:token-stem "CiC" ;
+	bva:token-prefix "ˈiː-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	.
+
+#TERMCLUSTER:  bvan-verb-suff-imperf-template
+
+bva:bvan-verb-suff-imperf-template a aamas:Termcluster ;
+	rdfs:label "bvan-verb-suff-imperf-template" ;
+	aamas:lang aama:Beja-van ;
+	rdfs:comment "VNp.22t.14" 
+	.
+
+aama:ID1c5c8942-e44c-44f4-9749-67ca62a2e777 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-imperf-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Imperfective ;
+	bva:token-suffix "-ˈani" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	.
+
+aama:ID72daf2cb-1769-43fd-9229-a13097293786 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-imperf-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Imperfective ;
+	bva:token-suffix "-ˈtnija" ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	.
+
+aama:IDa00791ff-f323-4f67-a748-a78dd7939f17 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-imperf-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Imperfective ;
+	bva:token-suffix "-ˈtiniː" ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	.
+
+aama:IDf2d7abde-7c07-41a1-acd1-c4cc51892363 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-imperf-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Imperfective ;
+	bva:token-suffix "-ˈiːni" ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	.
+
+aama:ID875ddfb0-4794-46e2-aff0-74f8b02cc42b a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-imperf-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Imperfective ;
+	bva:token-suffix "-ˈtini" ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	.
+
+aama:ID683e63d9-f31e-4fff-abf9-23ce048f2c5a a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-imperf-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Imperfective ;
+	bva:token-suffix "-nej/-naj" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Plural ;
+	.
+
+aama:ID6d7817c4-d0a4-44a5-ab94-b183081b9b9b a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-imperf-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Imperfective ;
+	bva:token-suffix "-teːn(a)" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	.
+
+aama:ID6b9de029-d0de-4696-88de-ec6928c98a01 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-imperf-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Imperfective ;
+	bva:token-suffix "-eːn(a)" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	.
+
+#TERMCLUSTER:  bvan-verb-suff-perf-template
+
+bva:bvan-verb-suff-perf-template a aamas:Termcluster ;
+	rdfs:label "bvan-verb-suff-perf-template" ;
+	aamas:lang aama:Beja-van ;
+	rdfs:comment "VNp.22t.14" 
+	.
+
+aama:ID96794e54-7bff-40cd-b909-61bc093a75d8 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-perf-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Perfective ;
+	bva:token-suffix "-ˈan" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	.
+
+aama:ID827ee161-9eae-4afd-9532-2f21b214b54c a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-perf-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Perfective ;
+	bva:token-suffix "-ta(n)" ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	.
+
+aama:ID204bcf69-fa5f-4d1d-bbe5-aa821a15b8ae a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-perf-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Perfective ;
+	bva:token-suffix "-taj /-tan" ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	.
+
+aama:IDa9462330-c9f4-483a-8d2c-ce24053e070b a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-perf-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Perfective ;
+	bva:token-suffix "-ja(n)" ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	.
+
+aama:ID7dc37a6d-fced-49e0-8f73-a6916caf364f a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-perf-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Perfective ;
+	bva:token-suffix "-ta(n)" ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	.
+
+aama:ID2cfcf357-3969-45e7-accd-22d3b562db3b a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-perf-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Perfective ;
+	bva:token-suffix " " ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Plural ;
+	.
+
+aama:ID6b5962dd-5432-4faf-8e6d-6333340e9562 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-perf-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Perfective ;
+	bva:token-suffix "-taːn(a)" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	.
+
+aama:IDbb2385af-e6c9-4b28-b5cc-65450b3b23d7 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-perf-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Perfective ;
+	bva:token-suffix "-ˈjaːn(a)" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	.
+
+#TERMCLUSTER:  bvan-verb-suff-aor-template
+
+bva:bvan-verb-suff-aor-template a aamas:Termcluster ;
+	rdfs:label "bvan-verb-suff-aor-template" ;
+	aamas:lang aama:Beja-van ;
+	rdfs:comment "VNp.22t.14" 
+	.
+
+aama:IDe7421ef4-d654-4bc4-adfa-2c3fd0240ed7 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-aor-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Aorist ;
+	bva:token-suffix "-i" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	.
+
+aama:ID6f5dbe1e-212b-4c7e-a1ec-e3c846062fd8 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-aor-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Aorist ;
+	bva:token-suffix "-tija" ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	.
+
+aama:ID4b72f3e0-bf24-403b-a8ba-b134497e180a a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-aor-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Aorist ;
+	bva:token-suffix "-tiː" ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	.
+
+aama:ID9433c560-4713-45bb-8b60-8465536f2ecb a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-aor-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Aorist ;
+	bva:token-suffix "-i" ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	.
+
+aama:ID45487403-8270-406f-b1f6-143f137d99a0 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-aor-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Aorist ;
+	bva:token-suffix "-ti" ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	.
+
+aama:ID55cc56ab-558a-45a4-b880-669efad42b19 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-aor-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Aorist ;
+	bva:token-suffix "-ni" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Plural ;
+	.
+
+aama:IDf5b382f8-025f-4147-9c6d-879700b06a9d a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-aor-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Aorist ;
+	bva:token-suffix "-tiːn(a)" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	.
+
+aama:IDbf1723b5-8d1c-4e4a-b0c5-0eee98b23131 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-aor-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Aorist ;
+	bva:token-suffix "-iːn(a)" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	.
+
+#TERMCLUSTER:  bvan-verb-pref-imperf-CCC-template
+
+bva:bvan-verb-pref-imperf-CCC-template a aamas:Termcluster ;
+	rdfs:label "bvan-verb-pref-imperf-CCC-template" ;
+	aamas:lang aama:Beja-van ;
+	rdfs:comment "VNp.22t.15" 
+	.
+
+aama:IDd896f17d-58e4-487b-8868-b88a1445a6a1 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-imperf-CCC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Imperfective ;
+	bva:token-suffix "-Ø" ;
+	bva:token-stem "ˈCanCiːC" ;
+	bva:token-prefix "a-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	.
+
+aama:IDd4b0e699-1e09-4191-8985-2b597fc9c23f a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-imperf-CCC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Imperfective ;
+	bva:token-suffix "-a" ;
+	bva:token-stem "ˈCanCiːC" ;
+	bva:token-prefix "Ø-" ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	.
+
+aama:IDaeecdc5f-7a44-41bb-b348-6fada5069a3e a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-imperf-CCC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Imperfective ;
+	bva:token-suffix "-i" ;
+	bva:token-stem "ˈCanCiːC" ;
+	bva:token-prefix "Ø-" ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	.
+
+aama:IDa822b6a5-71da-4f16-a12c-1b7576980c32 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-imperf-CCC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Imperfective ;
+	bva:token-suffix "-Ø" ;
+	bva:token-stem "CanˈCiːC" ;
+	bva:token-prefix "Ø-" ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	.
+
+aama:ID7a434b5a-7fa9-45e0-b77f-15a918456638 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-imperf-CCC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Imperfective ;
+	bva:token-suffix "-Ø" ;
+	bva:token-stem "CanˈCiːC" ;
+	bva:token-prefix "Ø-" ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	.
+
+aama:ID2b0ebb9c-2c8d-4cb0-8560-e232d0eaef16 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-imperf-CCC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Imperfective ;
+	bva:token-suffix "-Ø" ;
+	bva:token-stem "CaˈCiC" ;
+	bva:token-prefix "ni-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Plural ;
+	.
+
+aama:ID0ea5ceac-fc4e-43f3-b236-3e83c43a0e8b a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-imperf-CCC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Imperfective ;
+	bva:token-suffix "-na" ;
+	bva:token-stem "ˈCaCiC" ;
+	bva:token-prefix "ti-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	.
+
+aama:ID0bb5b402-680f-4887-be9b-6aac26100416 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-imperf-CCC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Imperfective ;
+	bva:token-suffix "-na" ;
+	bva:token-stem "ˈCaCiC" ;
+	bva:token-prefix "i-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	.
+
+#TERMCLUSTER:  bvan-verb-pref-aor-CCC-template
+
+bva:bvan-verb-pref-aor-CCC-template a aamas:Termcluster ;
+	rdfs:label "bvan-verb-pref-aor-CCC-template" ;
+	aamas:lang aama:Beja-van ;
+	rdfs:comment "VNp.22t.15" 
+	.
+
+aama:ID5bc84c28-4ae8-4bb8-a472-e6381b38c513 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-aor-CCC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Perfective ;
+	bva:token-suffix "-Ø" ;
+	bva:token-stem "ˈCCiC" ;
+	bva:token-prefix "a-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	.
+
+aama:IDfa7b03e4-2d45-4059-8d76-eae667907298 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-aor-CCC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Perfective ;
+	bva:token-suffix "-a" ;
+	bva:token-stem "CCiC" ;
+	bva:token-prefix "ˈti-" ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	.
+
+aama:ID1e85e7b8-a714-4f7b-953e-ac1940783c07 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-aor-CCC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Perfective ;
+	bva:token-suffix "-i" ;
+	bva:token-stem "CCiC" ;
+	bva:token-prefix "ˈti-" ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	.
+
+aama:IDe84d6b04-6fb9-4bd1-a65f-6dce66ad0e69 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-aor-CCC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Perfective ;
+	bva:token-suffix "-Ø" ;
+	bva:token-stem "ˈCCiC" ;
+	bva:token-prefix "i-" ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	.
+
+aama:IDbaf2a440-3fb4-4b51-970b-be2deae37bcf a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-aor-CCC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Perfective ;
+	bva:token-suffix "-Ø" ;
+	bva:token-stem "ˈCCiC" ;
+	bva:token-prefix "ti-" ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	.
+
+aama:ID23b60c80-d1d0-4f60-841e-60ff106bce1e a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-aor-CCC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Perfective ;
+	bva:token-suffix "-Ø" ;
+	bva:token-stem "CaˈCiC" ;
+	bva:token-prefix "ne:-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Plural ;
+	.
+
+aama:ID9403c24c-76fe-4ae6-bc3f-1c570d997516 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-aor-CCC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Perfective ;
+	bva:token-suffix "-na" ;
+	bva:token-stem "ˈCaCiC" ;
+	bva:token-prefix "te:-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	.
+
+aama:ID82cce065-14f4-4c53-8165-87f07a546613 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-aor-CCC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Perfective ;
+	bva:token-suffix "-na" ;
+	bva:token-stem "ˈCaCiC" ;
+	bva:token-prefix "e:-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	.
+
+#TERMCLUSTER:  bvan-verb-pref-aor-CCC-template
+
+bva:bvan-verb-pref-aor-CCC-template a aamas:Termcluster ;
+	rdfs:label "bvan-verb-pref-aor-CCC-template" ;
+	aamas:lang aama:Beja-van ;
+	rdfs:comment "VNp.22t.15" 
+	.
+
+aama:ID5c302bc0-fdfe-409c-b9cb-7d93a8d1e28b a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-aor-CCC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Aorist ;
+	bva:token-suffix "-Ø" ;
+	bva:token-stem "ˈCCiC" ;
+	bva:token-prefix "iː-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	.
+
+aama:ID95db862c-2acf-48c6-951a-d3d185babf53 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-aor-CCC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Aorist ;
+	bva:token-suffix "-a" ;
+	bva:token-stem "CCiC" ;
+	bva:token-prefix "ˈtiː-" ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	.
+
+aama:IDe1a3b731-6967-45ee-90ba-93456a73ca38 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-aor-CCC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Aorist ;
+	bva:token-suffix "-i" ;
+	bva:token-stem "CCiC" ;
+	bva:token-prefix "ˈtiː-" ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	.
+
+aama:IDbd6314a0-3d2e-45b4-9cbd-fc2cd82c4159 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-aor-CCC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Aorist ;
+	bva:token-suffix "-Ø" ;
+	bva:token-stem "ˈCCiC" ;
+	bva:token-prefix "iː-" ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	.
+
+aama:IDabda4d12-5da1-43e4-acab-71251cf54390 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-aor-CCC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Aorist ;
+	bva:token-suffix "-Ø" ;
+	bva:token-stem "ˈCCiC" ;
+	bva:token-prefix "tiː-" ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	.
+
+aama:IDfcafcae6-a62f-4c16-b54f-e850c26c21ca a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-aor-CCC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Aorist ;
+	bva:token-suffix "-Ø" ;
+	bva:token-stem "ˈCCiC" ;
+	bva:token-prefix "niː-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Plural ;
+	.
+
+aama:ID68b3c367-4e98-4e51-8d56-433e7850d4f4 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-aor-CCC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Aorist ;
+	bva:token-suffix "-na" ;
+	bva:token-stem "CCiC" ;
+	bva:token-prefix "ˈtiː-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	.
+
+aama:ID8bfed1eb-cc2b-4b50-a14b-26e891fb6988 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-aor-CCC-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Aorist ;
+	bva:token-suffix "-na" ;
+	bva:token-stem "CCiC" ;
+	bva:token-prefix "ˈiː-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	.
+
+#TERMCLUSTER:  bvan-verb-pref-perf-CCCvar-template
+
+bva:bvan-verb-pref-perf-CCCvar-template a aamas:Termcluster ;
+	rdfs:label "bvan-verb-pref-perf-CCCvar-template" ;
+	aamas:lang aama:Beja-van ;
+	rdfs:comment "VNp.22 :: In addition there is a small sub-class of bi-consonantal and tri-consonantal V1 which do not have the n prefix or infix in the IPFV at the base form%% but are characterized by a post-stem suffix -i. This sub-class includes most verbs with stem C1i(C2)oːC3 or C1iC2eːC3 %% and some verbs (mainly stative) with a(ː) as V(2)%% together with a few other highly irregular verbs (often mono-consonantal) which have suppletive stems.[NB: For the moment these verbs are noted ad hoc here in the :lexeme section as :rootClass1a/b%%2%%3. I have also ventured to supply 1SgC forms for :rootClass3%% but these are not in the text.]" 
+	.
+
+aama:IDe99b06db-f5a7-4064-8a38-73a9ab7d46cf a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-perf-CCCvar-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Imperfective ;
+	bva:token-postStemSuff "-i" ;
+	bva:token-stem "fo:r" ;
+	bva:token-prefix "a-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:rootClass bva:CCC1a ;
+	aamas:lexeme aama:Beja-van-foor ;
+	.
+
+aama:IDa65b1ea0-3534-49cd-b55d-71f24d6d4ed6 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-perf-CCCvar-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Imperfective ;
+	bva:token-postStemSuff "-i" ;
+	bva:token-stem "ʃibo:b" ;
+	bva:token-prefix "a-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:rootClass bva:CCC1b ;
+	aamas:lexeme aama:Beja-van-siboob ;
+	.
+
+aama:ID32d19701-c7b3-4227-85cf-a37c86a01c8a a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-perf-CCCvar-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Imperfective ;
+	bva:token-postStemSuff "-i" ;
+	bva:token-stem "hibe:b" ;
+	bva:token-prefix "a-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:rootClass bva:CCC2 ;
+	aamas:lexeme aama:Beja-van-hibeeb ;
+	.
+
+aama:ID2843f661-1bf0-420a-b84a-6b075402cd4b a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-perf-CCCvar-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Imperfective ;
+	bva:token-postStemSuff "-i" ;
+	bva:token-stem "hadal" ;
+	bva:token-prefix "a-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:rootClass bva:CCC3 ;
+	aamas:lexeme aama:Beja-van-hadal ;
+	.
+
+aama:IDa7982dbd-5061-41d8-b1be-4d41b145c20d a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-perf-CCCvar-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Imperfective ;
+	bva:token-postStemSuff "-i" ;
+	bva:token-stem "haragʷ" ;
+	bva:token-prefix "a-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:rootClass bva:CCC3 ;
+	aamas:lexeme aama:Beja-van-haragw ;
+	.
+
+aama:IDd24a64ea-fc06-4961-921a-6bcd29b6df21 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-perf-CCCvar-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Imperfective ;
+	bva:token-postStemSuff "-i" ;
+	bva:token-stem "ʃikʷan" ;
+	bva:token-prefix "a-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:rootClass bva:CCC3 ;
+	aamas:lexeme aama:Beja-van-sikwan ;
+	.
+
+aama:ID8a54da90-e4f0-4773-ac31-39f3dd899255 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-perf-CCCvar-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Imperfective ;
+	bva:token-postStemSuff "-i" ;
+	bva:token-stem "nhad" ;
+	bva:token-prefix "a-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:rootClass bva:CCC3 ;
+	aamas:lexeme aama:Beja-van-nhad ;
+	.
+
+aama:ID812b9061-1a38-40a5-a5a5-1d8eb76784f5 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-perf-CCCvar-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Imperfective ;
+	bva:token-postStemSuff "-i" ;
+	bva:token-stem "bɁaːn" ;
+	bva:token-prefix "a-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:rootClass bva:CCC3 ;
+	aamas:lexeme aama:Beja-van-b-an ;
+	.
+
+aama:ID0b6d71cd-aafd-42c3-b318-df734f721e1c a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-perf-CCCvar-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Imperfective ;
+	bva:token-postStemSuff "-i" ;
+	bva:token-stem "kʷaːs" ;
+	bva:token-prefix "a-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:rootClass bva:CCC3 ;
+	aamas:lexeme aama:Beja-van-kwas ;
+	.
+
+aama:ID3cdbf758-06ec-495b-bd3a-794a7c8f788e a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-perf-CCCvar-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Imperfective ;
+	bva:token-postStemSuff "-i" ;
+	bva:token-stem "war" ;
+	bva:token-prefix "a-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:rootClass bva:CCC3 ;
+	aamas:lexeme aama:Beja-van-war ;
+	.
+
+aama:ID9a52c6e6-5b0a-4489-af7d-f770364f8b5b a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-perf-CCCvar-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Affirmative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Imperfective ;
+	bva:token-postStemSuff "-i" ;
+	bva:token-stem "bar" ;
+	bva:token-prefix "a-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	bva:rootClass bva:CCC3 ;
+	aamas:lexeme aama:Beja-van-bar ;
+	.
+
+#TERMCLUSTER:  bvan-verb-neg-opt-pref
+
+bva:bvan-verb-neg-opt-pref a aamas:Termcluster ;
+	rdfs:label "bvan-verb-neg-opt-pref" ;
+	aamas:lang aama:Beja-van ;
+	rdfs:comment "VNp.23t.16" 
+	.
+
+aama:ID07d0c6e3-9bc5-4307-8b09-26d4a11e88e1 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-neg-opt-pref ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Negative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Optative ;
+	bva:token-suffix "-Ø" ;
+	bva:token-stem "stem" ;
+	bva:token-prefix "ba=a-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	.
+
+aama:IDfca5e49f-57c7-4fec-9eb4-58917ee97fb1 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-neg-opt-pref ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Negative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Optative ;
+	bva:token-suffix "-a" ;
+	bva:token-stem "stem" ;
+	bva:token-prefix "bi=t-" ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	.
+
+aama:IDa6ced83a-f928-4d5a-8fe6-369fe8bef7fa a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-neg-opt-pref ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Negative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Optative ;
+	bva:token-suffix "-i" ;
+	bva:token-stem "stem" ;
+	bva:token-prefix "bi=t-" ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	.
+
+aama:ID37dc7bf0-5b45-4592-b0c8-da2d52a5a6d1 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-neg-opt-pref ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Negative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Optative ;
+	bva:token-suffix "-Ø" ;
+	bva:token-stem "stem" ;
+	bva:token-prefix "bi=i-" ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	.
+
+aama:IDfd34b949-8c21-45ff-9f0d-8f7d31ec0dc9 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-neg-opt-pref ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Negative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Optative ;
+	bva:token-suffix "-Ø" ;
+	bva:token-stem "stem" ;
+	bva:token-prefix "bi=i-" ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	.
+
+aama:ID5f807252-cd44-4b4f-b612-60b171fc59a7 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-neg-opt-pref ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Negative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Optative ;
+	bva:token-suffix "-Ø" ;
+	bva:token-stem "stem " ;
+	bva:token-prefix "bi=n-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Plural ;
+	.
+
+aama:ID08cf3cbb-2e7a-480d-b7e9-d6cb4711dda4 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-neg-opt-pref ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Negative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Optative ;
+	bva:token-suffix "-na" ;
+	bva:token-stem "stem" ;
+	bva:token-prefix "bi=i-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	.
+
+aama:IDd419c0bd-825b-4c04-926d-c7f7509fa643 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-neg-opt-pref ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Prefix ;
+	bva:polarity bva:Negative ;
+	bva:pos bva:Verb ;
+	bva:rootClass bva:CCC ;
+	bva:tam bva:Optative ;
+	bva:token-suffix "-na" ;
+	bva:token-stem "stem" ;
+	bva:token-prefix "bi=i-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	.
+
+#TERMCLUSTER:  bvan-verb-neg-opt-suff
+
+bva:bvan-verb-neg-opt-suff a aamas:Termcluster ;
+	rdfs:label "bvan-verb-neg-opt-suff" ;
+	aamas:lang aama:Beja-van ;
+	rdfs:comment "VNp.23t.16" 
+	.
+
+aama:ID73096796-0d89-4959-bc21-b6243ffe586a a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-neg-opt-suff ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Negative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Optative ;
+	bva:token-suffix "-aj / ej" ;
+	bva:token-stem "stem" ;
+	bva:token-prefix "ba=a-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	.
+
+aama:ID8e60b94f-addb-4163-ad98-624b19cc06c0 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-neg-opt-suff ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Negative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Optative ;
+	bva:token-suffix "-aja / ej" ;
+	bva:token-stem "stem" ;
+	bva:token-prefix "bi=t-" ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	.
+
+aama:ID80150bcb-f19b-4fc8-96af-59951548fafc a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-neg-opt-suff ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Negative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Optative ;
+	bva:token-suffix "-aj / ej" ;
+	bva:token-stem "stem" ;
+	bva:token-prefix "bi=t-" ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	.
+
+aama:ID9b6a64cd-2e07-4320-9eef-5109d7beb5f3 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-neg-opt-suff ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Negative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Optative ;
+	bva:token-suffix "-aj / ej " ;
+	bva:token-stem "stem" ;
+	bva:token-prefix "bi=i-" ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	.
+
+aama:ID9d30ccf4-bcbd-4498-96f0-5a6442749d62 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-neg-opt-suff ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Negative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Optative ;
+	bva:token-suffix "-aj / ej " ;
+	bva:token-stem "stem" ;
+	bva:token-prefix "bi=t-" ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	.
+
+aama:IDebac653c-fd7d-47d9-8190-d6bb35eb7ebb a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-neg-opt-suff ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Negative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Optative ;
+	bva:token-suffix "-aj / ej " ;
+	bva:token-stem "stem" ;
+	bva:token-prefix "bi=n-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Plural ;
+	.
+
+aama:ID95f42dd0-182a-4fba-8c28-4baa75ede980 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-neg-opt-suff ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Negative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Optative ;
+	bva:token-suffix "-eːna " ;
+	bva:token-stem "stem" ;
+	bva:token-prefix "bi=i-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	.
+
+aama:IDf1203964-f371-48a3-8144-a547a4a3db15 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-neg-opt-suff ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	bva:polarity bva:Negative ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Optative ;
+	bva:token-suffix "-eːna " ;
+	bva:token-stem "stem" ;
+	bva:token-prefix "bi=i-" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	.
+
+#TERMCLUSTER:  bvan-verb-pref-derv_patterns
+
+bva:bvan-verb-pref-derv_patterns a aamas:Termcluster ;
+	rdfs:label "bvan-verb-pref-derv_patterns" ;
+	aamas:lang aama:Beja-van ;
+	rdfs:comment "VNp.24t.17" 
+	.
+
+aama:ID7eafade4-d630-42c9-876a-2479fbdae171 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-derv_patterns ;
+	bva:vmorphClass bva:StemExx ;
+	bva:conjClass bva:Prefix ;
+	bva:pos bva:Verb ;
+	bva:token-dervStem "boːs" ;
+	aamas:lexeme aama:Beja-van-bis ;
+	bva:dervStem bva:INT ;
+	bva:rootClass bva:CC ;
+	.
+
+aama:ID977b4b2e-e64c-4a3c-8681-6e22ce5f9353 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-derv_patterns ;
+	bva:vmorphClass bva:StemExx ;
+	bva:conjClass bva:Prefix ;
+	bva:pos bva:Verb ;
+	bva:token-dervStem "baːbis baːbabis" ;
+	aamas:lexeme aama:Beja-van-bis ;
+	bva:dervStem bva:PLAC ;
+	bva:rootClass bva:CC ;
+	.
+
+aama:ID01646b89-439f-4472-84a7-8da4eac36b99 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-derv_patterns ;
+	bva:vmorphClass bva:StemExx ;
+	bva:conjClass bva:Prefix ;
+	bva:pos bva:Verb ;
+	bva:token-dervStem "faf" ;
+	aamas:lexeme aama:Beja-van-fif ;
+	bva:dervStem bva:REFL ;
+	bva:rootClass bva:CC ;
+	.
+
+aama:ID4b10a986-2a31-4cb7-921e-8657ee9637f4 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-derv_patterns ;
+	bva:vmorphClass bva:StemExx ;
+	bva:conjClass bva:Prefix ;
+	bva:pos bva:Verb ;
+	bva:token-dervStem "soː-dir" ;
+	aamas:lexeme aama:Beja-van-dir ;
+	bva:dervStem bva:CAUS ;
+	bva:rootClass bva:CC ;
+	.
+
+aama:ID5523ecad-ecfa-40cf-b98f-287b0754fa8d a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-derv_patterns ;
+	bva:vmorphClass bva:StemExx ;
+	bva:conjClass bva:Prefix ;
+	bva:pos bva:Verb ;
+	bva:token-dervStem "sisi-joːd" ;
+	aamas:lexeme aama:Beja-van-di ;
+	bva:dervStem bva:DBL_CAUS ;
+	bva:rootClass bva:CC ;
+	.
+
+aama:ID7cd4cba4-7122-439f-b58a-69af935cb0fb a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-derv_patterns ;
+	bva:vmorphClass bva:StemExx ;
+	bva:conjClass bva:Prefix ;
+	bva:pos bva:Verb ;
+	bva:token-dervStem "aːtoː-maːn" ;
+	aamas:lexeme aama:Beja-van-min ;
+	bva:dervStem bva:PASS ;
+	bva:rootClass bva:CC ;
+	.
+
+aama:ID562c9237-07f2-4510-bb39-eea79ae6e1d2 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-derv_patterns ;
+	bva:vmorphClass bva:StemExx ;
+	bva:conjClass bva:Prefix ;
+	bva:pos bva:Verb ;
+	bva:token-dervStem "amoː-gaːd" ;
+	aamas:lexeme aama:Beja-van-gid ;
+	bva:dervStem bva:RECP ;
+	bva:rootClass bva:CC ;
+	.
+
+aama:IDee6bc3aa-a3ca-422c-befd-53f614b1e14c a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-derv_patterns ;
+	bva:vmorphClass bva:StemExx ;
+	bva:conjClass bva:Prefix ;
+	bva:pos bva:Verb ;
+	bva:token-dervStem "kaːtim" ;
+	aamas:lexeme aama:Beja-van-kitim ;
+	bva:dervStem bva:INT ;
+	bva:rootClass bva:CCC ;
+	.
+
+aama:IDf3f90722-8779-4062-af42-43144144b5a4 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-derv_patterns ;
+	bva:vmorphClass bva:StemExx ;
+	bva:conjClass bva:Prefix ;
+	bva:pos bva:Verb ;
+	bva:token-dervStem "kaːtatim / kitimkitim" ;
+	aamas:lexeme aama:Beja-van-kitim ;
+	bva:dervStem bva:PLAC ;
+	bva:rootClass bva:CCC ;
+	.
+
+aama:ID48242e70-61d4-448f-b1b4-3ca4c8baa893 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-derv_patterns ;
+	bva:vmorphClass bva:StemExx ;
+	bva:conjClass bva:Prefix ;
+	bva:pos bva:Verb ;
+	bva:token-dervStem "rimad" ;
+	aamas:lexeme aama:Beja-van-rimid ;
+	bva:dervStem bva:REFL ;
+	bva:rootClass bva:CCC ;
+	.
+
+aama:IDd2f09e66-280f-46f9-a101-525c5f0aff8b a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-derv_patterns ;
+	bva:vmorphClass bva:StemExx ;
+	bva:conjClass bva:Prefix ;
+	bva:pos bva:Verb ;
+	bva:token-dervStem "si-katim" ;
+	aamas:lexeme aama:Beja-van-kitim ;
+	bva:dervStem bva:CAUS ;
+	bva:rootClass bva:CCC ;
+	.
+
+aama:ID72f9adcb-b262-4655-9c43-635e42d9331b a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-derv_patterns ;
+	bva:vmorphClass bva:StemExx ;
+	bva:conjClass bva:Prefix ;
+	bva:pos bva:Verb ;
+	bva:token-dervStem "at-dabaːl" ;
+	aamas:lexeme aama:Beja-van-dibil ;
+	bva:dervStem bva:PASS ;
+	bva:rootClass bva:CCC ;
+	.
+
+aama:IDd7c7cc08-4317-47d7-a845-5b3d5bde987c a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-derv_patterns ;
+	bva:vmorphClass bva:StemExx ;
+	bva:conjClass bva:Prefix ;
+	bva:pos bva:Verb ;
+	bva:token-dervStem "am-garaːm" ;
+	aamas:lexeme aama:Beja-van-girim ;
+	bva:dervStem bva:RECP ;
+	bva:rootClass bva:CCC ;
+	.
+
+#TERMCLUSTER:  bvan-verb-pref-refl-tense-template
+
+bva:bvan-verb-pref-refl-tense-template a aamas:Termcluster ;
+	rdfs:label "bvan-verb-pref-refl-tense-template" ;
+	aamas:lang aama:Beja-van ;
+	rdfs:comment "VNp.25t.18" 
+	.
+
+aama:ID53bb395e-b4df-459f-bc63-631896579498 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-refl-tense-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:dervStem bva:Reflexive ;
+	bva:conjClass bva:Prefix ;
+	bva:pos bva:Verb ;
+	bva:token-stem "ˈCaC" ;
+	bva:token-prefix "a-" ;
+	bva:tam bva:Perfective ;
+	bva:rootClass bva:CC ;
+	.
+
+aama:ID7d496db5-7023-465c-8a0f-da673c6aae7b a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-refl-tense-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:dervStem bva:Reflexive ;
+	bva:conjClass bva:Prefix ;
+	bva:pos bva:Verb ;
+	bva:token-stem "ˈCiːC" ;
+	bva:token-prefix "eː-t-" ;
+	bva:tam bva:Imperfective ;
+	bva:rootClass bva:CC ;
+	.
+
+aama:ID665882a3-bdd1-45d1-9208-c1d61d878269 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-refl-tense-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:dervStem bva:Reflexive ;
+	bva:conjClass bva:Prefix ;
+	bva:pos bva:Verb ;
+	bva:token-stem "ˈCaC" ;
+	bva:token-prefix "iː-t-" ;
+	bva:tam bva:Aorist ;
+	bva:rootClass bva:CC ;
+	.
+
+aama:ID8e1cf748-b86c-4a53-bb99-b4e500e981ff a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-refl-tense-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:dervStem bva:Reflexive ;
+	bva:conjClass bva:Prefix ;
+	bva:pos bva:Verb ;
+	bva:token-stem "CˈCaC" ;
+	bva:token-prefix "a-" ;
+	bva:tam bva:Perfective ;
+	bva:rootClass bva:CCC ;
+	.
+
+aama:ID90fb2288-0ede-4aa6-a7c7-123fd7605efe a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-refl-tense-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:dervStem bva:Reflexive ;
+	bva:conjClass bva:Prefix ;
+	bva:pos bva:Verb ;
+	bva:token-stem "CaˈCiːC" ;
+	bva:token-prefix "a-t-" ;
+	bva:tam bva:Imperfective ;
+	bva:rootClass bva:CCC ;
+	.
+
+aama:ID82c9e6e1-fcaf-4e8f-885d-15e06e3d0392 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-pref-refl-tense-template ;
+	bva:vmorphClass bva:Finite ;
+	bva:dervStem bva:Reflexive ;
+	bva:conjClass bva:Prefix ;
+	bva:pos bva:Verb ;
+	bva:token-stem "CiˈCiC" ;
+	bva:token-prefix "i-t-" ;
+	bva:tam bva:Aorist ;
+	bva:rootClass bva:CCC ;
+	.
+
+#TERMCLUSTER:  bvan-verb-suff-derv_patterns
+
+bva:bvan-verb-suff-derv_patterns a aamas:Termcluster ;
+	rdfs:label "bvan-verb-suff-derv_patterns" ;
+	aamas:lang aama:Beja-van ;
+	rdfs:comment "VNp.26t.19 " 
+	.
+
+aama:IDab590b62-3953-4c55-921e-a1eaeac1a7d3 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-derv_patterns ;
+	bva:vmorphClass bva:StemExx ;
+	bva:conjClass bva:Suffix ;
+	bva:pos bva:Verb ;
+	bva:token-gloss "'gobble hastily'" ;
+	bva:token-dervStem "tam~tam" ;
+	bva:token-suffix "(Full Reduplication)" ;
+	bva:dervStem bva:PLAC1 ;
+	.
+
+aama:ID35cafce9-a39a-4100-9cd0-58d74b541b88 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-derv_patterns ;
+	bva:vmorphClass bva:StemExx ;
+	bva:conjClass bva:Suffix ;
+	bva:pos bva:Verb ;
+	bva:token-gloss "'walk hastily'" ;
+	bva:token-dervStem "hireːr~hireːr" ;
+	bva:token-suffix "(Full Reduplication)" ;
+	bva:dervStem bva:PLAC1 ;
+	.
+
+aama:ID60f6e9a8-bc0b-4f0f-9aae-1cd5f9a33ae4 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-derv_patterns ;
+	bva:vmorphClass bva:StemExx ;
+	bva:conjClass bva:Suffix ;
+	bva:pos bva:Verb ;
+	bva:token-dervStem "ta~tam 'eat slowly'" ;
+	bva:token-suffix "(Partial Reduplication)" ;
+	bva:dervStem bva:PLAC2 ;
+	.
+
+aama:IDfab34146-8a52-45d5-b242-b3db3bf25652 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-derv_patterns ;
+	bva:vmorphClass bva:StemExx ;
+	bva:conjClass bva:Suffix ;
+	bva:pos bva:Verb ;
+	bva:token-gloss "'stroll leisurely'" ;
+	bva:token-dervStem "hiraː~reːr" ;
+	bva:token-suffix "(Partial Reduplication)" ;
+	bva:dervStem bva:PLAC2 ;
+	.
+
+aama:IDa28af03d-e09d-490d-96b7-109ef6bfdd96 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-derv_patterns ;
+	bva:vmorphClass bva:StemExx ;
+	bva:conjClass bva:Suffix ;
+	bva:pos bva:Verb ;
+	bva:token-gloss "'I splash myself / I am splashed'" ;
+	bva:token-dervStem "gʷaːd-am-ani" ;
+	bva:token-suffix "-am " ;
+	bva:dervStem bva:REFL_PASS ;
+	.
+
+aama:IDc2c51cd9-4bdf-4b09-b524-839a256967b7 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-derv_patterns ;
+	bva:vmorphClass bva:StemExx ;
+	bva:conjClass bva:Suffix ;
+	bva:pos bva:Verb ;
+	bva:token-gloss "'show me!'" ;
+	bva:token-dervStem "rhi-is-a=heːb" ;
+	bva:token-suffix "-(i)s " ;
+	bva:dervStem bva:CAUS ;
+	.
+
+aama:ID82b28ede-d81c-4519-ba35-1a54f93a29f4 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-derv_patterns ;
+	bva:vmorphClass bva:StemExx ;
+	bva:conjClass bva:Suffix ;
+	bva:pos bva:Verb ;
+	bva:token-gloss "'make s.o blinded'" ;
+	bva:token-dervStem "hamaʃeː-sis" ;
+	bva:token-suffix "-isis " ;
+	bva:dervStem bva:DBL_CAUS ;
+	.
+
+aama:ID00acff5a-7c55-46bc-9d3c-74f24c8b2882 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-derv_patterns ;
+	bva:vmorphClass bva:StemExx ;
+	bva:conjClass bva:Suffix ;
+	bva:pos bva:Verb ;
+	bva:token-gloss "'eat each other'" ;
+	bva:token-dervStem "tam-sam" ;
+	bva:token-suffix "-sam " ;
+	bva:dervStem bva:RECP ;
+	.
+
+#TERMCLUSTER:  bvan-verb-suff-potential
+
+bva:bvan-verb-suff-potential a aamas:Termcluster ;
+	rdfs:label "bvan-verb-suff-potential" ;
+	aamas:lang aama:Beja-van ;
+	rdfs:comment "VNp.32t.20 :: The Potential form (POT) expresses epistemic modalities of inference or near-certainty%% and is based on the verbal noun with a suffix -at (-it with verbs ending in -i) + the auxiliary jɁ ‘come’ in the IPFV (glossed AUX.POT on rx). It only occurs as a full-fledged inflected auxiliary in 3SG and PL. It is always omitted in 1SG%% and formally reduced and grammaticalized to an inflection morpheme in 2SG and 2PL. " 
+	.
+
+aama:ID2f54e520-a24e-4808-84b7-b538c9c10ca5 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-potential ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	aamas:lexeme aama:Beja-van-tam ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Potential ;
+	bva:token-aux "-Ø" ;
+	bva:token-suffix "-Ø" ;
+	bva:token-verbalNoun "tam-at" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Singular ;
+	.
+
+aama:IDd5d53e7c-05ac-4566-8acc-23e9c21b73f3 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-potential ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	aamas:lexeme aama:Beja-van-tam ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Potential ;
+	bva:token-aux "-Ø" ;
+	bva:token-suffix "-a" ;
+	bva:token-verbalNoun "tam-at" ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	.
+
+aama:ID82d72f4f-2369-4301-a982-be86606b8d50 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-potential ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	aamas:lexeme aama:Beja-van-tam ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Potential ;
+	bva:token-aux "-Ø" ;
+	bva:token-suffix "-i" ;
+	bva:token-verbalNoun "tam-at" ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person2 ;
+	bva:number bva:Singular ;
+	.
+
+aama:IDa2ea26b1-adf6-4625-b482-40871bc35b3c a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-potential ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	aamas:lexeme aama:Beja-van-tam ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Potential ;
+	bva:token-aux "-eːjni" ;
+	bva:token-suffix "-Ø" ;
+	bva:token-verbalNoun "tam-at" ;
+	bva:gender bva:Masc ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	.
+
+aama:IDe3fb61a6-51a5-483d-8d8e-e2668210b7be a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-potential ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	aamas:lexeme aama:Beja-van-tam ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Potential ;
+	bva:token-aux "-eːtni" ;
+	bva:token-suffix "-Ø" ;
+	bva:token-verbalNoun "tam-at" ;
+	bva:gender bva:Fem ;
+	bva:person bva:Person3 ;
+	bva:number bva:Singular ;
+	.
+
+aama:ID2afe1d00-7960-435c-a836-f2507cb8213f a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-potential ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	aamas:lexeme aama:Beja-van-tam ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Potential ;
+	bva:token-aux "-eːnej" ;
+	bva:token-suffix "-Ø" ;
+	bva:token-verbalNoun "tam-at" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person1 ;
+	bva:number bva:Plural ;
+	.
+
+aama:ID446cfa79-f9a8-4084-95df-692dd39f595f a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-potential ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	aamas:lexeme aama:Beja-van-tam ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Potential ;
+	bva:token-aux "-Ø" ;
+	bva:token-suffix "-na" ;
+	bva:token-verbalNoun "tam-at" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person2 ;
+	bva:number bva:Plural ;
+	.
+
+aama:ID2b183b15-ea7d-4f69-b395-290853637e27 a aamas:Term ;
+	aamas:lang aama:Beja-van ;
+	aamas:memberOf bva:bvan-verb-suff-potential ;
+	bva:vmorphClass bva:Finite ;
+	bva:conjClass bva:Suffix ;
+	aamas:lexeme aama:Beja-van-tam ;
+	bva:pos bva:Verb ;
+	bva:tam bva:Potential ;
+	bva:token-aux "-eːn" ;
+	bva:token-suffix "-Ø" ;
+	bva:token-verbalNoun "tam-at" ;
+	bva:gender bva:Common ;
+	bva:person bva:Person3 ;
+	bva:number bva:Plural ;
+	.

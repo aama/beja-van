@@ -1,0 +1,581 @@
+{
+ :lang :beja-van
+ :subfamily "Beja"
+ :sgpref "bva"
+ :datasource "Vanhove2014 (http://corpafroas.huma-num.fr/Archives/BEJ/PDF/BEJ_MV_AGRAMMATICALSKETCH.PDF) Vanhove2017: abbrev. in :note  VNp.[age](.t[able])"
+ :datasourceNotes "The current data is taken from the paradigm tables in Vanhove2014."
+ :geodemoURL "http://www.ethnologue.com/language/bej"
+ :geodemoTXT "Beja is a closely related group of language varieties and dialects spoken in the Red Sea coastal and hill regions in Sudan, Eritrea, and Egypt by more than a million individuals. The variety documented here is that of the village of Sinkat (36 49'58E, 18 50'14N), about 60km WSW of Suakin, where Martine Vanhove recorded a corpus of Beja narratives (avaliable at https://cocoon.huma-num.fr/exist/crdo/search2.xql?keyword=beja."
+ :schemata {:case [:Ablative  :Accusative :Genitive :Nominative],
+            :conjClass [:Prefix :Suffix],
+            :dervStem [:CAUS :DBL_CAUS :INT :PASS :PLAC :PLAC1 :PLAC2 :RECP :REFL :REFL_PASS :Reflexive],
+            :gender [:Common :Fem :Masc],
+            :h_gender [:H_Fem :H_Masc],
+            :h_number [:ANY :H_Plural :H_Singular],
+            :number [:Plural :Singular],
+            :person [:Person1 :Person2 :Person3],
+            :pmorphClass [:ProMorph],
+            :polarity [:Affirmative :Negative],
+            :pos [:Pronoun :Verb],
+            :proClass [:Bound :Demonstrative :IndPoss :Independent :PossBound :ProBound :indPoss],
+            :proximity [:Distal :Proximal],
+            :rootClass [:CC :CCC :CCC1a :CCC1b :CCC2 :CCC3],
+            :slot [:After-IPFV-PFV :After-aor :Before-hoob],
+            :tam [:Aorist :Imperfective :Optative :Perfective :Potential],
+            :vmorphClass [:Finite :StemExx]
+            }
+ :pclass {:pngClass [:person :number :gender],
+          :synsemClass [:case :defClass :deixis :derivedStem :derivedStemAug :participle :polarity :pos :proClass :tam],
+          :inflClass [:conjClass :pluralClass :postpositionClass :rootClass],
+          :otherClass []}
+ :lexemes {
+           :b-an   {:pos :Verb, :lemma "bɁaːn", :gloss "fear", :conjClass :Prefix, :rootClass :CCC3},
+           :bar   {:pos :Verb, :lemma "bar", :gloss "have", :conjClass :Prefix, :rootClass :CCC3},
+           :bis   {:pos :Verb, :lemma "bis", :gloss "bury", :conjClass :Prefix, :rootClass :CC},
+           :di   {:pos :Verb, :lemma "di", :gloss "say", :conjClass :Prefix, :rootClass :CC},
+           :dibil   {:pos :Verb, :lemma "dibil", :gloss "collect", :conjClass :Prefix, :rootClass :CCC},
+           :dir   {:pos :Verb, :lemma "dir", :gloss "kill", :conjClass :Prefix, :rootClass :CC},
+           :fif   {:pos :Verb, :lemma "fif", :gloss "pour", :conjClass :Prefix, :rootClass :CC},
+           :foor   {:pos :Verb, :lemma "fo:r", :gloss "flee", :conjClass :Prefix, :rootClass :CCC1a},
+           :gid   {:pos :Verb, :lemma "gid", :gloss "throw", :conjClass :Prefix, :rootClass :CC},
+           :girim   {:pos :Verb, :lemma "girim", :gloss "be inimical", :conjClass :Prefix, :rootClass :CCC},
+           :hadal   {:pos :Verb, :lemma "hadal", :gloss "be black", :conjClass :Prefix, :rootClass :CCC3},
+           :haragw   {:pos :Verb, :lemma "haragʷ", :gloss "be hungry", :conjClass :Prefix, :rootClass :CCC3},
+           :hibeeb   {:pos :Verb, :lemma "hibe:b", :gloss "spend rainy season", :conjClass :Prefix, :rootClass :CCC2},
+           :kitim   {:pos :Verb, :lemma "kitim", :gloss "arrive", :conjClass :Prefix, :rootClass :CCC},
+           :kwas   {:pos :Verb, :lemma "kʷaːs", :gloss "create", :conjClass :Prefix, :rootClass :CCC3},
+           :min   {:pos :Verb, :lemma "min", :gloss "shave", :conjClass :Prefix, :rootClass :CC},
+           :nhad   {:pos :Verb, :lemma "nhad", :gloss "finish", :conjClass :Prefix, :rootClass :CCC3},
+           :rimid   {:pos :Verb, :lemma "rimid", :gloss "revenge", :conjClass :Prefix, :rootClass :CCC},
+           :siboob   {:pos :Verb, :lemma "ʃibo:b", :gloss "be good", :conjClass :Prefix, :rootClass :CCC1b},
+           :sikwan   {:pos :Verb, :lemma "ʃikʷan", :gloss "smell nice", :conjClass :Prefix, :rootClass :CCC3},
+           :tam   {:pos :Verb, :lemma "tam", :gloss "eat", :conjClass :Suffix},
+           :war   {:pos :Verb, :lemma "war", :gloss "do", :conjClass :Prefix, :rootClass :CCC3},
+           }
+ :termclusters [
+                {:label "bvan-dem-nom-acc"
+                 :note "VNp.16t.4"
+                 :common {:pos :Pronoun, 
+                          :pmorphClass :ProMorph,
+                          :proClass :Demonstrative}
+                 :terms [[:proximity :case :number :gender :token]
+                         [:Proximal :Nominative :Singular :Masc "u:n"],
+                         [:Proximal :Nominative :Singular :Fem "tu:n"],
+                         [:Proximal :Nominative :Plural  :Masc "a:n"],
+                         [:Proximal :Nominative :Plural :Fem "ta:n"],
+                         [:Proximal :Accusative :Singular :Masc "o:n"],
+                         [:Proximal :Accusative :Singular :Fem "to:n"],
+                         [:Proximal :Accusative :Plural  :Masc "e:n"],
+                         [:Proximal :Accusative :Plural :Fem "te:n"],
+                         [:Distal :Nominative :Singular :Masc "be:n"],
+                         [:Distal :Nominative :Singular :Fem "be:t"],
+                         [:Distal :Nominative :Plural  :Masc "ba'li:n"],
+                         [:Distal :Nominative :Plural :Fem "ba'li:t"],
+                         [:Distal :Accusative :Singular :Masc "be:b"],
+                         [:Distal :Accusative :Singular :Fem "be:t"],
+                         [:Distal :Accusative :Plural  :Masc "ba'li:b"],
+                         [:Distal :Accusative :Plural :Fem "ba'li:t"]]
+                 }
+                {:label "bvan-dem-gen"
+                 :note "VNp.16t.5"
+                 :common {:pos :Pronoun, 
+                          :pmorphClass :ProMorph,
+                          :case :Genitive
+                          ;;:number :ANY
+                          :proClass :Demonstrative }
+                 :terms [[:h_number :h_gender :gender :token]
+                         [:ANY :H_Masc :Masc "o:naj"],
+                         [:ANY :H_Masc :Fem "to:naj"],
+                         [:ANY :H_Fem :Masc "o:na:ti"],
+                         [:H_Singular :H_Fem :Fem "to:na:ti"],
+                         [:H_Plural :H_Fem :Fem "to:na:te:t"]]
+                 }
+                {:label "bvan-pro-ind"
+                 :note "VNp.16t.6"
+                 :common {:pos :Pronoun, 
+                          :pmorphClass :ProMorph,
+                          :proClass :Independent}
+                 :terms [[:case :number :person :gender :token],
+                         [:Nominative :Singular :Person1 :Common "(un)ˈani "],
+                         [:Nominative :Singular :Person2 :Masc "(um)baˈruːk "],
+                         [:Nominative :Singular :Person2 :Fem "(um)baˈtuːk "],
+                         [:Nominative :Singular :Person3 :Masc "(um)baˈruː "],
+                         [:Nominative :Singular :Person3 :Fem "(um)baˈtuː "],
+                         [:Nominative :Plural :Person1 :Common "(an)hiˈnin "],
+                         [:Nominative :Plural :Person2 :Masc "(am)baˈraːk(na)"],
+                         [:Nominative :Plural :Person2 :Fem "(am)baˈtaːk(na)"],
+                         [:Nominative :Plural :Person3 :Masc "(am)baˈraː "],
+                         [:Nominative :Plural :Person3 :Fem "(am)baˈtaː "],
+                         [:Accusative :Singular :Person1 :Common "(on)ˈaneb "],
+                         [:Accusative :Singular :Person2 :Masc "(om)baˈroːk"],
+                         [:Accusative :Singular :Person2 :Fem "(om)baˈtoːk"],
+                         [:Accusative :Singular :Person3 :Masc "(om)baˈroː "],
+                         [:Accusative :Singular :Person3 :Fem "(om)baˈtoː "],
+                         [:Accusative :Plural :Person1 :Common "(en)hiˈnin "],
+                         [:Accusative :Plural :Person2 :Masc "(em)baˈreːk(na) "],
+                         [:Accusative :Plural :Person2 :Fem "(em)baˈteːk(na) "],
+                         [:Accusative :Plural :Person3 :Masc "(em)baˈreː "],
+                         [:Accusative :Plural :Person3 :Fem "(em)baˈteːk "]]
+                 }
+                {:label "bvan-pro-ind-poss-nom-h_masc"
+                 :note "VNp.17t.7"
+                 :common {:pos :Pronoun, 
+                          :pmorphClass :ProMorph,
+                          :proClass :IndPoss
+                          :h_gender :H_Masc}
+                 :terms [[:h_number :number :person :gender :token]
+                         [:H_Singular :Singular :Person1 :Common "ˈani "],
+                         [:H_Singular :Singular :Person2 :Masc "bariˈjuːk "],
+                         [:H_Singular :Singular :Person2 :Fem "batiˈjuːk "],
+                         [:H_Singular :Singular :Person3 :Masc "bariˈjuː "],
+                         [:H_Singular :Singular :Person3 :Fem "batiˈjuː "],
+                         [:H_Singular :Plural :Person1 :Common "ˈaːni "],
+                         [:H_Singular :Plural :Person2 :Masc "bariˈjaːk "],
+                         [:H_Singular :Plural :Person2 :Fem "batiˈjaːk "],
+                         [:H_Singular :Plural :Person3 :Masc "bariˈjaː "],
+                         [:H_Singular :Plural :Person3 :Fem "batiˈjaː "],
+                         [:H_Plural :Singular :Person1 :Common "ˈhine "],
+                         [:H_Plural :Singular :Person2 :Masc "bareːˈjuːk(na) "],
+                         [:H_Plural :Singular :Person2 :Fem "bateːˈjuːk(na) "],
+                         [:H_Plural :Singular :Person3 :Masc "bareːˈjuː "],
+                         [:H_Plural :Singular :Person3 :Fem "bateːˈjuː "],
+                         [:H_Plural :Plural :Person1 :Common "hine "],
+                         [:H_Plural :Plural :Person2 :Masc "bareːˈjaːk(na) "],
+                         [:H_Plural :Plural :Person2 :Fem "bateːˈjaːk(na) "],
+                         [:H_Plural :Plural :Person3 :Masc "bareːˈjaː "],
+                         [:H_Plural :Plural :Person3 :Fem "bateːˈjaː "]]
+                 }
+                {:label "bvan-pro-ind-poss-acc-h_masc"
+                 :note "VNp.17t.8"
+                 :common {:pos :Pronoun, 
+                          :pmorphClass :ProMorph,
+                          :proClass :indPoss
+                          :h_gender :H_Masc
+                          :case :Accusative}
+                 :terms [[:h_number :number :person :gender :token]
+                         [:H_Singular :Singular :Person1 :Common "ˈoːnib "],
+                         [:H_Singular :Singular :Person2 :Masc "bariˈjoːk "],
+                         [:H_Singular :Singular :Person2 :Fem "batiˈjoːk "],
+                         [:H_Singular :Singular :Person3 :Masc "bariˈjoː "],
+                         [:H_Singular :Singular :Person3 :Fem "batiˈjoː "],
+                         [:H_Singular :Plural :Person1 :Common "ˈeːnib "],
+                         [:H_Singular :Plural :Person2 :Masc "bariˈjeːk "],
+                         [:H_Singular :Plural :Person2 :Fem "batiˈjeːk "],
+                         [:H_Singular :Plural :Person3 :Masc "bariˈjeː "],
+                         [:H_Singular :Plural :Person3 :Fem "batiˈjeː "],
+                         [:H_Plural :Singular :Person1 :Common "ˈhineb "],
+                         [:H_Plural :Singular :Person2 :Masc "bareːˈjoːk(na) "],
+                         [:H_Plural :Singular :Person2 :Fem "bateːˈjoːk(na) "],
+                         [:H_Plural :Singular :Person3 :Masc "bareːˈjoː "],
+                         [:H_Plural :Singular :Person3 :Fem "bateːˈjoː "],
+                         [:H_Plural :Plural :Person1 :Common "ˈhineb "],
+                         [:H_Plural :Plural :Person2 :Masc "bareːˈjeːk(na) "],
+                         [:H_Plural :Plural :Person2 :Fem "bateːˈjeːk(na) "],
+                         [:H_Plural :Plural :Person3 :Masc "bareːˈjeː "],
+                         [:H_Plural :Plural :Person3 :Fem "bateːˈje"]]
+                 }
+                {:label "bvan-pro-ind-poss-nom-h_fem"
+                 :note "VNp.17t.9"
+                 :common {:pos :Pronoun, 
+                          :pmorphClass :ProMorph,
+                          :proClass :indPoss
+                          :h_gender :H_Fem
+                          :case :Nominative}
+                 :terms [[:h_number :number :person :gender :token]
+                         [:H_Singular :Singular :Person1 :Common "ˈani "],
+                         [:H_Singular :Singular :Person2 :Masc "bariˈtuːk "],
+                         [:H_Singular :Singular :Person2 :Fem "batiˈtuːk "],
+                         [:H_Singular :Singular :Person3 :Masc "bariˈtuː "],
+                         [:H_Singular :Singular :Person3 :Fem "batiˈtuː "],
+                         [:H_Singular :Plural :Person1 :Common "ˈaːni "],
+                         [:H_Singular :Plural :Person2 :Masc "bariˈtaːk "],
+                         [:H_Singular :Plural :Person2 :Fem "batiˈtaːk "],
+                         [:H_Singular :Plural :Person3 :Masc "bariˈtaː "],
+                         [:H_Singular :Plural :Person3 :Fem "batiˈtaː "],
+                         [:H_Plural :Singular :Person1 :Common "ˈhine "],
+                         [:H_Plural :Singular :Person2 :Masc "bareːˈtuːk(na) "],
+                         [:H_Plural :Singular :Person2 :Fem "bateːˈtuːk(na) "],
+                         [:H_Plural :Singular :Person3 :Masc "bareːˈtuː "],
+                         [:H_Plural :Singular :Person3 :Fem "bateːˈtuː "],
+                         [:H_Plural :Plural :Person1 :Common "hine "],
+                         [:H_Plural :Plural :Person2 :Masc "bareːˈtaːk(na) "],
+                         [:H_Plural :Plural :Person2 :Fem "bateːˈtaːk(na) "],
+                         [:H_Plural :Plural :Person3 :Masc "bareːˈtaː "],
+                         [:H_Plural :Plural :Person3 :Fem "bateːˈtaː "]]
+                 }
+                {:label "bvan-pro-ind-poss-nom-h_fem"
+                 :note "VNp.17t.10"
+                 :common {:pos :Pronoun, 
+                          :pmorphClass :ProMorph,
+                          :proClass :indPoss
+                          :h_gender :H_Fem
+                          :case :Accusative}
+                 :terms [[:h_number :number :person :gender :token]
+                         [:H_Singular :Singular :Person1 :Common "ˈoːnib "],
+                         [:H_Singular :Singular :Person2 :Masc "bariˈtoːk "],
+                         [:H_Singular :Singular :Person2 :Fem "batiˈtoːk "],
+                         [:H_Singular :Singular :Person3 :Masc "bariˈtoː "],
+                         [:H_Singular :Singular :Person3 :Fem "batiˈtoː "],
+                         [:H_Singular :Plural :Person1 :Common "ˈeːnib "],
+                         [:H_Singular :Plural :Person2 :Masc "bariˈteːk "],
+                         [:H_Singular :Plural :Person2 :Fem "batiˈteːk "],
+                         [:H_Singular :Plural :Person3 :Masc "bariˈteː "],
+                         [:H_Singular :Plural :Person3 :Fem "batiˈteː "],
+                         [:H_Plural :Singular :Person1 :Common "ˈhineb "],
+                         [:H_Plural :Singular :Person2 :Masc "bareːˈtoːk(na) "],
+                         [:H_Plural :Singular :Person2 :Fem "bateːˈtoːk(na) "],
+                         [:H_Plural :Singular :Person3 :Masc "bareːˈtoː "],
+                         [:H_Plural :Singular :Person3 :Fem "bateːˈtoː "],
+                         [:H_Plural :Plural :Person1 :Common "ˈhineb "],
+                         [:H_Plural :Plural :Person2 :Masc "bareːˈteːk(na) "],
+                         [:H_Plural :Plural :Person2 :Fem "bateːˈteːk(na) "],
+                         [:H_Plural :Plural :Person3 :Masc "bareːˈteː "],
+                         [:H_Plural :Plural :Person3 :Fem "bateːˈte"]]
+                 }
+                {:label "bvan-pro-bound-obj"
+                 :note "VNp.18t.11"
+                 :common {:pos :Pronoun, 
+                          :pmorphClass :ProMorph,
+                          :proClass :Bound}
+                 :terms [[:slot :number :person :token]
+                         [:After-IPFV-PFV :Singular :Person1 "=heːb "],
+                         [:After-IPFV-PFV :Singular :Person1 "=hoːk "],
+                         [:After-IPFV-PFV :Plural :Person2 "=hoːn "],
+                         [:After-IPFV-PFV :Plural :Person2 "=ˈhoːkna "],
+                         [:After-aor :Singular :Person1 "=i "],
+                         [:After-aor :Singular :Person1 "=uːk "],
+                         [:After-aor :Plural :Person2 "=uːn "],
+                         [:After-aor :Plural :Person2 "=ˈuːkna "],
+                         [:Before-hoob :Singular :Person1 "=ˈo(ː) "],
+                         [:Before-hoob :Singular :Person1 "=ˈoːk "],
+                         [:Before-hoob :Plural :Person2 "=ˈoːn "],
+                         [:Before-hoob :Plural :Person3 "=ˈoːkna "]]
+                 }
+                {:label "bvan-pro-poss-bound-nom-acc"
+                 :note "VNp.19t.12"
+                 :common {:pos :Pronoun, 
+                          :pmorphClass :ProMorph,
+                          :proClass :PossBound}
+                 :terms [[:h_number :case :number :person :token]
+                         [:H_Singular :Nominative :Singular :Person1 "=i/=eː"],
+                         [:H_Singular :Nominative :Singular :Person2 "=uːk "],
+                         [:H_Singular :Nominative :Singular :Person3 "=uː "],
+                         [:H_Singular :Nominative :Plural :Person1 "=uːn "],
+                         [:H_Singular :Nominative :Plural :Person2 "=uːkna"],
+                         [:H_Singular :Nominative :Plural :Person3 "=uː "],
+                         [:H_Plural :Nominative :Singular :Person1 "=aː "],
+                         [:H_Plural :Nominative :Singular :Person2 "=aːk "],
+                         [:H_Plural :Nominative :Singular :Person3 "=aː "],
+                         [:H_Plural :Nominative :Plural :Person1 "=aːn "],
+                         [:H_Plural :Nominative :Plural :Person2 "=aːkna"],
+                         [:H_Plural :Nominative :Plural :Person3 "=aː "],
+                         [:H_Singular :Accusative :Singular :Person1 "=i "],
+                         [:H_Singular :Accusative :Singular :Person2 "=oːk "],
+                         [:H_Singular :Accusative :Singular :Person3 "=oː "],
+                         [:H_Singular :Accusative :Plural :Person1 "=oːn "],
+                         [:H_Singular :Accusative :Plural :Person2 "=oːkna"],
+                         [:H_Singular :Accusative :Plural :Person3 "=oː "],
+                         [:H_Plural :Accusative :Singular :Person1 "=eː "],
+                         [:H_Plural :Accusative :Singular :Person2 "=eːk "],
+                         [:H_Plural :Accusative :Singular :Person3 "=eː "],
+                         [:H_Plural :Accusative :Plural :Person1 "=eːn "],
+                         [:H_Plural :Accusative :Plural :Person2 "=eːkna"],
+                         [:H_Plural :Accusative :Plural :Person3 "=e"]]
+                 }
+                {:label "bvan-pro-bound-ablative"
+                 :note "VNp.20t.13"
+                 :common {:pos :Pronoun, 
+                          :pmorphClass :ProMorph,
+                          :proClass :ProBound
+                          :case :Ablative}
+                 :terms [[:h_number :number :person :token]
+                         [:H_Singular :Singular :Person1 "=isoː / =isiːsi"],
+                         [:H_Singular :Singular :Person2 "=isoːk "],
+                         [:H_Singular :Singular :Person3 "=isoː / =isiː "],
+                         [:H_Singular :Plural :Person1 "=isoːn "],
+                         [:H_Plural :Plural :Person1 "=eːsoːn"]]
+                 }
+                {:label "bvan-verb-pref-imperf-CC-template"
+                 :note "VNp.22t.14"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :CC,
+                          :tam :Imperfective}
+                 :terms [[:number :person :gender :token-prefix :token-stem :token-suffix],
+                         [:Singular :Person1 :Common  "an-" "ˈCiːC" "-Ø"],
+                         [:Singular :Person2 :Masc "ˈtin-" "CiːC" "-a"],
+                         [:Singular :Person2 :Fem "ˈtin-" "CiːC" "-i"],
+                         [:Singular :Person3 :Masc "in-" "ˈCiːC" "-Ø"],
+                         [:Singular :Person3 :Fem "tin-" "ˈCiːC" "-Ø"],
+                         [:Plural :Person1 :Common "neː-" "ˈCiC" "-Ø"],
+                         [:Plural :Person2 :Common "ˈteː-" "CiC" "-na"]
+                         [:Plural :Person3 :Common "ˈeː-" "CiC" "-na"]]
+                 }
+                {:label "bvan-verb-pref-perf-CC-template"
+                 :note "VNp.22t.14"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :CC,
+                          :tam :Perfective}
+                 :terms [[:number :person :gender :token-prefix :token-stem :token-suffix],
+                         [:Singular :Person1 :Common  "a-" "ˈCiC" "-Ø"],
+                         [:Singular :Person2 :Masc "ˈti-" "CiC" "-a"],
+                         [:Singular :Person2 :Fem "ˈti-" "CiC" "-i"],
+                         [:Singular :Person3 :Masc "i-" "ˈCiC" "-Ø"],
+                         [:Singular :Person3 :Fem "ti-" "ˈCiC" "-Ø"],
+                         [:Plural :Person1 :Common "n(i)-" "ˈCiC" "-Ø"],
+                         [:Plural :Person2 :Common "ˈti-" "CiC" "-na"],
+                         [:Plural :Person3 :Common "ˈi-" "CiC" "-na"]]
+                 }
+                {:label "bvan-verb-pref-aor-CC-template"
+                 :note "VNp.22t.14"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :CC,
+                          :tam :Aorist}
+                 :terms [[:number :person :gender :token-prefix :token-stem :token-suffix],
+                         [:Singular :Person1 :Common  "iː-" "ˈCiC" "-Ø"],
+                         [:Singular :Person2 :Masc "ˈtiː-" "CiC" "-a"],
+                         [:Singular :Person2 :Fem "ˈtiː-" "CiC" "-i"],
+                         [:Singular :Person3 :Masc "iː-" "ˈCiC" "-Ø"],
+                         [:Singular :Person3 :Fem "tiː-" "ˈCiC" "-Ø"],
+                         [:Plural :Person1 :Common "niː-" "ˈCiC" "-Ø"],
+                         [:Plural :Person2 :Common "ˈtiː-" "CiC" "-na"],
+                         [:Plural :Person3 :Common "ˈiː-" "CiC" "-na"]]
+                 }
+                {:label "bvan-verb-suff-imperf-template"
+                 :note "VNp.22t.14"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Suffix,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :tam :Imperfective}
+                 :terms [[:number :person :gender :token-suffix],
+                         [:Singular :Person1 :Common  "-ˈani"],
+                         [:Singular :Person2 :Masc "-ˈtnija"],
+                         [:Singular :Person2 :Fem "-ˈtiniː"],
+                         [:Singular :Person3 :Masc "-ˈiːni"],
+                         [:Singular :Person3 :Fem "-ˈtini"],
+                         [:Plural :Person1 :Common "-nej/-naj"],
+                         [:Plural :Person2 :Common "-teːn(a)"],
+                         [:Plural :Person3 :Common "-eːn(a)"]]
+                 }
+                {:label "bvan-verb-suff-perf-template"
+                 :note "VNp.22t.14"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Suffix,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :tam :Perfective}
+                 :terms [[:number :person :gender :token-suffix],
+                         [:Singular :Person1 :Common  "-ˈan"],
+                         [:Singular :Person2 :Masc "-ta(n)"],
+                         [:Singular :Person2 :Fem "-taj /-tan"],
+                         [:Singular :Person3 :Masc "-ja(n)"],
+                         [:Singular :Person3 :Fem "-ta(n)"],
+                         [:Plural :Person1 :Common " " "-na"],
+                         [:Plural :Person2 :Common "-taːn(a)"],
+                         [:Plural :Person3 :Common "-ˈjaːn(a)"]]
+                   }
+                {:label "bvan-verb-suff-aor-template"
+                 :note "VNp.22t.14"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Suffix,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :tam :Aorist}
+                 :terms [[:number :person :gender :token-suffix],
+                         [:Singular :Person1 :Common "-i"],
+                         [:Singular :Person2 :Masc "-tija"],
+                         [:Singular :Person2 :Fem "-tiː"],
+                         [:Singular :Person3 :Masc "-i"],
+                         [:Singular :Person3 :Fem "-ti"],
+                         [:Plural :Person1 :Common "-ni"],
+                         [:Plural :Person2 :Common "-tiːn(a)"],
+                         [:Plural :Person3 :Common "-iːn(a)"]]
+                 }
+                {:label "bvan-verb-pref-imperf-CCC-template"
+                 :note "VNp.22t.15"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :CCC,
+                          :tam :Imperfective}
+                 :terms [[:number :person :gender :token-prefix :token-stem :token-suffix],
+                         [:Singular :Person1 :Common  "a-" "ˈCanCiːC" "-Ø"],
+                         [:Singular :Person2 :Masc "Ø-" "ˈCanCiːC" "-a"],
+                         [:Singular :Person2 :Fem "Ø-" "ˈCanCiːC" "-i"],
+                         [:Singular :Person3 :Masc "Ø-" "CanˈCiːC" "-Ø"],
+                         [:Singular :Person3 :Fem "Ø-" "CanˈCiːC" "-Ø"],
+                         [:Plural :Person1 :Common "ni-" "CaˈCiC" "-Ø"],
+                         [:Plural :Person2 :Common "ti-" "ˈCaCiC" "-na"],
+                         [:Plural :Person3 :Common "i-" "ˈCaCiC" "-na"]]
+                 }
+                {:label "bvan-verb-pref-aor-CCC-template"
+                 :note "VNp.22t.15"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :CCC,
+                          :tam :Perfective}
+                 :terms [[:number :person :gender :token-prefix :token-stem :token-suffix],
+                         [:Singular :Person1 :Common  "a-" "ˈCCiC" "-Ø"],
+                         [:Singular :Person2 :Masc "ˈti-" "CCiC" "-a"],
+                         [:Singular :Person2 :Fem "ˈti-" "CCiC" "-i"],
+                         [:Singular :Person3 :Masc "i-" "ˈCCiC" "-Ø"],
+                         [:Singular :Person3 :Fem "ti-" "ˈCCiC" "-Ø"],
+                         [:Plural :Person1 :Common "ne:-" "CaˈCiC" "-Ø"],
+                         [:Plural :Person2 :Common "te:-" "ˈCaCiC" "-na"],
+                         [:Plural :Person3 :Common "e:-" "ˈCaCiC" "-na"]]
+                 }
+                {:label "bvan-verb-pref-aor-CCC-template"
+                 :note "VNp.22t.15"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :CCC,
+                          :tam :Aorist}
+                 :terms [[:number :person :gender :token-prefix :token-stem :token-suffix],
+                         [:Singular :Person1 :Common  "iː-" "ˈCCiC" "-Ø"],
+                         [:Singular :Person2 :Masc "ˈtiː-" "CCiC" "-a"],
+                         [:Singular :Person2 :Fem "ˈtiː-" "CCiC" "-i"],
+                         [:Singular :Person3 :Masc "iː-" "ˈCCiC" "-Ø"],
+                         [:Singular :Person3 :Fem "tiː-" "ˈCCiC" "-Ø"],
+                         [:Plural :Person1 :Common "niː-" "ˈCCiC" "-Ø"],
+                         [:Plural :Person2 :Common "ˈtiː-" "CCiC" "-na"],
+                         [:Plural :Person3 :Common "ˈiː-" "CCiC" "-na"]]
+                 }
+                {:label "bvan-verb-pref-perf-CCCvar-template"
+                 :note "VNp.22 :: In addition there is a small sub-class of bi-consonantal and tri-consonantal V1 which do not have the n prefix or infix in the IPFV at the base form, but are characterized by a post-stem suffix -i. This sub-class includes most verbs with stem C1i(C2)oːC3 or C1iC2eːC3 , and some verbs (mainly stative) with a(ː) as V(2), together with a few other highly irregular verbs (often mono-consonantal) which have suppletive stems.[NB: For the moment these verbs are noted ad hoc here in the :lexeme section as :rootClass1a/b,2,3. I have also ventured to supply 1SgC forms for :rootClass3, but these are not in the text.]"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :tam :Imperfective}
+                 :terms [[:lexeme :rootClass :number :person :gender :token-prefix :token-stem :token-postStemSuff],
+                         [:foor :CCC1a  :Singular :Person1 :Common "a-" "fo:r" "-i"],
+                         [:siboob :CCC1b  :Singular :Person1 :Common "a-" "ʃibo:b" "-i"],
+                         [:hibeeb :CCC2  :Singular :Person1 :Common "a-" "hibe:b" "-i"],
+                         [:hadal :CCC3  :Singular :Person1 :Common "a-" "hadal" "-i"],
+                         [:haragw :CCC3  :Singular :Person1 :Common "a-" "haragʷ" "-i"],
+                         [:sikwan :CCC3  :Singular :Person1 :Common "a-" "ʃikʷan" "-i"],
+                         [:nhad :CCC3  :Singular :Person1 :Common "a-" "nhad" "-i"],
+                         [:b-an :CCC3  :Singular :Person1 :Common "a-" "bɁaːn" "-i"],
+                         [:kwas :CCC3  :Singular :Person1 :Common "a-" "kʷaːs" "-i"],
+                         [:war :CCC3  :Singular :Person1 :Common "a-" "war" "-i"],
+                         [:bar :CCC3  :Singular :Person1 :Common "a-" "bar" "-i"]]
+                 }
+                {:label "bvan-verb-neg-opt-pref"
+                 :note "VNp.23t.16"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix
+                          :polarity :Negative,
+                          :pos :Verb,
+                          :rootClass :CCC,
+                          :tam :Optative}
+                 :terms [[:number :person :gender :token-prefix :token-stem :token-suffix],
+                         [:Singular :Person1 :Common  "ba=a-" "stem" "-Ø"],
+                         [:Singular :Person2 :Masc "bi=t-" "stem" "-a"],
+                         [:Singular :Person2 :Fem "bi=t-" "stem" "-i"],
+                         [:Singular :Person3 :Masc "bi=i-" "stem" "-Ø"],
+                         [:Singular :Person3 :Fem "bi=i-" "stem" "-Ø"],
+                         [:Plural :Person1 :Common "bi=n-" "stem " "-Ø"],
+                         [:Plural :Person2 :Common "bi=i-" "stem" "-na"],
+                         [:Plural :Person3 :Common "bi=i-" "stem" "-na"]]
+                 }
+                {:label "bvan-verb-neg-opt-suff"
+                 :note "VNp.23t.16"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Suffix
+                          :polarity :Negative,
+                          :pos :Verb,
+                          :tam :Optative}
+                 :terms [[:number :person :gender :token-prefix :token-stem :token-suffix],
+                         [:Singular :Person1 :Common  "ba=a-" "stem" "-aj / ej"],
+                         [:Singular :Person2 :Masc "bi=t-" "stem" "-aja / ej"],
+                         [:Singular :Person2 :Fem "bi=t-" "stem" "-aj / ej"],
+                         [:Singular :Person3 :Masc "bi=i-" "stem" "-aj / ej "],
+                         [:Singular :Person3 :Fem "bi=t-" "stem" "-aj / ej "],
+                         [:Plural :Person1 :Common "bi=n-" "stem" "-aj / ej "],
+                         [:Plural :Person2 :Common "bi=i-" "stem" "-eːna "],
+                         [:Plural :Person3 :Common "bi=i-" "stem" "-eːna "]]
+                 }
+                {:label "bvan-verb-pref-derv_patterns"
+                 :note "VNp.24t.17"
+                 :common {:vmorphClass :StemExx
+                          :conjClass :Prefix,
+                          :pos :Verb}
+                 :terms [[:rootClass :dervStem :lexeme :token-dervStem],
+                         [:CC :INT  :bis "boːs"],
+                         [:CC :PLAC  :bis "baːbis baːbabis"],
+                         [:CC :REFL  :fif "faf"],
+                         [:CC :CAUS  :dir "soː-dir"],
+                         [:CC :DBL_CAUS  :di "sisi-joːd"],
+                         [:CC :PASS  :min "aːtoː-maːn"],
+                         [:CC :RECP  :gid "amoː-gaːd"],
+                         [:CCC :INT  :kitim "kaːtim"],
+                         [:CCC :PLAC  :kitim "kaːtatim / kitimkitim"],
+                         [:CCC :REFL  :rimid "rimad"],
+                         [:CCC :CAUS  :kitim "si-katim"],
+                         [:CCC :PASS  :dibil "at-dabaːl"],
+                         [:CCC :RECP  :girim "am-garaːm"]]
+                 }
+                {:label "bvan-verb-pref-refl-tense-template"
+                 :note "VNp.25t.18"
+                 :common {:vmorphClass :Finite
+                          :dervStem :Reflexive
+                          :conjClass :Prefix,
+                          :pos :Verb}
+                 :terms [[:rootClass :tam :token-prefix :token-stem],
+                         [:CC :Perfective  "a-" "ˈCaC"],
+                         [:CC :Imperfective  "eː-t-" "ˈCiːC"],
+                         [:CC :Aorist  "iː-t-" "ˈCaC"],
+                         [:CCC :Perfective  "a-" "CˈCaC"],
+                         [:CCC :Imperfective  "a-t-" "CaˈCiːC"],
+                         [:CCC :Aorist  "i-t-" "CiˈCiC"]]
+                 }
+                {:label "bvan-verb-suff-derv_patterns"
+                 :note "VNp.26t.19 "
+                 :common {:vmorphClass :StemExx
+                          :conjClass :Suffix,
+                          :pos :Verb}
+                 :terms [[:dervStem :token-suffix :token-dervStem :token-gloss],
+                         [:PLAC1  "(Full Reduplication)" "tam~tam" "'gobble hastily'"],
+                         [:PLAC1  "(Full Reduplication)" "hireːr~hireːr" "'walk hastily'"],
+                         [:PLAC2  "(Partial Reduplication)" "ta~tam 'eat slowly'"],
+                         [:PLAC2  "(Partial Reduplication)" "hiraː~reːr" "'stroll leisurely'"],
+                         [:REFL_PASS  "-am " "gʷaːd-am-ani" "'I splash myself / I am splashed'"],
+                         [:CAUS  "-(i)s " "rhi-is-a=heːb" "'show me!'"],
+                         [:DBL_CAUS  "-isis " "hamaʃeː-sis" "'make s.o blinded'"],
+                         [:RECP  "-sam " "tam-sam" "'eat each other'"]]
+                 }
+                {:label "bvan-verb-suff-potential"
+                 :note "VNp.32t.20 :: The Potential form (POT) expresses epistemic modalities of inference or near-certainty, and is based on the verbal noun with a suffix -at (-it with verbs ending in -i) + the auxiliary jɁ ‘come’ in the IPFV (glossed AUX.POT on rx). It only occurs as a full-fledged inflected auxiliary in 3SG and PL. It is always omitted in 1SG, and formally reduced and grammaticalized to an inflection morpheme in 2SG and 2PL. "
+                 :common {:vmorphClass :Finite
+                          :conjClass :Suffix,
+                          :lexeme :tam
+                          :pos :Verb,
+                          :tam :Potential}
+                 :terms [[:number :person :gender :token-verbalNoun :token-suffix :token-aux],
+                         [:Singular :Person1 :Common  "tam-at" "-Ø" "-Ø"],
+                         [:Singular :Person2 :Masc "tam-at" "-a" "-Ø"],
+                         [:Singular :Person2 :Fem "tam-at" "-i" "-Ø"],
+                         [:Singular :Person3 :Masc "tam-at" "-Ø"  "-eːjni"],
+                         [:Singular :Person3 :Fem "tam-at" "-Ø"  "-eːtni"],
+                         [:Plural :Person1 :Common "tam-at" "-Ø"  "-eːnej"],
+                         [:Plural :Person2 :Common "tam-at" "-na" "-Ø"],
+                         [:Plural :Person3 :Common "tam-at" "-Ø"  "-eːn"]]
+                 }
+                ]
+ }
+
+
