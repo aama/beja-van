@@ -2,7 +2,7 @@
  :lang :beja-van
  :subfamily "Beja"
  :sgpref "bva"
- :datasource "Vanhove2014 (http://corpafroas.huma-num.fr/Archives/BEJ/PDF/BEJ_MV_AGRAMMATICALSKETCH.PDF) Vanhove2017: abbrev. in :note  VNp.[age](.t[able])"
+ :datasource "Vanhove2014 (http://corpafroas.huma-num.fr/Archives/BEJ/PDF/BEJ_MV_AGRAMMATICALSKETCH.PDF) Vanhove2017: abbrev. in :note  V14p.[age](.t[able]), V17"
  :datasourceNotes "The current data is taken from the paradigm tables in Vanhove2014."
  :geodemoURL "http://www.ethnologue.com/language/bej"
  :geodemoTXT "Beja is a closely related group of language varieties and dialects spoken in the Red Sea coastal and hill regions in Sudan, Eritrea, and Egypt by more than a million individuals. The variety documented here is that of the village of Sinkat (36 49'58E, 18 50'14N), about 60km WSW of Suakin, where Martine Vanhove recorded a corpus of Beja narratives (avaliable at https://cocoon.huma-num.fr/exist/crdo/search2.xql?keyword=beja."
@@ -54,7 +54,7 @@
            }
  :termclusters [
                 {:label "bvan-dem-nom-acc"
-                 :note "VNp.16t.4"
+                 :note "V17p.31t.6;V14p.16t.4"
                  :common {:pos :Pronoun, 
                           :pmorphClass :ProMorph,
                           :proClass :Demonstrative}
@@ -77,7 +77,7 @@
                          [:Distal :Accusative :Plural :Fem "ba'li:t"]]
                  }
                 {:label "bvan-dem-gen"
-                 :note "VNp.16t.5"
+                 :note "V17p.32t7.;V14p.16t.5"
                  :common {:pos :Pronoun, 
                           :pmorphClass :ProMorph,
                           :case :Genitive
@@ -91,7 +91,7 @@
                          [:H_Plural :H_Fem :Fem "to:na:te:t"]]
                  }
                 {:label "bvan-pro-ind"
-                 :note "VNp.16t.6"
+                 :note "V17p.42t.8;V14p.16t.6"
                  :common {:pos :Pronoun, 
                           :pmorphClass :ProMorph,
                           :proClass :Independent}
@@ -118,7 +118,7 @@
                          [:Accusative :Plural :Person3 :Fem "(em)baˈteːk "]]
                  }
                 {:label "bvan-pro-ind-poss-nom-h_masc"
-                 :note "VNp.17t.7"
+                 :note "V17p.43t.9;V14p.17t.7"
                  :common {:pos :Pronoun, 
                           :pmorphClass :ProMorph,
                           :proClass :IndPoss
@@ -146,7 +146,7 @@
                          [:H_Plural :Plural :Person3 :Fem "bateːˈjaː "]]
                  }
                 {:label "bvan-pro-ind-poss-acc-h_masc"
-                 :note "VNp.17t.8"
+                 :note "V17p.43t10.;V14p.17t.8"
                  :common {:pos :Pronoun, 
                           :pmorphClass :ProMorph,
                           :proClass :indPoss
@@ -175,7 +175,7 @@
                          [:H_Plural :Plural :Person3 :Fem "bateːˈje"]]
                  }
                 {:label "bvan-pro-ind-poss-nom-h_fem"
-                 :note "VNp.17t.9"
+                 :note "V17p.43t.11;V14p.17t.9"
                  :common {:pos :Pronoun, 
                           :pmorphClass :ProMorph,
                           :proClass :indPoss
@@ -204,7 +204,7 @@
                          [:H_Plural :Plural :Person3 :Fem "bateːˈtaː "]]
                  }
                 {:label "bvan-pro-ind-poss-nom-h_fem"
-                 :note "VNp.17t.10"
+                 :note "V17p.44t.12;V14p.17t.10"
                  :common {:pos :Pronoun, 
                           :pmorphClass :ProMorph,
                           :proClass :indPoss
@@ -233,7 +233,7 @@
                          [:H_Plural :Plural :Person3 :Fem "bateːˈte"]]
                  }
                 {:label "bvan-pro-bound-obj"
-                 :note "VNp.18t.11"
+                 :note "V17p.46t.16;V14p.18t.11"
                  :common {:pos :Pronoun, 
                           :pmorphClass :ProMorph,
                           :proClass :Bound}
@@ -252,7 +252,7 @@
                          [:Before-hoob :Plural :Person3 "=ˈoːkna "]]
                  }
                 {:label "bvan-pro-poss-bound-nom-acc"
-                 :note "VNp.19t.12"
+                 :note "V17p.48t.17;V14p.19t.12"
                  :common {:pos :Pronoun, 
                           :pmorphClass :ProMorph,
                           :proClass :PossBound}
@@ -280,23 +280,43 @@
                          [:H_Plural :Accusative :Singular :Person3 "=eː "],
                          [:H_Plural :Accusative :Plural :Person1 "=eːn "],
                          [:H_Plural :Accusative :Plural :Person2 "=eːkna"],
-                         [:H_Plural :Accusative :Plural :Person3 "=e"]]
+                         [:H_Plural :Accusative :Plural :Person3 "=e:"]]
                  }
                 {:label "bvan-pro-bound-ablative"
-                 :note "VNp.20t.13"
+                 :note "V17p.50t.18;V14p.20t.13.( V14 table slightly different.)"
                  :common {:pos :Pronoun, 
                           :pmorphClass :ProMorph,
                           :proClass :ProBound
                           :case :Ablative}
                  :terms [[:h_number :number :person :token]
-                         [:H_Singular :Singular :Person1 "=isoː / =isiːsi"],
-                         [:H_Singular :Singular :Person2 "=isoːk "],
-                         [:H_Singular :Singular :Person3 "=isoː / =isiː "],
-                         [:H_Singular :Plural :Person1 "=isoːn "],
-                         [:H_Plural :Plural :Person1 "=eːsoːn"]]
+                         [:H_Singular :Singular :Person1 "=isi / =i'siːsi"],
+                         [:H_Singular :Singular :Person2 "=i'soːk "],
+                         [:H_Singular :Singular :Person3 "=i'soː / =i'siː / =i'sej"],
+                         [:H_Singular :Plural :Person1 "=i'soːn "],
+                         [:H_Singular :Plural :Person2 "=i'soːkna "],
+                         [:H_Singular :Plural :Person3 "=i'soː "],
+                         [:H_Plural :Singular :Person1 "='e:si "],
+                         [:H_Plural :Singular :Person2 "=e:s'oːk "],
+                         [:H_Plural :Singular :Person3 "=e:'soː"],
+                         [:H_Plural :Plural :Person1 "=eː'soːn"]
+                         [:H_Plural :Plural :Person2 "=eː'soːkna"]
+                         [:H_Plural :Plural :Person3 "=eː'soː"]]
+                 }
+                {:label "bvan-pro-enclitic-copula"
+                 :note "V17p.59t.19;V14p.9t.2."
+                 :common {:pos :Pronoun, 
+                          :pmorphClass :ProMorph,
+                          :proClass :CopEncl}
+                 :terms [[:number :person :token]
+                         [:Singular :Person1 "=i / =u"],
+                         [:Singular :Person2 "=wa / =u:j "],
+                         [:Singular :Person3 "=1 / =u"],
+                         [:Plural :Person1 "=a "],
+                         [:Plural :Person2 "=a:na "],
+                         [:Plural :Person3 "=a "]]
                  }
                 {:label "bvan-verb-pref-imperf-CC-template"
-                 :note "VNp.22t.14"
+                 :note "V17p62.t20.;V14p.22t.14"
                  :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :polarity :Affirmative,
@@ -314,7 +334,7 @@
                          [:Plural :Person3 :Common "ˈeː-" "CiC" "-na"]]
                  }
                 {:label "bvan-verb-pref-perf-CC-template"
-                 :note "VNp.22t.14"
+                 :note "V17p.62t.20;V14p.22t.14"
                  :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :polarity :Affirmative,
@@ -332,7 +352,7 @@
                          [:Plural :Person3 :Common "ˈi-" "CiC" "-na"]]
                  }
                 {:label "bvan-verb-pref-aor-CC-template"
-                 :note "VNp.22t.14"
+                 :note "V17p.62t.20;V14p.22t.14"
                  :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :polarity :Affirmative,
@@ -350,7 +370,7 @@
                          [:Plural :Person3 :Common "ˈiː-" "CiC" "-na"]]
                  }
                 {:label "bvan-verb-suff-imperf-template"
-                 :note "VNp.22t.14"
+                 :note "V17p.62t.20;V14p.22t.14"
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :polarity :Affirmative,
@@ -367,7 +387,7 @@
                          [:Plural :Person3 :Common "-eːn(a)"]]
                  }
                 {:label "bvan-verb-suff-perf-template"
-                 :note "VNp.22t.14"
+                 :note "V17p.62t.20;V14p.22t.14"
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :polarity :Affirmative,
@@ -384,7 +404,7 @@
                          [:Plural :Person3 :Common "-ˈjaːn(a)"]]
                    }
                 {:label "bvan-verb-suff-aor-template"
-                 :note "VNp.22t.14"
+                 :note "V17p.62t.20;V14p.22t.14"
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :polarity :Affirmative,
@@ -401,7 +421,7 @@
                          [:Plural :Person3 :Common "-iːn(a)"]]
                  }
                 {:label "bvan-verb-pref-imperf-CCC-template"
-                 :note "VNp.22t.15"
+                 :note "V17p.63t.21;V14p.22t.15"
                  :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :polarity :Affirmative,
@@ -419,7 +439,7 @@
                          [:Plural :Person3 :Common "i-" "ˈCaCiC" "-na"]]
                  }
                 {:label "bvan-verb-pref-aor-CCC-template"
-                 :note "VNp.22t.15"
+                 :note "V17p.63t.21;V14p.22t.15"
                  :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :polarity :Affirmative,
@@ -437,7 +457,7 @@
                          [:Plural :Person3 :Common "e:-" "ˈCaCiC" "-na"]]
                  }
                 {:label "bvan-verb-pref-aor-CCC-template"
-                 :note "VNp.22t.15"
+                 :note "V17p.63t21.;V14p.22t.15"
                  :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :polarity :Affirmative,
@@ -455,7 +475,7 @@
                          [:Plural :Person3 :Common "ˈiː-" "CCiC" "-na"]]
                  }
                 {:label "bvan-verb-pref-perf-CCCvar-template"
-                 :note "VNp.22 :: In addition there is a small sub-class of bi-consonantal and tri-consonantal V1 which do not have the n prefix or infix in the IPFV at the base form, but are characterized by a post-stem suffix -i. This sub-class includes most verbs with stem C1i(C2)oːC3 or C1iC2eːC3 , and some verbs (mainly stative) with a(ː) as V(2), together with a few other highly irregular verbs (often mono-consonantal) which have suppletive stems.[NB: For the moment these verbs are noted ad hoc here in the :lexeme section as :rootClass1a/b,2,3. I have also ventured to supply 1SgC forms for :rootClass3, but these are not in the text.]"
+                 :note "V17p.63;V14p.22 :: In addition there is a small sub-class of bi-consonantal and tri-consonantal V1 which do not have the n prefix or infix in the IPFV at the base form, but are characterized by a post-stem suffix -i. This sub-class includes most verbs with stem C1i(C2)oːC3 or C1iC2eːC3 , and some verbs (mainly stative) with a(ː) as V(2), together with a few other highly irregular verbs (often mono-consonantal) which have suppletive stems.[NB: For the moment these verbs are noted ad hoc here in the :lexeme section as :rootClass1a/b,2,3. I have also ventured to supply 1SgC forms for :rootClass3, but these are not in the text.]"
                  :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :polarity :Affirmative,
@@ -471,11 +491,11 @@
                          [:nhad :CCC3  :Singular :Person1 :Common "a-" "nhad" "-i"],
                          [:b-an :CCC3  :Singular :Person1 :Common "a-" "bɁaːn" "-i"],
                          [:kwas :CCC3  :Singular :Person1 :Common "a-" "kʷaːs" "-i"],
-                         [:war :CCC3  :Singular :Person1 :Common "a-" "war" "-i"],
+                         [:war :CCC3  :Singular :Person1 :Common "a-" "we:r" "-i"],
                          [:bar :CCC3  :Singular :Person1 :Common "a-" "bar" "-i"]]
                  }
                 {:label "bvan-verb-neg-opt-pref"
-                 :note "VNp.23t.16"
+                 :note "V17p.65t.22;V14p.23t.16"
                  :common {:vmorphClass :Finite
                           :conjClass :Prefix
                           :polarity :Negative,
@@ -493,7 +513,7 @@
                          [:Plural :Person3 :Common "bi=i-" "stem" "-na"]]
                  }
                 {:label "bvan-verb-neg-opt-suff"
-                 :note "VNp.23t.16"
+                 :note "V17p.65t.22;V14p.23t.16"
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix
                           :polarity :Negative,
@@ -509,8 +529,672 @@
                          [:Plural :Person2 :Common "bi=i-" "stem" "-eːna "],
                          [:Plural :Person3 :Common "bi=i-" "stem" "-eːna "]]
                  }
+                {:label "beja-v-imperf-jʔi"
+                 :note "V17p.67t.23"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :jʔi,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Imperfective}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person1, :Common,   "jʔ-ani"],
+                         [:Singular, :Person2, :Masc,  "ʔe:tne:ja"],
+                         [:Singular, :Person2, :Fem,  "ʔe:tniː"],
+                         [:Singular, :Person3, :Masc,  "jʔ-iːni"],
+                         [:Singular, :Person3, :Fem,  "ʔe:tni"],
+                         [:Plural, :Person1, :Common,  "ʔe:nej"],
+                         [:Plural, :Person2, :Common,  "ʔe:teːna"],
+                         [:Plural, :Person3, :Common,  "jʔ-eːn(a) / e:je:jna"]]
+                 }
+                {:label "beja-v-perf-jʔi"
+                 :note "V17p.67t.23"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :jʔi,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Perfective}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person1, :Common,   "jʔ-an"],
+                         [:Singular, :Person2, :Masc,  "ʔe:ta"],
+                         [:Singular, :Person2, :Fem,  "ʔe:taj "],
+                         [:Singular, :Person3, :Masc,  "ʔe:ja / jʔe:ja"],
+                         [:Singular, :Person3, :Fem,  "ʔe:ta"],
+                         [:Plural, :Person1, :Common,  "ʔe:na"],
+                         [:Plural, :Person2, :Common,  "ʔe:taːna"],
+                         [:Plural, :Person3, :Common,  "ʔe:jaːn(a)"]]
+                 }
+                {:label "beja-v-aor-jʔi"
+                 :note "V17p.67t.23"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :jʔi,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Aorist}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person1, :Common,   "jʔ-i"],
+                         [:Singular, :Person2, :Masc,  "ʔe:tija"],
+                         [:Singular, :Person2, :Fem,  "ʔe:tiː"],
+                         [:Singular, :Person3, :Masc,  "jʔ-i"],
+                         [:Singular, :Person3, :Fem,  "ʔe:ti"],
+                         [:Plural, :Person1, :Common,  "ʔe:ni"],
+                         [:Plural, :Person2, :Common,  "ʔe:tiːn(a)"],
+                         [:Plural, :Person3, :Common,  "jʔiːn(a)"]]
+                 }
+                {:label "beja-v-imprtv-jʔi"
+                 :note "V17p.67t.23"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :jʔi,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Imperative}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person2, :Masc,   "mʔ-a"],
+                         [:Singular, :Person2, :Fem,  "mʔ-i"],
+                         [:Plural, :Person2, :Common,  "mʔ-a:na"]]
+                 }
+                {:label "beja-v-vnom-jʔi"
+                 :note "V17p.23"
+                 :common {:vmorphClass :VNom
+                          :conjClass :Prefix,
+                          :lexeme :jʔi,
+                          :pos :Verb,
+                          :rootClass :Irreg}
+                 :terms [[:vNomClass :token],
+                         [:Sequential "jʔe:ti:t"]
+                         [:General "jʔ-e:ti"]
+                         [:Manner "jʔ-a"]
+                         [:Simul "jʔ-e:"]
+                         [:Action "ʔa:j "]]
+                 }
+                {:label "beja-v-imperf-baj"
+                 :note "V17p.67t.24"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :baj,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Imperfective}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person1, :Common,   "e:-bi"],
+                         [:Singular, :Person2, :Masc,  "te:-bi-a"],
+                         [:Singular, :Person2, :Fem,  "te:-bi:"],
+                         [:Singular, :Person3, :Masc,  "e:-bi"],
+                         [:Singular, :Person3, :Fem,  "te:-bi"],
+                         [:Plural, :Person1, :Common,  "neː-bi"],
+                         [:Plural, :Person2, :Common,  "ˈteː-bi:-na"],
+                         [:Plural, :Person3, :Common,  "ˈeː-bi: -na"]]
+                 }
+                {:label "beja-v-perf-baj"
+                 :note "V17p.67t.24"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :baj,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Perfective}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person1, :Common,   "a-ba"],
+                         [:Singular, :Person2, :Masc,  "ti-ba:"],
+                         [:Singular, :Person2, :Fem,  "ti-bi:"],
+                         [:Singular, :Person3, :Masc,  "i-ba"],
+                         [:Singular, :Person3, :Fem,  "ti-ba"],
+                         [:Plural, :Person1, :Common,  "ni-ba"],
+                         [:Plural, :Person2, :Common,  "ti-be-na"],
+                         [:Plural, :Person3, :Common,  "i-be-na"]]
+                 }
+                {:label "beja-v-aor-baj"
+                 :note "V17p.67t.24"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :baj,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Aorist}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person1, :Common,   "iː-ba"],
+                         [:Singular, :Person2, :Masc,  "tiː-bi-ja"],
+                         [:Singular, :Person2, :Fem,  "tiː-bi:"],
+                         [:Singular, :Person3, :Masc,  "iː-baj"],
+                         [:Singular, :Person3, :Fem,  "tiː-baj"],
+                         [:Plural, :Person1, :Common,  "niː-ba"],
+                         [:Plural, :Person2, :Common,  "tiː-bi:-na"],
+                         [:Plural, :Person3, :Common,  "iː-bi:-na"]]
+                 }
+                {:label "beja-v-imprtv-baj"
+                 :note "V17p.67t.24"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :baj,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Imperative}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person2, :Masc,   "baj-a"],
+                         [:Singular, :Person2, :Fem,  " baj-i"],
+                         [:Plural, :Person2, :Common,  "be-na"]]
+                 }
+                {:label "beja-v-vnom-baj"
+                 :note "V17p.67"
+                 :common {:vmorphClass :VNom
+                          :conjClass :Prefix,
+                          :lexeme :baj,
+                          :pos :Verb,
+                          :rootClass :Irreg}
+                 :terms [[:vNomClass :token],
+                         [:Sequential "b-e:ti:t"]
+                         [:General "be:ti ( > directional pstpsn: 'towards') "]
+                         [:Manner "baj-a"]
+                         [:Simul "baj-e:"]
+                         [:Action "ma-baj"]]
+                 }
+                {:label "beja-v-imperf-di"
+                 :note "V17p.68t.25"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :di,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Imperfective}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person1, :Common,   "a-n-di"],
+                         [:Singular, :Person2, :Masc,  "ti-n-dija"],
+                         [:Singular, :Person2, :Fem,  "ti-n-di:"],
+                         [:Singular, :Person3, :Masc,  "i-n-di"],
+                         [:Singular, :Person3, :Fem,  "ti-n-di"],
+                         [:Plural, :Person1, :Common,  "ni-jad"],
+                         [:Plural, :Person2, :Common,  "ti-jad-na"],
+                         [:Plural, :Person3, :Common,  "i-jad-na"]]
+                 }
+                {:label "beja-v-perf-di"
+                 :note "V17p.68t.25"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :di,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Perfective}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person1, :Common,   "a-ni / a-di"],
+                         [:Singular, :Person2, :Masc,  "ti-ni-ja / ti-di-ja"],
+                         [:Singular, :Person2, :Fem,  "ti-ni: / ti-di:"],
+                         [:Singular, :Person3, :Masc,  "i-ni / i-di"],
+                         [:Singular, :Person3, :Fem,  "ti-ni / ti-di"],
+                         [:Plural, :Person1, :Common,  "ni-di"],
+                         [:Plural, :Person2, :Common,  "ti-di:-na"],
+                         [:Plural, :Person3, :Common,  "e:n(a) / i-di:-na"]]
+                 }
+                {:label "beja-v-aor-di"
+                 :note "V17p.68t.25"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :di,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Aorist}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person1, :Common,   "iː-d"],
+                         [:Singular, :Person2, :Masc,  "tiː-da"],
+                         [:Singular, :Person2, :Fem,  "tiː-dii"],
+                         [:Singular, :Person3, :Masc,  "iː-d"],
+                         [:Singular, :Person3, :Fem,  "tiː-d"],
+                         [:Plural, :Person1, :Common,  "niː-d"],
+                         [:Plural, :Person2, :Common,  "tiː-d-na"],
+                         [:Plural, :Person3, :Common,  "iː-d-na"]]
+                 }
+                {:label "beja-v-imprtv-di"
+                 :note "V17p.68t.25"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :di,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Imperative}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person2, :Masc,   "di-ja"],
+                         [:Singular, :Person2, :Fem,  " di-i"],
+                         [:Plural, :Person2, :Common,  "di:-na"]]
+                 }
+                {:label "beja-v-vnom-di"
+                 :note "V17p.68"
+                 :common {:vmorphClass :VNom
+                          :conjClass :Prefix,
+                          :lexeme :di,
+                          :pos :Verb,
+                          :rootClass :Irreg}
+                 :terms [[:vNomClass :token],
+                         [:Sequential "di:-ti:t / di:t"]
+                         [:General "di:-ti:"]
+                         [:Manner "di-a"]
+                         [:Simul "di-e:"]
+                         [:Action "mi-ja:d"]
+                         [:Agent "mi-ja:d-ana"]]
+                 }
+                {:label "beja-v-imperf-hee"
+                 :note "V17p.68t.26"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :hee,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Imperfective}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person1, :Common,   "a-n-i:w"],
+                         [:Singular, :Person2, :Masc,  "ti-n-i:w-a"],
+                         [:Singular, :Person2, :Fem,  "ti-n-i:w-i"],
+                         [:Singular, :Person3, :Masc,  "i-n-i:w"],
+                         [:Singular, :Person3, :Fem,  "ti-n-i:w"],
+                         [:Plural, :Person1, :Common,  "ni-jaw"],
+                         [:Plural, :Person2, :Common,  "ti-jaw-na"],
+                         [:Plural, :Person3, :Common,  "e:-jaw-na / e:-w-na"]]
+                 }
+                {:label "beja-v-perf-hee"
+                 :note "V17p.68t.26"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :hee,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Perfective}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person1, :Common,   "a-hi"],
+                         [:Singular, :Person2, :Masc,  "ti-hi-a"],
+                         [:Singular, :Person2, :Fem,  "ti-hi:"],
+                         [:Singular, :Person3, :Masc,  "i-hi"],
+                         [:Singular, :Person3, :Fem,  "ti-hi"],
+                         [:Plural, :Person1, :Common,  "ni-he:"],
+                         [:Plural, :Person2, :Common,  "ti-hi:-na"],
+                         [:Plural, :Person3, :Common,  "i-hi:-na"]]
+                 }
+                {:label "beja-v-aor-hee"
+                 :note "V17p.68t.26"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :hee,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Aorist}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person1, :Common,   "iː-ji:w"],
+                         [:Singular, :Person2, :Masc,  "tiː-ji:w-a"],
+                         [:Singular, :Person2, :Fem,  "tiː-ji:w-i"],
+                         [:Singular, :Person3, :Masc,  "iː-ji:w"],
+                         [:Singular, :Person3, :Fem,  "tiː-ji:w"],
+                         [:Plural, :Person1, :Common,  "niː-ji:w"],
+                         [:Plural, :Person2, :Common,  "tiː-ji:w-na"],
+                         [:Plural, :Person3, :Common,  "iː-ji:w-na"]]
+                 }
+                {:label "beja-v-imprtv-hee"
+                 :note "V17p.68t.26"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :hee,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Imperative}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person2, :Masc,   "hi-ja"],
+                         [:Singular, :Person2, :Fem,  " hi:"],
+                         [:Plural, :Person2, :Common,  "hi:-na"]]
+                 }
+                {:label "beja-v-vnom-hee"
+                 :note "V17p.68"
+                 :common {:vmorphClass :VNom
+                          :conjClass :Prefix,
+                          :lexeme :hee,
+                          :pos :Verb,
+                          :rootClass :Irreg}
+                 :terms [[:vNomClass :token],
+                         [:Sequential "hi:-ti:t"]
+                         [:General "hi:-ti"]
+                         [:Manner "hi-a"]
+                         [:Simul "hi-e:"]
+                         [:Action "mi-ja:w"]
+                         [:Agent "mi-ja:w-ana"]]
+                 }
+                {:label "beja-v-imperf-ha"
+                 :note "V17p.69t.27"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :ha,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Imperfective}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person1, :Common,   "a-ni:n"],
+                         [:Singular, :Person2, :Masc,  "ti-ni:n-a"],
+                         [:Singular, :Person2, :Fem,  "ti-ni:n-i"],
+                         [:Singular, :Person3, :Masc,  "i-ni:n"],
+                         [:Singular, :Person3, :Fem,  "ti-ni:n"],
+                         [:Plural, :Person1, :Common,  "ni-jej"],
+                         [:Plural, :Person2, :Common,  "ti-jej-na"],
+                         [:Plural, :Person3, :Common,  "i-jej-na (e:-je:j-na)"]]
+                 }
+                {:label "beja-v-perf-ha"
+                 :note "V17p.69t.27"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :ha,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Perfective}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person1, :Common,   "a-jha"],
+                         [:Singular, :Person2, :Masc,  "ti-jha:"],
+                         [:Singular, :Person2, :Fem,  "ti-jha:-j"],
+                         [:Singular, :Person3, :Masc,  "i-jha"],
+                         [:Singular, :Person3, :Fem,  "ti-jha"],
+                         [:Plural, :Person1, :Common,  "ni-jha"],
+                         [:Plural, :Person2, :Common,  "ti-jhe:-na"],
+                         [:Plural, :Person3, :Common,  "i-jhe:-na"]]
+                 }
+                {:label "beja-v-aor-ha"
+                 :note "V17p.69t.27"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :ha,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Aorist}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person1, :Common,   "iː-ha / 'i:-ji"],
+                         [:Singular, :Person2, :Masc,  "tiː-ha / ti:-jj-a"],
+                         [:Singular, :Person2, :Fem,  "tiː-hi: / ti:-jj-i:"],
+                         [:Singular, :Person3, :Masc,  "iː-ha / i-ji:"],
+                         [:Singular, :Person3, :Fem,  "tiː-ha / ti-ji:"],
+                         [:Plural, :Person1, :Common,  "ni-ji:"],
+                         [:Plural, :Person2, :Common,  "ti-ji:-na"],
+                         [:Plural, :Person3, :Common,  "i-ji:-na"]]
+                 }
+                {:label "beja-v-imprtv-ha"
+                 :note "V17p.69t.27"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :ha,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Imperative}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person2, :Masc,   "ah-a"],
+                         [:Singular, :Person2, :Fem,  " ah-i"],
+                         [:Plural, :Person2, :Common,  "ahe:-na"]]
+                 }
+                {:label "beja-v-vnom-ha"
+                 :note "V17p.69"
+                 :common {:vmorphClass :VNom
+                          :conjClass :Prefix,
+                          :lexeme :ha,
+                          :pos :Verb,
+                          :rootClass :Irreg}
+                 :terms [[:vNomClass :token],
+                         [:Sequential "ah-e:ti:t / ah0i:t"]
+                         [:Manner "ah-a"]
+                         [:Simul "ah-e"]
+                         [:Action "mi-ja:j"]
+                         [:Agent "mi-ja:j-ana"]]
+                 }
+                {:label "beja-v-imperf-ak"
+                 :note "V17p.69t.28"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :ak,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Imperfective}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person1, :Common,   "a-kati"],
+                         [:Singular, :Person2, :Masc,  "ti-kati-ja"],
+                         [:Singular, :Person2, :Fem,  "ti-kati:"],
+                         [:Singular, :Person3, :Masc,  "i-kati"],
+                         [:Singular, :Person3, :Fem,  "ti-kati"],
+                         [:Plural, :Person1, :Common,  "ni-kati"],
+                         [:Plural, :Person2, :Common,  "ti-kati-na"],
+                         [:Plural, :Person3, :Common,  "i-kati-na"]]
+                 }
+                {:label "beja-v-perf-ak"
+                 :note "V17p.69t.28"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :ak,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Perfective}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person1, :Common,   "a-ki / a-ka"],
+                         [:Singular, :Person2, :Masc,  "ti-ka:"],
+                         [:Singular, :Person2, :Fem,  "ti-ki:"],
+                         [:Singular, :Person3, :Masc,  "i-ki / i-ka"],
+                         [:Singular, :Person3, :Fem,  "ti-ki / ti-ka"],
+                         [:Plural, :Person1, :Common,  "ni-ki / ni-ka"],
+                         [:Plural, :Person2, :Common,  "ti-ke:-na"],
+                         [:Plural, :Person3, :Common,  "i-ke:-na"]]
+                 }
+                {:label "beja-v-aor-ak"
+                 :note "V17p.69t.28"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :ak,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Aorist}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person1, :Common,   "a-ki / a-ka"],
+                         [:Singular, :Person2, :Masc,  "ti-ka:"],
+                         [:Singular, :Person2, :Fem,  "ti-ki:"],
+                         [:Singular, :Person3, :Masc,  "i-ki / i-ka"],
+                         [:Singular, :Person3, :Fem,  "ti-ki / ti-ka"],
+                         [:Plural, :Person1, :Common,  "ni-ki / ni-ka"],
+                         [:Plural, :Person2, :Common,  "ti-ke:-na"],
+                         [:Plural, :Person3, :Common,  "i-ke:-na"]]
+                 }
+                {:label "beja-v-imprtv-ak"
+                 :note "V17p.69t.28"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :ak,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Imperative}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person2, :Masc,   "-a"],
+                         [:Singular, :Person2, :Fem,  " -i"],
+                         [:Plural, :Person2, :Common,  "-na"]]
+                 }
+                {:label "beja-v-vnom-ak"
+                 :note "V17p.69"
+                 :common {:vmorphClass :VNom
+                          :conjClass :Prefix,
+                          :lexeme :ak,
+                          :pos :Verb,
+                          :rootClass :Irreg}
+                 :terms [[:vNomClass :token],
+                         [:Sequential "ak-e:ti:t"]
+                         [:Manner "ak-a"]
+                         [:Simul "aka-je:"]
+                         [:Action "mi-kti"]]
+                 }
+                {:label "beja-v-imperf-haj"
+                 :note "V17p.70t.29"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :haj,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Imperfective}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person1, :Common,   "Ø"],
+                         [:Singular, :Person2, :Masc,  "t-haj -a"],
+                         [:Singular, :Person2, :Fem,  "t-haj-i"],
+                         [:Singular, :Person3, :Masc,  "i-he:"],
+                         [:Singular, :Person3, :Fem,  "t-he:"],
+                         [:Plural, :Person1, :Common,  "ni-ha"],
+                         [:Plural, :Person2, :Common,  "ti-he: -na"],
+                         [:Plural, :Person3, :Common,  "he:-n(a)"]]
+                 }
+                {:label "beja-v-perf-haj"
+                 :note "V17p.70t.29"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :haj,
+                          :polarity :Negative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Imperfective}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person1, :Common,   "ki-ha:j"],
+                         [:Singular, :Person2, :Masc,  "ki-t-ha:j-a"],
+                         [:Singular, :Person2, :Fem,  "ki-t-ha:j-i"],
+                         [:Singular, :Person3, :Masc,  "ki-ha:j"],
+                         [:Singular, :Person3, :Fem,  "ki-t-ha:j"],
+                         [:Plural, :Person1, :Common,  "ki-n-ha:j"],
+                         [:Plural, :Person2, :Common,  "ki-t-ha:j -na"],
+                         [:Plural, :Person3, :Common,  "ki-ha:j-na"]]
+                 }
+                {:label "beja-v-aor-haj"
+                 :note "V17p.70t.29"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :haj,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Aorist}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person1, :Common,   "i-hi"],
+                         [:Singular, :Person2, :Masc,  "i-hija"],
+                         [:Singular, :Person2, :Fem,  "ti-hiː"],
+                         [:Singular, :Person3, :Masc,  "hiː"],
+                         [:Singular, :Person3, :Fem,  "ti-hi"],
+                         [:Plural, :Person1, :Common,  "ni-hi "],
+                         [:Plural, :Person2, :Common,  "ti-hi:-na"],
+                         [:Plural, :Person3, :Common,  "hiː-n(a)"]]
+                 }
+                {:label "beja-v-vnom-haj"
+                 :note "V17p.70"
+                 :common {:vmorphClass :VNom
+                          :conjClass :Prefix,
+                          :lexeme :haj,
+                          :pos :Verb,
+                          :rootClass :Irreg}
+                 :terms [[:vNomClass :token],
+                         [:Manner "ha:"]
+                         [:Simul "ha:-je:"]
+                         [:Action "haj-i (F)"]]
+                 }
+                {:label "beja-v-imperf-tʔi"
+                 :note "V17p.70t.30"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :tʔi,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Imperfective}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person1, :Common,   "tannʔi"],
+                         [:Singular, :Person2, :Masc,  " tannʔi-ja"],
+                         [:Singular, :Person2, :Fem,  "  tannʔi:"],
+                         [:Singular, :Person3, :Masc,  "tannʔi"],
+                         [:Singular, :Person3, :Fem,  "tannʔi"],
+                         [:Plural, :Person1, :Common,  "ni-tʔa"],
+                         [:Plural, :Person2, :Common,  " ti-tʔa-na"],
+                         [:Plural, :Person3, :Common,  " i-tʔa -na"]]
+                 }
+                {:label "beja-v-perf-tʔi"
+                 :note "V17p.70t.30"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :tʔi,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Perfective}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person1, :Common,   "a-tʔi"],
+                         [:Singular, :Person2, :Masc,  "ti-tʔi-ja"],
+                         [:Singular, :Person2, :Fem,  "ti-tʔi:"],
+                         [:Singular, :Person3, :Masc,  "i-tʔi"],
+                         [:Singular, :Person3, :Fem,  "ti-tʔi"],
+                         [:Plural, :Person1, :Common,  "ni-tʔi"],
+                         [:Plural, :Person2, :Common,  "ti-tʔi-n(a)"],
+                         [:Plural, :Person3, :Common,  "i-tʔi-n(a)"]]
+                 }
+                {:label "beja-v-aor-tʔi"
+                 :note "V17p.70t.30"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :tʔi,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Aorist}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person1, :Common,   "iː-tʔa"],
+                         [:Singular, :Person2, :Masc,  "tiː-tʔa:"],
+                         [:Singular, :Person2, :Fem,  "tiː-tʔi:"],
+                         [:Singular, :Person3, :Masc,  "iː-tʔa"],
+                         [:Singular, :Person3, :Fem,  "tiː-tʔa"],
+                         [:Plural, :Person1, :Common,  "niː-tʔa "],
+                         [:Plural, :Person2, :Common,  "tiː-tʔa-na"],
+                         [:Plural, :Person3, :Common,  "iː-tʔa-na"]]
+                 }
+                {:label "beja-v-imprtv-tʔi"
+                 :note "V17p.70t.30"
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :lexeme :tʔi,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :rootClass :Irreg,
+                          :tam :Imperative}
+                 :terms [[:number :person :gender :token],
+                         [:Singular, :Person2, :Masc,   "tʔi-ja"],
+                         [:Singular, :Person2, :Fem,  "tʔi:"],
+                         [:Plural, :Person2, :Common,  "tʔa:-na"]]
+                 }
+                {:label "beja-v-vnom-tʔi"
+                 :note "V17p.70"
+                 :common {:vmorphClass :VNom
+                          :conjClass :Prefix,
+                          :lexeme :tʔi,
+                          :pos :Verb,
+                          :rootClass :Irreg}
+                 :terms [[:vNomClass :token],
+                         [:Sequential "tʔi-ti:t"]
+                         [:Manner "tʔi'-ja"]
+                         [:Simul "tʔi-e:"]
+                         [:Action "o:= tʔ-u:j"]]
+                 }
                 {:label "bvan-verb-pref-derv_patterns"
-                 :note "VNp.24t.17"
+                 :note "V17p.71t.31;V14p.24t.17"
                  :common {:vmorphClass :StemExx
                           :conjClass :Prefix,
                           :pos :Verb}
@@ -530,7 +1214,7 @@
                          [:CCC :RECP  :girim "am-garaːm"]]
                  }
                 {:label "bvan-verb-pref-refl-tense-template"
-                 :note "VNp.25t.18"
+                 :note "V17p.78t.32;V14p.25t.18"
                  :common {:vmorphClass :Finite
                           :dervStem :Reflexive
                           :conjClass :Prefix,
@@ -544,7 +1228,7 @@
                          [:CCC :Aorist  "i-t-" "CiˈCiC"]]
                  }
                 {:label "bvan-verb-suff-derv_patterns"
-                 :note "VNp.26t.19 "
+                 :note "V17p.85t33.;V14p.26t.19 "
                  :common {:vmorphClass :StemExx
                           :conjClass :Suffix,
                           :pos :Verb}
@@ -559,7 +1243,7 @@
                          [:RECP  "-sam " "tam-sam" "'eat each other'"]]
                  }
                 {:label "bvan-verb-suff-potential"
-                 :note "VNp.32t.20 :: The Potential form (POT) expresses epistemic modalities of inference or near-certainty, and is based on the verbal noun with a suffix -at (-it with verbs ending in -i) + the auxiliary jɁ ‘come’ in the IPFV (glossed AUX.POT on rx). It only occurs as a full-fledged inflected auxiliary in 3SG and PL. It is always omitted in 1SG, and formally reduced and grammaticalized to an inflection morpheme in 2SG and 2PL. "
+                 :note "V17p.141t.37;V14p.32t.20 :: The Potential form (POT) expresses epistemic modalities of inference or near-certainty, and is based on the verbal noun with a suffix -at (-it with verbs ending in -i) + the auxiliary jɁ ‘come’ in the IPFV (glossed AUX.POT on rx). It only occurs as a full-fledged inflected auxiliary in 3SG and PL. It is always omitted in 1SG, and formally reduced and grammaticalized to an inflection morpheme in 2SG and 2PL. "
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :tam
@@ -575,6 +1259,7 @@
                          [:Plural :Person2 :Common "tam-at" "-na" "-Ø"],
                          [:Plural :Person3 :Common "tam-at" "-Ø"  "-eːn"]]
                  }
+
                 ]
  }
 
