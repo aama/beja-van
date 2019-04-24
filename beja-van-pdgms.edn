@@ -19,7 +19,7 @@
             :pos [:Pronoun :Verb],
             :proClass [:Bound :Demonstrative :IndPoss :Independent :PossBound :ProBound :indPoss],
             :proximity [:Distal :Proximal],
-            :rootClass [:CC :CCC :CCC1a :CCC1b :CCC2 :CCC3],
+            :rootClass [:CC :CCC :CCi :CCC1a :CCC1b :CCC2 :CCC3 :_NA],
             :slot [:After-IPFV-PFV :After-aor :Before-hoob],
             :tam [:Aorist :Imperfective :Optative :Perfective :Potential],
             :vmorphClass [:Finite :StemExx]
@@ -29,19 +29,25 @@
           :inflClass [:conjClass :pluralClass :postpositionClass :rootClass],
           :otherClass []}
  :lexemes {
-           :b-an   {:pos :Verb, :lemma "bɁaːn", :gloss "fear", :conjClass :Prefix, :rootClass :CCC3},
+           :ak   {:pos :Verb, :lemma "ak", :gloss "become", :conjClass :Prefix, :rootClass :Irreg},
+           :bʔan   {:pos :Verb, :lemma "bɁaːn", :gloss "fear", :conjClass :Prefix, :rootClass :CCC3},
+           :baj   {:pos :Verb, :lemma "baj", :gloss "go", :conjClass :Prefix, :rootClass :Irreg},
            :bar   {:pos :Verb, :lemma "bar", :gloss "have", :conjClass :Prefix, :rootClass :CCC3},
            :bis   {:pos :Verb, :lemma "bis", :gloss "bury", :conjClass :Prefix, :rootClass :CC},
-           :di   {:pos :Verb, :lemma "di", :gloss "say", :conjClass :Prefix, :rootClass :CC},
+           :di   {:pos :Verb, :lemma "di", :gloss "say", :conjClass :Prefix, :rootClass :Irreg},
            :dibil   {:pos :Verb, :lemma "dibil", :gloss "collect", :conjClass :Prefix, :rootClass :CCC},
            :dir   {:pos :Verb, :lemma "dir", :gloss "kill", :conjClass :Prefix, :rootClass :CC},
            :fif   {:pos :Verb, :lemma "fif", :gloss "pour", :conjClass :Prefix, :rootClass :CC},
            :foor   {:pos :Verb, :lemma "fo:r", :gloss "flee", :conjClass :Prefix, :rootClass :CCC1a},
            :gid   {:pos :Verb, :lemma "gid", :gloss "throw", :conjClass :Prefix, :rootClass :CC},
            :girim   {:pos :Verb, :lemma "girim", :gloss "be inimical", :conjClass :Prefix, :rootClass :CCC},
+           :ha   {:pos :Verb, :lemma "ha", :gloss "take", :conjClass :Prefix, :rootClass :Irreg},
            :hadal   {:pos :Verb, :lemma "hadal", :gloss "be black", :conjClass :Prefix, :rootClass :CCC3},
+           :haj   {:pos :Verb, :lemma "haj", :gloss "be there", :conjClass :Prefix, :rootClass :Irreg},
            :haragw   {:pos :Verb, :lemma "haragʷ", :gloss "be hungry", :conjClass :Prefix, :rootClass :CCC3},
+           :hee   {:pos :Verb, :lemma "hee", :gloss "give", :conjClass :Prefix, :rootClass :Irreg},
            :hibeeb   {:pos :Verb, :lemma "hibe:b", :gloss "spend rainy season", :conjClass :Prefix, :rootClass :CCC2},
+           :jʔi   {:pos :Verb, :lemma ":jʔi", :gloss "come", :conjClass :Prefix, :rootClass :Irreg},
            :kitim   {:pos :Verb, :lemma "kitim", :gloss "arrive", :conjClass :Prefix, :rootClass :CCC},
            :kwas   {:pos :Verb, :lemma "kʷaːs", :gloss "create", :conjClass :Prefix, :rootClass :CCC3},
            :min   {:pos :Verb, :lemma "min", :gloss "shave", :conjClass :Prefix, :rootClass :CC},
@@ -50,6 +56,7 @@
            :siboob   {:pos :Verb, :lemma "ʃibo:b", :gloss "be good", :conjClass :Prefix, :rootClass :CCC1b},
            :sikwan   {:pos :Verb, :lemma "ʃikʷan", :gloss "smell nice", :conjClass :Prefix, :rootClass :CCC3},
            :tam   {:pos :Verb, :lemma "tam", :gloss "eat", :conjClass :Suffix},
+           :tʔi   {:pos :Verb, :lemma "tʔi", :gloss "resemble", :conjClass :Prefix, :rootClass :Irreg},
            :war   {:pos :Verb, :lemma "war", :gloss "do", :conjClass :Prefix, :rootClass :CCC3},
            }
  :termclusters [
@@ -283,7 +290,7 @@
                          [:H_Plural :Accusative :Plural :Person3 "=e:"]]
                  }
                 {:label "bvan-pro-bound-ablative"
-                 :note "V17p.50t.18;V14p.20t.13.( V14 table slightly different.)"
+                 :note "V17p.50t.18;V14p.20t.13 :: ( V14 table slightly different.)"
                  :common {:pos :Pronoun, 
                           :pmorphClass :ProMorph,
                           :proClass :ProBound
@@ -316,7 +323,7 @@
                          [:Plural :Person3 "=a "]]
                  }
                 {:label "bvan-verb-pref-imperf-CC-template"
-                 :note "V17p62.t20.;V14p.22t.14"
+                 :note "V17p.62.t20.;V14p.22t.14 :: note plural prefixes of Perfective and Imperfective reversed between :rootClass CC  and CCC"
                  :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :polarity :Affirmative,
@@ -334,7 +341,7 @@
                          [:Plural :Person3 :Common "ˈeː-" "CiC" "-na"]]
                  }
                 {:label "bvan-verb-pref-perf-CC-template"
-                 :note "V17p.62t.20;V14p.22t.14"
+                 :note "V17p.62t.20;V14p.22t.14 :: note plural prefixes of Perfective and Imperfective reversed between :rootClass CC  and CCC"
                  :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :polarity :Affirmative,
@@ -387,7 +394,7 @@
                          [:Plural :Person3 :Common "-eːn(a)"]]
                  }
                 {:label "bvan-verb-suff-perf-template"
-                 :note "V17p.62t.20;V14p.22t.14"
+                 :note "V17p.62t.20;V14p.22t.14 :: variants with final -n in 2/3 SG and 1 PL[?] occur before enclitic conjuctions =ho:b 'when', =e:k 'if', =e:b/t 'rel'"
                  :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :polarity :Affirmative,
@@ -396,7 +403,7 @@
                  :terms [[:number :person :gender :token-suffix],
                          [:Singular :Person1 :Common  "-ˈan"],
                          [:Singular :Person2 :Masc "-ta(n)"],
-                         [:Singular :Person2 :Fem "-taj /-tan"],
+                         [:Singular :Person2 :Fem "-taj /-ta(n)"],
                          [:Singular :Person3 :Masc "-ja(n)"],
                          [:Singular :Person3 :Fem "-ta(n)"],
                          [:Plural :Person1 :Common " " "-na"],
@@ -421,7 +428,7 @@
                          [:Plural :Person3 :Common "-iːn(a)"]]
                  }
                 {:label "bvan-verb-pref-imperf-CCC-template"
-                 :note "V17p.63t.21;V14p.22t.15"
+                 :note "V17p.63t.21;V14p.22t.15 :: note plural prefixes of Perfective and Imperfective reversed between :rootClass CC  and CCC"
                  :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :polarity :Affirmative,
@@ -439,7 +446,7 @@
                          [:Plural :Person3 :Common "i-" "ˈCaCiC" "-na"]]
                  }
                 {:label "bvan-verb-pref-aor-CCC-template"
-                 :note "V17p.63t.21;V14p.22t.15"
+                 :note "V17p.63t.21;V14p.22t.15 :: note plural prefixes of Perfective and Imperfective reversed between :rootClass CC  and CCC"
                  :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :polarity :Affirmative,
@@ -489,11 +496,88 @@
                          [:haragw :CCC3  :Singular :Person1 :Common "a-" "haragʷ" "-i"],
                          [:sikwan :CCC3  :Singular :Person1 :Common "a-" "ʃikʷan" "-i"],
                          [:nhad :CCC3  :Singular :Person1 :Common "a-" "nhad" "-i"],
-                         [:b-an :CCC3  :Singular :Person1 :Common "a-" "bɁaːn" "-i"],
+                         [:bʔan :CCC3  :Singular :Person1 :Common "a-" "bɁaːn" "-i"],
                          [:kwas :CCC3  :Singular :Person1 :Common "a-" "kʷaːs" "-i"],
                          [:war :CCC3  :Singular :Person1 :Common "a-" "we:r" "-i"],
                          [:bar :CCC3  :Singular :Person1 :Common "a-" "bar" "-i"]]
                  }
+                {:label "beja-v-imprtv-aff-pref"
+                 :note "V17p.64;V14p.23 :: 'The stem, which forms the basis of the conjugation is, by convention, the bare form found in the construction with the light verb auxiliary di ‘say’ (see section 3.2.6.4), which is also that of the Imperative without the inflectional morphemes.. . . A suffix -n is added to the IMP flectional morphemes to emphasize the imperative meaning and strengthen the illocutionary force of the command'."
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :tam :Imperative}
+                 :terms [[:number :person :gender :token-stem :token-suffix],
+                         [:Singular, :Person2, :Masc,   "{Stem]" "-a(n)"],
+                         [:Singular, :Person2, :Fem,  "{Stem]" "-i(n)"],
+                         [:Plural, :Person2, :Common,  "{Stem]" "-na(n)"]]
+                 }
+                {:label "beja-v-imprtv-aff-suff"
+                 :note "V17p.64;V14p.23 :: The stem, which forms the basis of the conjugation is, by convention, the bare form found in the construction with the light verb auxiliary di ‘say’ (see section 3.2.6.4), which is also that of the Imperative without the inflectional morphemes. . . . A suffix -n is added to the IMP flectional morphemes to emphasize the imperative meaning and strengthen the illocutionary force of the command'."
+                 :common {:vmorphClass :Finite
+                          :conjClass :Suffix,
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :tam :Imperative}
+                 :terms [[:number :person :gender :token-stem :token-suffix],
+                         [:Singular, :Person2, :Masc,   "{Stem]" "-a(n)"],
+                         [:Singular, :Person2, :Fem,  "{Stem]" "-i(n)"],
+                         [:Plural, :Person2, :Common,  "{Stem]" "-a:na(n)"]]
+                 }
+                {:label "beja-v-imprtv-neg-CC"
+                 :note "V17p.64;V14p.23 :: For the Prohibitive, the proclitic modal negative particle baː= (SG.M & PL) / biː= (SG.F) (glossed as NEG.PROH) precedes the verb stem."
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :polarity :Negative,
+                          :pos :Verb,
+                          :rootClass :CC,
+                          :tam :Imperative}
+                 :terms [[:number :person :gender :token-proclitic :token-stem :token-suffix],
+                         [:Singular, :Person2, :Masc,   "ba:" "-Ci:C" "-a"],
+                         [:Singular, :Person2, :Fem,  "bi:" "-Ci:C" "-i"],
+                         [:Plural, :Person2, :Common,  "ba:" "-Ci:C" "-na"]]
+                 }
+                {:label "beja-v-imprtv-neg-CCC"
+                 :note "V17p.64;V14p.23 :: For the Prohibitive, the proclitic modal negative particle baː= (SG.M & PL) / biː= (SG.F) (glossed as NEG.PROH) precedes the verb stem."
+                 :common {:vmorphClass :Finite
+                          :conjClass :Prefix,
+                          :polarity :Negative,
+                          :pos :Verb,
+                          :rootClass :CCC,
+                          :tam :Imperative}
+                 :terms [[:number :person :gender :token-proclitic :token-stem :token-suffix],
+                         [:Singular, :Person2, :Masc,   "ba:" "-CaCi:C" "-a"],
+                         [:Singular, :Person2, :Fem,  "bi:" "-CaCi:C" "-i"],
+                         [:Plural, :Person2, :Common,  "ba:" "-CaCi:C" "-na"]]
+                 }
+                {:label "beja-v-imprtv-neg-suff"
+                 :note "V17p.64;V14p.23 :: For the Prohibitive, the proclitic modal negative particle baː= (SG.M & PL) / biː= (SG.F) (glossed as NEG.PROH) precedes the verb stem."
+                 :common {:vmorphClass :Finite
+                          :conjClass :Suffix,
+                          :polarity :Negative,
+                          :pos :Verb,
+                          :tam :Imperative}
+                 :terms [[:number :person :gender :token-proclitic :token-stem :token-suffix],
+                         [:Singular, :Person2, :Masc,   "ba:" "-{Stem]" "-a"],
+                         [:Singular, :Person2, :Fem,  "bi:" "-{Stem]" "-ej"],
+                         [:Plural, :Person2, :Common,  "ba:" "-{Stem]" "-a:na"]]
+                 }
+                {:label "bvan-verb-aff-opt"
+                 :note "V17p.64;V14p.23 :: 'The affirmative Optative (OPT) paradigm is based on the AOR paradigm for both verb classes, preceded by the invariable modal particle baː= (homophonous with the SG.M & PL prohibitive particle). It fully inflects for person, number and gender, thus functioning also as a Hortative with 1st persons, and as a Jussive with 3rd persons.
+If the affirmative Optative is followed by a bound Object pronoun (instead of the Possessive pronouns which normally cliticize to the Aorist form), the use of the particle is optional: i-saːn-n=hoːk ‘may you find!’'"
+                 :common {:vmorphClass :Finite
+                          :polarity :Affirmative,
+                          :pos :Verb,
+                          :tam :Optative}
+                 :terms [[:conjClass :rootClass :token-proclitic :token-stem],
+                         [:Prefix :CC "ba:" "[Aorist]"]
+                         [:Prefix :CCC "ba:" "[Aorist]"]
+                         [:Prefix :CCi "ba:" "[Aorist, w. Stem =] Ca:C"]
+                         [:Suffix :_NA "ba:" "[Aorist]"]]
+                 }
+
+
                 {:label "bvan-verb-neg-opt-pref"
                  :note "V17p.65t.22;V14p.23t.16"
                  :common {:vmorphClass :Finite
