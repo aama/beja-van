@@ -19,10 +19,11 @@
             :pos [:Pronoun :Verb],
             :proClass [:Bound :Demonstrative :IndPoss :Independent :PossBound :ProBound :indPoss],
             :proximity [:Distal :Proximal],
-            :rootClass [:CC :CCC :CCi :CCC1a :CCC1b :CCC2 :CCC3 :_NA],
+            :rootClass [:CC :CCC :CCi :RC1a :RC1b :RC2 :_NA],
             :slot [:After-IPFV-PFV :After-aor :Before-hoob],
             :tam [:Aorist :Imperfective :Optative :Perfective :Potential],
-            :vmorphClass [:Finite :StemExx]
+            :vmorphClass [:Finite :FiniteImperfExx :StemExx :VNom]
+            :vNomClass [:Sequential :General :Manner :Simul :Action :Agent]
             }
  :pclass {:pngClass [:person :number :gender],
           :synsemClass [:case :defClass :deixis :derivedStem :derivedStemAug :participle :polarity :pos :proClass :tam],
@@ -30,11 +31,11 @@
           :otherClass []}
  :lexemes {
            :ak   {:pos :Verb, :lemma "ak", :gloss "become", :conjClass :Prefix, :rootClass :Irreg},
-           :bʔan   {:pos :Verb, :lemma "bɁaːn", :gloss "fear", :conjClass :Prefix, :rootClass :CCC3},
+           :bʔaan   {:pos :Verb, :lemma "bɁaːn", :gloss "fear", :conjClass :Prefix, :rootClass :RC2},
            :baj   {:pos :Verb, :lemma "baj", :gloss "go", :conjClass :Prefix, :rootClass :Irreg},
-           :bar   {:pos :Verb, :lemma "bar", :gloss "have", :conjClass :Prefix, :rootClass :CCC3},
+           :bar   {:pos :Verb, :lemma "bar", :gloss "have", :conjClass :Prefix, :rootClass :RC2},
            :bis   {:pos :Verb, :lemma "bis", :gloss "bury", :conjClass :Prefix, :rootClass :CC},
-           :di   {:pos :Verb, :lemma "di", :gloss "say", :conjClass :Prefix, :rootClass :Irreg},
+           :di  {:pos :Verb, :lemma "di", :gloss "say", :conjClass :Prefix, :rootClass :Irreg},
            :dibil   {:pos :Verb, :lemma "dibil", :gloss "collect", :conjClass :Prefix, :rootClass :CCC},
            :dir   {:pos :Verb, :lemma "dir", :gloss "kill", :conjClass :Prefix, :rootClass :CC},
            :fif   {:pos :Verb, :lemma "fif", :gloss "pour", :conjClass :Prefix, :rootClass :CC},
@@ -42,22 +43,22 @@
            :gid   {:pos :Verb, :lemma "gid", :gloss "throw", :conjClass :Prefix, :rootClass :CC},
            :girim   {:pos :Verb, :lemma "girim", :gloss "be inimical", :conjClass :Prefix, :rootClass :CCC},
            :ha   {:pos :Verb, :lemma "ha", :gloss "take", :conjClass :Prefix, :rootClass :Irreg},
-           :hadal   {:pos :Verb, :lemma "hadal", :gloss "be black", :conjClass :Prefix, :rootClass :CCC3},
+           :hadal   {:pos :Verb, :lemma "hadal", :gloss "be black", :conjClass :Prefix, :rootClass :RC2},
            :haj   {:pos :Verb, :lemma "haj", :gloss "be there", :conjClass :Prefix, :rootClass :Irreg},
-           :haragw   {:pos :Verb, :lemma "haragʷ", :gloss "be hungry", :conjClass :Prefix, :rootClass :CCC3},
+           :haragw   {:pos :Verb, :lemma "haragʷ", :gloss "be hungry", :conjClass :Prefix, :rootClass :RC2},
            :hee   {:pos :Verb, :lemma "hee", :gloss "give", :conjClass :Prefix, :rootClass :Irreg},
-           :hibeeb   {:pos :Verb, :lemma "hibe:b", :gloss "spend rainy season", :conjClass :Prefix, :rootClass :CCC2},
-           :jʔi   {:pos :Verb, :lemma ":jʔi", :gloss "come", :conjClass :Prefix, :rootClass :Irreg},
+           :hibeeb   {:pos :Verb, :lemma "hibe:b", :gloss "spend rainy season", :conjClass :Prefix, :rootClass :RC1b},
+           :jʔi   {:pos :Verb, :lemma "jʔi", :gloss "come", :conjClass :Suffix, :rootClass :Irreg},
            :kitim   {:pos :Verb, :lemma "kitim", :gloss "arrive", :conjClass :Prefix, :rootClass :CCC},
-           :kwas   {:pos :Verb, :lemma "kʷaːs", :gloss "create", :conjClass :Prefix, :rootClass :CCC3},
+           :kwaas   {:pos :Verb, :lemma "kʷaːs", :gloss "create", :conjClass :Prefix, :rootClass :RC2},
            :min   {:pos :Verb, :lemma "min", :gloss "shave", :conjClass :Prefix, :rootClass :CC},
-           :nhad   {:pos :Verb, :lemma "nhad", :gloss "finish", :conjClass :Prefix, :rootClass :CCC3},
+           :nhad   {:pos :Verb, :lemma "nhad", :gloss "finish", :conjClass :Prefix, :rootClass :RC2},
            :rimid   {:pos :Verb, :lemma "rimid", :gloss "revenge", :conjClass :Prefix, :rootClass :CCC},
-           :siboob   {:pos :Verb, :lemma "ʃibo:b", :gloss "be good", :conjClass :Prefix, :rootClass :CCC1b},
-           :sikwan   {:pos :Verb, :lemma "ʃikʷan", :gloss "smell nice", :conjClass :Prefix, :rootClass :CCC3},
+           :siboob   {:pos :Verb, :lemma "ʃibo:b", :gloss "be good", :conjClass :Prefix, :rootClass :C1a},
+           :sikwaan   {:pos :Verb, :lemma "ʃikʷa:n", :gloss "smell nice", :conjClass :Prefix, :rootClass :RC2},
            :tam   {:pos :Verb, :lemma "tam", :gloss "eat", :conjClass :Suffix},
            :tʔi   {:pos :Verb, :lemma "tʔi", :gloss "resemble", :conjClass :Prefix, :rootClass :Irreg},
-           :war   {:pos :Verb, :lemma "war", :gloss "do", :conjClass :Prefix, :rootClass :CCC3},
+           :weer   {:pos :Verb, :lemma "we:r", :gloss "do", :conjClass :Prefix, :rootClass :RC2},
            }
  :termclusters [
                 {:label "bvan-dem-nom-acc"
@@ -482,24 +483,24 @@
                          [:Plural :Person3 :Common "ˈiː-" "CCiC" "-na"]]
                  }
                 {:label "bvan-verb-pref-perf-CCCvar-template"
-                 :note "V17p.63;V14p.22 :: In addition there is a small sub-class of bi-consonantal and tri-consonantal V1 which do not have the n prefix or infix in the IPFV at the base form, but are characterized by a post-stem suffix -i. This sub-class includes most verbs with stem C1i(C2)oːC3 or C1iC2eːC3 , and some verbs (mainly stative) with a(ː) as V(2), together with a few other highly irregular verbs (often mono-consonantal) which have suppletive stems.[NB: For the moment these verbs are noted ad hoc here in the :lexeme section as :rootClass1a/b,2,3. I have also ventured to supply 1SgC forms for :rootClass3, but these are not in the text.]"
-                 :common {:vmorphClass :Finite
+                 :note "V17p.63;V14p.22 :: In addition there is a small sub-class of bi-consonantal and tri-consonantal V1 which do not have the n prefix or infix in the IPFV at the base form, but are characterized by a post-stem suffix -i. This sub-class includes most verbs with stem C1i(C2)oːC3 or C1iC2eːC3 , and some verbs (mainly stative) with a(ː) as V(2).[NB: For the moment these verbs are noted ad hoc here in the :lexeme section as :RC1a/b,2. I have also ventured to supply 1SgC forms for :rootClass3, but these are not in the text.]"
+                 :common {:vmorphClass :FiniteImperfExx
                           :conjClass :Prefix,
                           :polarity :Affirmative,
                           :pos :Verb,
                           :tam :Imperfective}
                  :terms [[:lexeme :rootClass :number :person :gender :token-prefix :token-stem :token-postStemSuff],
-                         [:foor :CCC1a  :Singular :Person1 :Common "a-" "fo:r" "-i"],
-                         [:siboob :CCC1b  :Singular :Person1 :Common "a-" "ʃibo:b" "-i"],
-                         [:hibeeb :CCC2  :Singular :Person1 :Common "a-" "hibe:b" "-i"],
-                         [:hadal :CCC3  :Singular :Person1 :Common "a-" "hadal" "-i"],
-                         [:haragw :CCC3  :Singular :Person1 :Common "a-" "haragʷ" "-i"],
-                         [:sikwan :CCC3  :Singular :Person1 :Common "a-" "ʃikʷan" "-i"],
-                         [:nhad :CCC3  :Singular :Person1 :Common "a-" "nhad" "-i"],
-                         [:bʔan :CCC3  :Singular :Person1 :Common "a-" "bɁaːn" "-i"],
-                         [:kwas :CCC3  :Singular :Person1 :Common "a-" "kʷaːs" "-i"],
-                         [:war :CCC3  :Singular :Person1 :Common "a-" "we:r" "-i"],
-                         [:bar :CCC3  :Singular :Person1 :Common "a-" "bar" "-i"]]
+                         [:foor :RC1a  :Singular :Person1 :Common "a-" "fo:r" "-i"],
+                         [:siboob :RC1a  :Singular :Person1 :Common "a-" "ʃibo:b" "-i"],
+                         [:hibeeb :RC1b  :Singular :Person1 :Common "a-" "hibe:b" "-i"],
+                         [:hadal :RC2  :Singular :Person1 :Common "a-" "hadal" "-i"],
+                         [:haragw :RC2  :Singular :Person1 :Common "a-" "haragʷ" "-i"],
+                         [:sikwaan :RC2  :Singular :Person1 :Common "a-" "ʃikʷan" "-i"],
+                         [:nhad :RC2  :Singular :Person1 :Common "a-" "nhad" "-i"],
+                         [:bʔaan :RC2  :Singular :Person1 :Common "a-" "bɁaːn" "-i"],
+                         [:kwaas :RC2  :Singular :Person1 :Common "a-" "kʷaːs" "-i"],
+                         [:weer :RC2  :Singular :Person1 :Common "a-" "we:r" "-i"],
+                         [:bar :RC2  :Singular :Person1 :Common "a-" "bar" "-i"]]
                  }
                 {:label "beja-v-imprtv-aff-pref"
                  :note "V17p.64;V14p.23 :: 'The stem, which forms the basis of the conjugation is, by convention, the bare form found in the construction with the light verb auxiliary di ‘say’ (see section 3.2.6.4), which is also that of the Imperative without the inflectional morphemes.. . . A suffix -n is added to the IMP flectional morphemes to emphasize the imperative meaning and strengthen the illocutionary force of the command'."
@@ -616,7 +617,7 @@ If the affirmative Optative is followed by a bound Object pronoun (instead of th
                 {:label "beja-v-imperf-jʔi"
                  :note "V17p.67t.23"
                  :common {:vmorphClass :Finite
-                          :conjClass :Prefix,
+                          :conjClass :Suffix,
                           :lexeme :jʔi,
                           :polarity :Affirmative,
                           :pos :Verb,
@@ -635,7 +636,7 @@ If the affirmative Optative is followed by a bound Object pronoun (instead of th
                 {:label "beja-v-perf-jʔi"
                  :note "V17p.67t.23"
                  :common {:vmorphClass :Finite
-                          :conjClass :Prefix,
+                          :conjClass :Suffix,
                           :lexeme :jʔi,
                           :polarity :Affirmative,
                           :pos :Verb,
@@ -654,7 +655,7 @@ If the affirmative Optative is followed by a bound Object pronoun (instead of th
                 {:label "beja-v-aor-jʔi"
                  :note "V17p.67t.23"
                  :common {:vmorphClass :Finite
-                          :conjClass :Prefix,
+                          :conjClass :Suffix,
                           :lexeme :jʔi,
                           :polarity :Affirmative,
                           :pos :Verb,
@@ -673,7 +674,7 @@ If the affirmative Optative is followed by a bound Object pronoun (instead of th
                 {:label "beja-v-imprtv-jʔi"
                  :note "V17p.67t.23"
                  :common {:vmorphClass :Finite
-                          :conjClass :Prefix,
+                          :conjClass :Suffix,
                           :lexeme :jʔi,
                           :polarity :Affirmative,
                           :pos :Verb,
@@ -687,7 +688,7 @@ If the affirmative Optative is followed by a bound Object pronoun (instead of th
                 {:label "beja-v-vnom-jʔi"
                  :note "V17p.23"
                  :common {:vmorphClass :VNom
-                          :conjClass :Prefix,
+                          :conjClass :Suffix,
                           :lexeme :jʔi,
                           :pos :Verb,
                           :rootClass :Irreg}
