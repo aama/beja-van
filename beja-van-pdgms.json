@@ -1,9 +1,21 @@
 {
   "lang": "beja-van",
-  "subfamily": "Cushitic North Beja",
+  "subfamily": "cushitic beja",
   "lgpref": "bva",
   "datasource": "Vanhove, Martine. 2017. Le Beja. Leuven, Paris : Peeters (coll. Les Langues du Monde 9). Vanhove, Martine. 2014. 'Beja Grammatical Sketch'. In Mettouchi, A. and C. Chanard (eds.) The CorpAfroAs Corpus of Spoken AfroAsiatic Languages. 68 pages. DOI: http://dx.doi.org/10.1075/scl.68.website.  (http://corpafroas.huma-num.fr/Archives/BEJ/PDF/BEJ_MV_AGRAMMATICALSKETCH.PDF)  [V14p.[page](.t[able]); V17]",
-  "datasourceNotes": "The current data is taken from the paradigm tables in Vanhove2014.",
+  "datasourceNotes": "The data currently in this file are taken from the paradigm tables in Vanhove2014; addition of fuller data from Vanhove2017 is in process. ",
+  "transcription": { 
+    "Consonants": {
+      "general": "cf. transcription table",
+      "note": [
+        "'' = ''",
+        "'' = '' "
+        ]},
+    "Vowels": {
+      "inventory": "i e a o u; ii ee aa oo uu"},
+    "Prosody": {
+      "Type": "",
+      "Tone": "'v́(v)' high; 'v(v)' unaccented"}},
   "geodemoURL": "http://www.ethnologue.com/language/bej",
   "geodemoTXT": "Beja is a closely related group of language varieties and dialects spoken in the Red Sea coastal and hill regions in Sudan, Eritrea, and Egypt by more than a million individuals. The variety documented here is that of the village of Sinkat (36 49ZZ58E, 18 50ZZ14N), about 60km WSW of Suakin, where Martine Vanhove recorded a corpus of Beja narratives (avaliable at https://cocoon.huma-num.fr/exist/crdo/search2.xql?keyword=beja.",
   "schemata": {
@@ -145,216 +157,216 @@
   ]
 },
   "lexemes": {
-    "ak": {
-      "pos": "Verb",
-      "lemma": "ak",
-      "gloss": "become",
-      "conjClass": "Prefix",
-      "rootClass": "Irreg"
-    },
-    "baj": {
-      "pos": "Verb",
-      "lemma": "baj",
-      "gloss": "go",
-      "conjClass": "Prefix",
-      "rootClass": "Irreg"
-    },
-    "bar": {
-      "pos": "Verb",
-      "lemma": "bar",
-      "gloss": "have",
-      "conjClass": "Prefix",
-      "rootClass": "RC2"
-    },
-    "bis": {
-      "pos": "Verb",
-      "lemma": "bis",
-      "gloss": "bury",
-      "conjClass": "Prefix",
-      "rootClass": "CC"
-    },
-    "bʔaan": {
-      "pos": "Verb",
-      "lemma": "bɁaːn",
-      "gloss": "fear",
-      "conjClass": "Prefix",
-      "rootClass": "RC2"
-    },
-    "dbl": {
-      "pos": "Verb",
-      "lemma": "dbl",
-      "gloss": "add",
-      "conjClass": "Prefix",
-      "rootClass": "CCC"
-    },
-    "di": {
-      "pos": "Verb",
-      "lemma": "di",
-      "gloss": "say",
-      "conjClass": "Prefix",
-      "rootClass": "Irreg"
-    },
-    "dibil": {
-      "pos": "Verb",
-      "lemma": "dibil",
-      "gloss": "collect",
-      "conjClass": "Prefix",
-      "rootClass": "CCC"
-    },
-    "dir": {
-      "pos": "Verb",
-      "lemma": "dir",
-      "gloss": "kill",
-      "conjClass": "Prefix",
-      "rootClass": "CC"
-    },
-    "fif": {
-      "pos": "Verb",
-      "lemma": "fif",
-      "gloss": "pour",
-      "conjClass": "Prefix",
-      "rootClass": "CC"
-    },
-    "foor": {
-      "pos": "Verb",
-      "lemma": "fo:r",
-      "gloss": "flee",
-      "conjClass": "Prefix",
-      "rootClass": "CCC1a"
-    },
-    "gid": {
-      "pos": "Verb",
-      "lemma": "gid",
-      "gloss": "throw",
-      "conjClass": "Prefix",
-      "rootClass": "CC"
-    },
-    "girim": {
-      "pos": "Verb",
-      "lemma": "girim",
-      "gloss": "be inimical",
-      "conjClass": "Prefix",
-      "rootClass": "CCC"
-    },
-    "ha": {
-      "pos": "Verb",
-      "lemma": "ha",
-      "gloss": "take",
-      "conjClass": "Prefix",
-      "rootClass": "Irreg"
-    },
-    "hadal": {
-      "pos": "Verb",
-      "lemma": "hadal",
-      "gloss": "be black",
-      "conjClass": "Prefix",
-      "rootClass": "RC2"
-    },
-    "haj": {
-      "pos": "Verb",
-      "lemma": "haj",
-      "gloss": "be there",
-      "conjClass": "Prefix",
-      "rootClass": "Irreg"
-    },
-    "haragw": {
-      "pos": "Verb",
-      "lemma": "haragʷ",
-      "gloss": "be hungry",
-      "conjClass": "Prefix",
-      "rootClass": "RC2"
-    },
-    "hee": {
-      "pos": "Verb",
-      "lemma": "hee",
-      "gloss": "give",
-      "conjClass": "Prefix",
-      "rootClass": "Irreg"
-    },
-    "hibeeb": {
-      "pos": "Verb",
-      "lemma": "hibe:b",
-      "gloss": "spend rainy season",
-      "conjClass": "Prefix",
-      "rootClass": "RC1b"
-    },
-    "jʔi": {
-      "pos": "Verb",
-      "lemma": "jʔi",
-      "gloss": "come",
-      "conjClass": "Suffix",
-      "rootClass": "Irreg"
-    },
-    "kitim": {
-      "pos": "Verb",
-      "lemma": "kitim",
-      "gloss": "arrive",
-      "conjClass": "Prefix",
-      "rootClass": "CCC"
-    },
-    "kwaas": {
-      "pos": "Verb",
-      "lemma": "kʷaːs",
-      "gloss": "create",
-      "conjClass": "Prefix",
-      "rootClass": "RC2"
-    },
-    "min": {
-      "pos": "Verb",
-      "lemma": "min",
-      "gloss": "shave",
-      "conjClass": "Prefix",
-      "rootClass": "CC"
-    },
-    "nhad": {
-      "pos": "Verb",
-      "lemma": "nhad",
-      "gloss": "finish",
-      "conjClass": "Prefix",
-      "rootClass": "RC2"
-    },
-    "rimid": {
-      "pos": "Verb",
-      "lemma": "rimid",
-      "gloss": "revenge",
-      "conjClass": "Prefix",
-      "rootClass": "CCC"
-    },
-    "siboob": {
-      "pos": "Verb",
-      "lemma": "ʃibo:b",
-      "gloss": "be good",
-      "conjClass": "Prefix",
-      "rootClass": "C1a"
-    },
-    "sikwaan": {
-      "pos": "Verb",
-      "lemma": "ʃikʷa:n",
-      "gloss": "smell nice",
-      "conjClass": "Prefix",
-      "rootClass": "RC2"
-    },
-    "tam": {
-      "pos": "Verb",
-      "lemma": "tam",
-      "gloss": "eat",
-      "conjClass": "Suffix"
-    },
-    "tʔi": {
-      "pos": "Verb",
-      "lemma": "tʔi",
-      "gloss": "resemble",
-      "conjClass": "Prefix",
-      "rootClass": "Irreg"
-    },
-    "weer": {
-      "pos": "Verb",
-      "lemma": "we:r",
-      "gloss": "do",
-      "conjClass": "Prefix",
-      "rootClass": "RC2"
-    }
+  "ak": {
+    "pos": "Verb",
+    "lemma": "ak",
+    "gloss": "become",
+    "conjClass": "Prefix",
+    "rootClass": "Irreg"
   },
+  "baj": {
+    "pos": "Verb",
+    "lemma": "baj",
+    "gloss": "go",
+    "conjClass": "Prefix",
+    "rootClass": "Irreg"
+  },
+  "bar": {
+    "pos": "Verb",
+    "lemma": "bar",
+    "gloss": "have",
+    "conjClass": "Prefix",
+    "rootClass": "RC2"
+  },
+  "bis": {
+    "pos": "Verb",
+    "lemma": "bis",
+    "gloss": "bury",
+    "conjClass": "Prefix",
+    "rootClass": "CC"
+  },
+  "bʔaan": {
+    "pos": "Verb",
+    "lemma": "bɁaːn",
+    "gloss": "fear",
+    "conjClass": "Prefix",
+    "rootClass": "RC2"
+  },
+  "dbl": {
+    "pos": "Verb",
+    "lemma": "dbl",
+    "gloss": "add",
+    "conjClass": "Prefix",
+    "rootClass": "CCC"
+  },
+  "di": {
+    "pos": "Verb",
+    "lemma": "di",
+    "gloss": "say",
+    "conjClass": "Prefix",
+    "rootClass": "Irreg"
+  },
+  "dibil": {
+    "pos": "Verb",
+    "lemma": "dibil",
+    "gloss": "collect",
+    "conjClass": "Prefix",
+    "rootClass": "CCC"
+  },
+  "dir": {
+    "pos": "Verb",
+    "lemma": "dir",
+    "gloss": "kill",
+    "conjClass": "Prefix",
+    "rootClass": "CC"
+  },
+  "fif": {
+    "pos": "Verb",
+    "lemma": "fif",
+    "gloss": "pour",
+    "conjClass": "Prefix",
+    "rootClass": "CC"
+  },
+  "foor": {
+    "pos": "Verb",
+    "lemma": "fo:r",
+    "gloss": "flee",
+    "conjClass": "Prefix",
+    "rootClass": "CCC1a"
+  },
+  "gid": {
+    "pos": "Verb",
+    "lemma": "gid",
+    "gloss": "throw",
+    "conjClass": "Prefix",
+    "rootClass": "CC"
+  },
+  "girim": {
+    "pos": "Verb",
+    "lemma": "girim",
+    "gloss": "be inimical",
+    "conjClass": "Prefix",
+    "rootClass": "CCC"
+  },
+  "ha": {
+    "pos": "Verb",
+    "lemma": "ha",
+    "gloss": "take",
+    "conjClass": "Prefix",
+    "rootClass": "Irreg"
+  },
+  "hadal": {
+    "pos": "Verb",
+    "lemma": "hadal",
+    "gloss": "be black",
+    "conjClass": "Prefix",
+    "rootClass": "RC2"
+  },
+  "haj": {
+    "pos": "Verb",
+    "lemma": "haj",
+    "gloss": "be there",
+    "conjClass": "Prefix",
+    "rootClass": "Irreg"
+  },
+  "haragw": {
+    "pos": "Verb",
+    "lemma": "haragʷ",
+    "gloss": "be hungry",
+    "conjClass": "Prefix",
+    "rootClass": "RC2"
+  },
+  "hee": {
+    "pos": "Verb",
+    "lemma": "hee",
+    "gloss": "give",
+    "conjClass": "Prefix",
+    "rootClass": "Irreg"
+  },
+  "hibeeb": {
+    "pos": "Verb",
+    "lemma": "hibe:b",
+    "gloss": "spend rainy season",
+    "conjClass": "Prefix",
+    "rootClass": "RC1b"
+  },
+  "jʔi": {
+    "pos": "Verb",
+    "lemma": "jʔi",
+    "gloss": "come",
+    "conjClass": "Suffix",
+    "rootClass": "Irreg"
+  },
+  "kitim": {
+    "pos": "Verb",
+    "lemma": "kitim",
+    "gloss": "arrive",
+    "conjClass": "Prefix",
+    "rootClass": "CCC"
+  },
+  "kwaas": {
+    "pos": "Verb",
+    "lemma": "kʷaːs",
+    "gloss": "create",
+    "conjClass": "Prefix",
+    "rootClass": "RC2"
+  },
+  "min": {
+    "pos": "Verb",
+    "lemma": "min",
+    "gloss": "shave",
+    "conjClass": "Prefix",
+    "rootClass": "CC"
+  },
+  "nhad": {
+    "pos": "Verb",
+    "lemma": "nhad",
+    "gloss": "finish",
+    "conjClass": "Prefix",
+    "rootClass": "RC2"
+  },
+  "rimid": {
+    "pos": "Verb",
+    "lemma": "rimid",
+    "gloss": "revenge",
+    "conjClass": "Prefix",
+    "rootClass": "CCC"
+  },
+  "siboob": {
+    "pos": "Verb",
+    "lemma": "ʃibo:b",
+    "gloss": "be good",
+    "conjClass": "Prefix",
+    "rootClass": "C1a"
+  },
+  "sikwaan": {
+    "pos": "Verb",
+    "lemma": "ʃikʷa:n",
+    "gloss": "smell nice",
+    "conjClass": "Prefix",
+    "rootClass": "RC2"
+  },
+  "tam": {
+    "pos": "Verb",
+    "lemma": "tam",
+    "gloss": "eat",
+    "conjClass": "Suffix"
+  },
+  "tʔi": {
+    "pos": "Verb",
+    "lemma": "tʔi",
+    "gloss": "resemble",
+    "conjClass": "Prefix",
+    "rootClass": "Irreg"
+  },
+  "weer": {
+    "pos": "Verb",
+    "lemma": "we:r",
+    "gloss": "do",
+    "conjClass": "Prefix",
+    "rootClass": "RC2"
+  }
+},
   "pdgmPropOrder": ["pos", "proClass", "morphClass", "case", "h_gender", "conjClass", "rootClass", "lexeme", "derivedStem", "tam", "polarity"],
   "termclusters": [
   {
